@@ -1,0 +1,51 @@
+[package]
+name = "project-jericho"
+version = "0.1.0"
+edition = "2021"
+description = "Project Jericho - Local AI orchestration, RAG, and system harness with real-time GUI"
+authors = ["Jericho Ops"]
+
+[dependencies]
+# GUI framework - immediate mode, fast rendering
+egui = "0.31"
+eframe = { version = "0.31", features = ["default"] }
+egui_extras = "0.31"
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# HTTP client for Ollama API
+reqwest = { version = "0.12", features = ["json", "stream"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# System monitoring
+sysinfo = "0.35"
+
+# Logging and tracing
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+
+# Configuration
+toml = "0.8"
+dirs = "6"
+
+# RAG - embeddings and vector storage
+uuid = { version = "1", features = ["v4"] }
+
+# Timing and async utilities
+chrono = { version = "0.4", features = ["serde"] }
+
+# Streaming
+futures = "0.3"
+bytes = "1"
+
+# Text processing for RAG chunking
+regex = "1"
+
+[profile.release]
+opt-level = 2
+lto = "thin"
+codegen-units = 1
