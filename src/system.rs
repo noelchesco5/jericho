@@ -177,13 +177,16 @@ impl SystemMonitor {
             });
         }
 
-        if h.cpu.usage_percent > self.cpu_limit_percent * 100.0 {
+        if h.cpu.usage_percent > self.cpu_limit_percent {
             alerts.push(ThrottleAlert {
                 severity: AlertSeverity::Warning,
                 resource: "CPU".to_string(),
-                message: format!("CPU at {:.1}%", h.cpu.usage_percent),
+                message: format!(
+                    "CPU at {:.1}% (limit {:.0}%)",
+                    h.cpu.usage_percent, self.cpu_limit_percent
+                ),
                 current: h.cpu.usage_percent as f64,
-                limit: self.cpu_limit_percent as f64 * 100.0,
+                limit: self.cpu_limit_percent as f64,
             });
         }
 

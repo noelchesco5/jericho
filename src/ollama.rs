@@ -44,13 +44,13 @@ pub struct StreamChunk {
     pub done: bool,
     #[serde(default)]
     pub eval_count: Option<u64>,
-    #[serde(default)]
+    #[serde(default, rename = "eval_duration")]
     pub eval_duration_ns: Option<u64>,
     #[serde(default)]
     pub prompt_eval_count: Option<u64>,
-    #[serde(default)]
+    #[serde(default, rename = "prompt_eval_duration")]
     pub prompt_eval_duration_ns: Option<u64>,
-    #[serde(default)]
+    #[serde(default, rename = "total_duration")]
     pub total_duration_ns: Option<u64>,
 }
 
@@ -58,6 +58,83 @@ pub struct StreamChunk {
 pub struct StreamMessage {
     pub role: String,
     pub content: String,
+    /// Native reasoning field returned by newer Ollama reasoning models
+    #[serde(default)]
+    pub thinking: Option<String>,
+}
+
+/// State machine that separates <think>...</think> reasoning from answer
+/// content across arbitrary chunk boundaries.
+struct ThinkSplitter {
+    inside_think: bool,
+    pending: String,
+}
+
+impl ThinkSplitter {
+    fn new() -> Self {
+        Self {
+            inside_think: false,
+            pending: String::new(),
+        }
+    }
+
+    /// Feed one raw token; returns (reasoning_delta, content_delta)
+    fn feed(&mut self, token: &str) -> (String, String) {
+        self.pending.push_str(token);
+        let mut reasoning = String::new();
+        let mut content = String::new();
+
+        loop {
+            if self.inside_think {
+                match self.pending.find("</think>") {
+                    Some(pos) => {
+                        reasoning.push_str(&self.pending[..pos]);
+                        self.pending.drain(..pos + "</think>".len());
+                        self.inside_think = false;
+                    }
+                    None => {
+                        // hold back a possible partial closing tag
+                        let hold = 7.min(self.pending.len());
+                        let emit = self.pending.len() - hold;
+                        if emit > 0 {
+                            reasoning.push_str(&self.pending[..emit]);
+                            self.pending.drain(..emit);
+                        }
+                        break;
+                    }
+                }
+            } else {
+                match self.pending.find("<think>") {
+                    Some(pos) => {
+                        content.push_str(&self.pending[..pos]);
+                        self.pending.drain(..pos + "<think>".len());
+                        self.inside_think = true;
+                    }
+                    None => {
+                        // hold back a possible partial opening tag
+                        let hold = 6.min(self.pending.len());
+                        let emit = self.pending.len() - hold;
+                        if emit > 0 {
+                            content.push_str(&self.pending[..emit]);
+                            self.pending.drain(..emit);
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+        (reasoning, content)
+    }
+
+    /// Emit whatever remains when the stream ends
+    fn flush(&mut self) -> (String, String) {
+        let remainder = std::mem::take(&mut self.pending);
+        if self.inside_think {
+            (remainder, String::new())
+        } else {
+            (String::new(), remainder)
+        }
+    }
 }
 
 /// Performance stats from a completed inference
@@ -98,8 +175,10 @@ pub struct OllamaClient {
 
 impl OllamaClient {
     pub fn new(config: &OllamaConfig) -> Self {
+        // No total request timeout: it would abort long streaming generations
+        // mid-response. Only bound the connection phase.
         let http = Client::builder()
-            .timeout(std::time::Duration::from_secs(config.timeout_secs))
+            .connect_timeout(std::time::Duration::from_secs(config.timeout_secs.min(30)))
             .build()
             .expect("Failed to create HTTP client");
 
@@ -215,6 +294,7 @@ impl OllamaClient {
         let mut full_content = String::new();
         let mut full_reasoning = String::new();
         let mut stats = InferenceStats::default();
+        let mut splitter = ThinkSplitter::new();
 
         while let Some(chunk) = stream.next().await {
             match chunk {
@@ -226,23 +306,38 @@ impl OllamaClient {
                             }
                             if let Ok(parsed) = serde_json::from_str::<StreamChunk>(line) {
                                 if let Some(msg) = &parsed.message {
-                                    // Detect thinking/reasoning blocks
-                                    let content = &msg.content;
-                                    if content.contains("<think>") || content.contains("</think>") {
-                                        let _ = reasoning_tx.send(content.clone()).await;
-                                        full_reasoning.push_str(content);
-                                    } else if !full_reasoning.is_empty()
-                                        && !content.contains("</think>")
-                                    {
-                                        // Content after reasoning but before closing tag
-                                        full_reasoning.push_str(content);
-                                        let _ = reasoning_tx.send(content.clone()).await;
-                                    } else {
-                                        let _ = content_tx.send(content.clone()).await;
-                                        full_content.push_str(content);
+                                    // Native thinking channel (newer reasoning models)
+                                    if let Some(think) = &msg.thinking {
+                                        if !think.is_empty() {
+                                            full_reasoning.push_str(think);
+                                            let _ = reasoning_tx.send(think.clone()).await;
+                                        }
+                                    }
+
+                                    // Tag-aware <think> splitting, safe across chunks
+                                    let (reasoning_delta, content_delta) =
+                                        splitter.feed(&msg.content);
+                                    if !reasoning_delta.is_empty() {
+                                        full_reasoning.push_str(&reasoning_delta);
+                                        let _ = reasoning_tx.send(reasoning_delta).await;
+                                    }
+                                    if !content_delta.is_empty() {
+                                        full_content.push_str(&content_delta);
+                                        let _ = content_tx.send(content_delta).await;
                                     }
                                 }
                                 if parsed.done {
+                                    // Flush any held-back tail (partial tag or trailing content)
+                                    let (tail_reasoning, tail_content) = splitter.flush();
+                                    if !tail_reasoning.is_empty() {
+                                        full_reasoning.push_str(&tail_reasoning);
+                                        let _ = reasoning_tx.send(tail_reasoning).await;
+                                    }
+                                    if !tail_content.is_empty() {
+                                        full_content.push_str(&tail_content);
+                                        let _ = content_tx.send(tail_content).await;
+                                    }
+
                                     // Extract performance stats
                                     if let Some(count) = parsed.eval_count {
                                         stats.generated_tokens = count;
@@ -267,6 +362,8 @@ impl OllamaClient {
                                     }
                                     let _ = stats_tx.send(stats.clone()).await;
                                 }
+                            } else {
+                                tracing::debug!("Unparseable stream line: {}", line);
                             }
                         }
                     }
@@ -295,6 +392,7 @@ impl OllamaClient {
         let resp = self
             .http
             .post(&url)
+            .timeout(std::time::Duration::from_secs(300))
             .json(&request)
             .send()
             .await

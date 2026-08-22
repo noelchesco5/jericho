@@ -53,6 +53,8 @@ pub struct ChatPanel {
     pub scroll_to_bottom: bool,
     pub current_tps: f64,
     pub total_tokens: u64,
+    /// Generated tokens reported by the latest completed inference
+    pub last_generated_tokens: u64,
     /// Set to true only when user presses Enter or clicks SEND
     pub send_requested: bool,
 }
@@ -79,6 +81,7 @@ impl ChatPanel {
             scroll_to_bottom: false,
             current_tps: 0.0,
             total_tokens: 0,
+            last_generated_tokens: 0,
             send_requested: false,
         }
     }
@@ -374,20 +377,24 @@ impl ChatPanel {
         self.is_generating = false;
         let content = self.streaming_content.clone();
         let reasoning = self.streaming_reasoning.clone();
+        let tokens = self.last_generated_tokens;
         if !content.trim().is_empty() || !reasoning.trim().is_empty() {
             self.add_message(
                 MessageRole::Assistant,
                 content,
                 reasoning,
                 self.current_tps,
-                0, // will be updated with stats
+                tokens,
             );
         }
+        self.last_generated_tokens = 0;
         self.streaming_content.clear();
         self.streaming_reasoning.clear();
     }
 
-    /// Check if user submitted input (only when Enter pressed or SEND clicked)
+    /// Check if user submitted input (only when Enter pressed or SEND clicked).
+    /// Returns the input without pushing anything to history; the caller
+    /// decides whether the send is accepted and records the user bubble.
     pub fn take_input(&mut self) -> Option<String> {
         if !self.send_requested || self.is_generating || self.input_buffer.trim().is_empty() {
             self.send_requested = false;
@@ -395,15 +402,19 @@ impl ChatPanel {
         }
         self.send_requested = false;
         let input = self.input_buffer.trim().to_string();
+        self.input_buffer.clear();
+        Some(input)
+    }
+
+    /// Record a user message in history (called only when the send is accepted)
+    pub fn push_user_message(&mut self, content: &str) {
         self.messages.push(ChatMessage {
             role: MessageRole::User,
-            content: input.clone(),
+            content: content.to_string(),
             reasoning: String::new(),
             timestamp: chrono::Local::now().format("%H:%M:%S").to_string(),
             tokens_per_second: 0.0,
             token_count: 0,
         });
-        self.input_buffer.clear();
-        Some(input)
     }
 }

@@ -6,9 +6,13 @@ use crate::gui::sidebar::{Sidebar, ActivePanel};
 use crate::ollama::{self, OllamaClient, Message, ModelOptions, SharedClient};
 use crate::rag::{self, RagPipeline, RagConfig};
 use crate::system::{SystemMonitor, SharedMonitor};
+use std::collections::HashSet;
 use std::sync::Arc;
 use tokio::sync::RwLock;
 use tokio::sync::mpsc;
+
+/// Maximum conversation turns sent back to the model as context
+const MAX_HISTORY_MESSAGES: usize = 20;
 
 pub struct JerichoApp {
     config: JerichoConfig,
@@ -23,11 +27,14 @@ pub struct JerichoApp {
     content_rx: Option<mpsc::Receiver<String>>,
     reasoning_rx: Option<mpsc::Receiver<String>>,
     stats_rx: Option<mpsc::Receiver<ollama::InferenceStats>>,
+    error_rx: Option<mpsc::Receiver<String>>,
     active_panel: ActivePanel,
     ollama_connected: bool,
     initialized: bool,
     pending_send: bool,
     health_timer: f64,
+    /// Throttle alerts already surfaced to the user (dedupe)
+    shown_alerts: HashSet<String>,
 }
 
 impl JerichoApp {
@@ -77,11 +84,13 @@ impl JerichoApp {
             content_rx: None,
             reasoning_rx: None,
             stats_rx: None,
+            error_rx: None,
             active_panel: ActivePanel::Chat,
             ollama_connected: false,
             initialized: false,
             pending_send: false,
             health_timer: 0.0,
+            shown_alerts: HashSet::new(),
         }
     }
 
@@ -139,11 +148,37 @@ impl JerichoApp {
         let (content_tx, content_rx) = mpsc::channel(256);
         let (reasoning_tx, reasoning_rx) = mpsc::channel(256);
         let (stats_tx, stats_rx) = mpsc::channel(32);
+        let (error_tx, error_rx) = mpsc::channel(8);
 
         self.content_rx = Some(content_rx);
         self.reasoning_rx = Some(reasoning_rx);
         self.stats_rx = Some(stats_rx);
+        self.error_rx = Some(error_rx);
         self.pending_send = true;
+        self.chat_panel.start_streaming();
+
+        // Build conversation history so the model remembers prior turns.
+        // The current input was just pushed to the panel; it is re-added
+        // explicitly below, so drop the trailing copy here.
+        let mut history: Vec<Message> = self
+            .chat_panel
+            .messages
+            .iter()
+            .filter(|m| matches!(m.role, MessageRole::User | MessageRole::Assistant))
+            .map(|m| Message {
+                role: if m.role == MessageRole::User {
+                    "user".to_string()
+                } else {
+                    "assistant".to_string()
+                },
+                content: m.content.clone(),
+            })
+            .collect();
+        history.pop();
+        if history.len() > MAX_HISTORY_MESSAGES {
+            let start = history.len() - MAX_HISTORY_MESSAGES;
+            history.drain(..start);
+        }
 
         let client = self.client.clone();
         let system_prompt = self.config.model.system_prompt.clone();
@@ -157,19 +192,23 @@ impl JerichoApp {
         };
 
         self.runtime.spawn(async move {
-            let messages = vec![
-                Message {
-                    role: "system".to_string(),
-                    content: system_prompt,
-                },
-                Message {
-                    role: "user".to_string(),
-                    content: input,
-                },
-            ];
+            let mut messages = Vec::with_capacity(history.len() + 2);
+            messages.push(Message {
+                role: "system".to_string(),
+                content: system_prompt,
+            });
+            messages.extend(history);
+            messages.push(Message {
+                role: "user".to_string(),
+                content: input,
+            });
 
-            if let Err(e) = client.chat_stream(messages, &options, content_tx, reasoning_tx, stats_tx).await {
+            if let Err(e) = client
+                .chat_stream(messages, &options, content_tx, reasoning_tx, stats_tx)
+                .await
+            {
                 tracing::error!("Chat stream error: {}", e);
+                let _ = error_tx.send(e).await;
             }
         });
     }
@@ -177,13 +216,31 @@ impl JerichoApp {
 
 impl eframe::App for JerichoApp {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
-        // Periodic health refresh
+        // Periodic health refresh + harness throttle alerts
         self.health_timer += ctx.input(|i| i.predicted_dt) as f64;
         if self.health_timer >= self.config.gui.stats_refresh_ms as f64 / 1000.0 {
             self.health_timer = 0.0;
             let health = self.monitor.refresh();
             let history = self.monitor.get_history().to_vec();
             self.health_panel.update(health, history);
+
+            for alert in self.monitor.check_throttle() {
+                if self.shown_alerts.insert(alert.message.clone()) {
+                    tracing::warn!("Harness alert: {}", alert.message);
+                    let severity = match alert.severity {
+                        crate::system::AlertSeverity::Critical => "CRITICAL",
+                        crate::system::AlertSeverity::Warning => "WARNING",
+                        crate::system::AlertSeverity::Info => "INFO",
+                    };
+                    self.chat_panel.add_message(
+                        MessageRole::System,
+                        format!("HARNESS {} - {}", severity, alert.message),
+                        String::new(),
+                        0.0,
+                        0,
+                    );
+                }
+            }
             ctx.request_repaint();
         }
 
@@ -210,6 +267,21 @@ impl eframe::App for JerichoApp {
         if let Some(rx) = &mut self.stats_rx {
             while let Ok(stats) = rx.try_recv() {
                 self.chat_panel.current_tps = stats.tokens_per_second;
+                self.chat_panel.last_generated_tokens = stats.generated_tokens;
+                ctx.request_repaint();
+            }
+        }
+
+        // Surface stream errors in the chat instead of swallowing them
+        if let Some(rx) = &mut self.error_rx {
+            while let Ok(err) = rx.try_recv() {
+                self.chat_panel.add_message(
+                    MessageRole::System,
+                    format!("ERROR: {}", err),
+                    String::new(),
+                    0.0,
+                    0,
+                );
                 ctx.request_repaint();
             }
         }
@@ -219,6 +291,7 @@ impl eframe::App for JerichoApp {
             self.content_rx = None;
             self.reasoning_rx = None;
             self.stats_rx = None;
+            self.error_rx = None;
             self.pending_send = false;
             ctx.request_repaint();
         }
@@ -226,6 +299,7 @@ impl eframe::App for JerichoApp {
         // Check if user sent a message
         if let Some(input) = self.chat_panel.take_input() {
             if self.ollama_connected && !self.pending_send {
+                self.chat_panel.push_user_message(&input);
                 self.spawn_chat(input);
             } else {
                 self.chat_panel.add_message(
