@@ -15,6 +15,8 @@ pub struct ChatMessage {
     pub timestamp: String,
     pub tokens_per_second: f64,
     pub token_count: u64,
+    /// Model that produced this message (assistant messages only)
+    pub model: String,
 }
 
 #[derive(Debug, Clone, PartialEq)]
@@ -55,6 +57,10 @@ pub struct ChatPanel {
     pub total_tokens: u64,
     /// Generated tokens reported by the latest completed inference
     pub last_generated_tokens: u64,
+    /// Model used for the in-flight / most recent generation
+    pub active_model: String,
+    /// Set when user clicks the model-list refresh button
+    pub refresh_models_requested: bool,
     /// Set to true only when user presses Enter or clicks SEND
     pub send_requested: bool,
 }
@@ -69,6 +75,7 @@ impl ChatPanel {
             timestamp: chrono::Local::now().format("%H:%M:%S").to_string(),
             tokens_per_second: 0.0,
             token_count: 0,
+            model: String::new(),
         });
 
         Self {
@@ -82,12 +89,20 @@ impl ChatPanel {
             current_tps: 0.0,
             total_tokens: 0,
             last_generated_tokens: 0,
+            active_model: String::new(),
+            refresh_models_requested: false,
             send_requested: false,
         }
     }
 
-    /// Render the full chat panel
-    pub fn render(&mut self, ui: &mut egui::Ui) {
+    /// Render the full chat panel. `models` are the models available on the
+    /// Ollama server; `selected_model` is the active session choice.
+    pub fn render(
+        &mut self,
+        ui: &mut egui::Ui,
+        models: &[String],
+        selected_model: &mut String,
+    ) {
         // ---- Header bar ----
         ui.horizontal(|ui| {
             ui.heading(
@@ -97,6 +112,23 @@ impl ChatPanel {
             );
 
             ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
+                // Model picker - hot-swap between installed Ollama models
+                let combo = egui::ComboBox::from_id_salt("model_picker")
+                    .selected_text(RichText::new(selected_model.clone()).monospace().size(11.0))
+                    .width(170.0);
+                combo.show_ui(ui, |ui| {
+                    for model in models {
+                        ui.selectable_value(selected_model, model.clone(), model.clone());
+                    }
+                });
+
+                if ui
+                    .button(RichText::new("REFRESH").monospace().size(10.0))
+                    .clicked()
+                {
+                    self.refresh_models_requested = true;
+                }
+
                 // Token throughput indicator
                 if self.current_tps > 0.0 {
                     let tps_color = if self.current_tps > 50.0 {
@@ -234,6 +266,14 @@ impl ChatPanel {
                         .monospace(),
                 );
             }
+            if !msg.model.is_empty() {
+                ui.label(
+                    RichText::new(format!("[{}]", msg.model))
+                        .color(Color32::from_rgb(90, 130, 160))
+                        .size(10.0)
+                        .monospace(),
+                );
+            }
         });
 
         // Reasoning block (collapsible)
@@ -360,6 +400,7 @@ impl ChatPanel {
             timestamp: chrono::Local::now().format("%H:%M:%S").to_string(),
             tokens_per_second: tps,
             token_count: tokens,
+            model: String::new(),
         });
         self.total_tokens += tokens;
         self.current_tps = tps;
@@ -379,6 +420,7 @@ impl ChatPanel {
         let reasoning = self.streaming_reasoning.clone();
         let tokens = self.last_generated_tokens;
         if !content.trim().is_empty() || !reasoning.trim().is_empty() {
+            let model = self.active_model.clone();
             self.add_message(
                 MessageRole::Assistant,
                 content,
@@ -386,6 +428,9 @@ impl ChatPanel {
                 self.current_tps,
                 tokens,
             );
+            if let Some(last) = self.messages.last_mut() {
+                last.model = model;
+            }
         }
         self.last_generated_tokens = 0;
         self.streaming_content.clear();
@@ -415,6 +460,7 @@ impl ChatPanel {
             timestamp: chrono::Local::now().format("%H:%M:%S").to_string(),
             tokens_per_second: 0.0,
             token_count: 0,
+            model: String::new(),
         });
     }
 }

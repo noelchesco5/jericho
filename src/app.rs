@@ -35,6 +35,10 @@ pub struct JerichoApp {
     health_timer: f64,
     /// Throttle alerts already surfaced to the user (dedupe)
     shown_alerts: HashSet<String>,
+    /// Models reported by the Ollama server
+    available_models: Vec<String>,
+    /// Model chosen for this session (hot-swappable from chat header)
+    selected_model: String,
 }
 
 impl JerichoApp {
@@ -70,6 +74,7 @@ impl JerichoApp {
             None
         };
         let runtime = tokio::runtime::Runtime::new().expect("Failed to create Tokio runtime");
+        let selected_model = config.ollama.model_name.clone();
 
         Self {
             config: config.clone(),
@@ -91,6 +96,8 @@ impl JerichoApp {
             pending_send: false,
             health_timer: 0.0,
             shown_alerts: HashSet::new(),
+            available_models: Vec::new(),
+            selected_model,
         }
     }
 
@@ -115,13 +122,37 @@ impl JerichoApp {
             match self.runtime.block_on(client2.list_models()) {
                 Ok(models) => {
                     let names: Vec<String> = models.iter().map(|m| m.name.clone()).collect();
-                    self.chat_panel.add_message(
-                        MessageRole::System,
-                        format!("Available models: {}", names.join(", ")),
-                        String::new(),
-                        0.0,
-                        0,
-                    );
+                    self.available_models = names.clone();
+                    // Fall back to the first installed model if the configured
+                    // one is not present on this machine.
+                    if !names.contains(&self.selected_model) {
+                        if let Some(first) = names.first() {
+                            tracing::warn!(
+                                "Configured model '{}' not installed; using '{}' instead",
+                                self.selected_model,
+                                first
+                            );
+                            self.selected_model = first.clone();
+                            self.config.ollama.model_name = first.clone();
+                        }
+                    }
+                    if names.is_empty() {
+                        self.chat_panel.add_message(
+                            MessageRole::System,
+                            "No models installed yet. Run: ollama pull qwen2.5:0.5b".to_string(),
+                            String::new(),
+                            0.0,
+                            0,
+                        );
+                    } else {
+                        self.chat_panel.add_message(
+                            MessageRole::System,
+                            format!("Available models ({}): {}", names.len(), names.join(", ")),
+                            String::new(),
+                            0.0,
+                            0,
+                        );
+                    }
                 }
                 Err(e) => {
                     tracing::warn!("Could not list models: {}", e);
@@ -136,6 +167,8 @@ impl JerichoApp {
                 0,
             );
         }
+
+        self.sidebar.model_name = self.selected_model.clone();
 
         let health = self.monitor.refresh();
         self.health_panel.update(health, self.monitor.get_history().to_vec());
@@ -181,6 +214,8 @@ impl JerichoApp {
         }
 
         let client = self.client.clone();
+        let model = self.selected_model.clone();
+        self.chat_panel.active_model = model.clone();
         let system_prompt = self.config.model.system_prompt.clone();
         let options = ModelOptions {
             temperature: self.config.model.temperature,
@@ -204,7 +239,7 @@ impl JerichoApp {
             });
 
             if let Err(e) = client
-                .chat_stream(messages, &options, content_tx, reasoning_tx, stats_tx)
+                .chat_stream(&model, messages, &options, content_tx, reasoning_tx, stats_tx)
                 .await
             {
                 tracing::error!("Chat stream error: {}", e);
@@ -316,7 +351,12 @@ impl eframe::App for JerichoApp {
         if self.config_panel.dirty {
             self.config = self.config_panel.config.clone();
             self.client = OllamaClient::new(&self.config.ollama);
-            self.sidebar.model_name = self.config.ollama.model_name.clone();
+            // Adopt the configured default only if the session pick is no
+            // longer valid (e.g. user changed base_url or reset defaults).
+            if !self.available_models.contains(&self.selected_model) {
+                self.selected_model = self.config.ollama.model_name.clone();
+            }
+            self.sidebar.model_name = self.selected_model.clone();
             self.monitor.update_limits(
                 self.config.resources.max_ram_mb,
                 self.config.resources.max_cpu_percent,
@@ -347,12 +387,45 @@ impl eframe::App for JerichoApp {
                 .inner_margin(egui::Margin::same(12i8)))
             .show(ctx, |ui| {
                 match self.active_panel {
-                    ActivePanel::Chat => self.chat_panel.render(ui),
+                    ActivePanel::Chat => {
+                        let before = self.selected_model.clone();
+                        self.chat_panel
+                            .render(ui, &self.available_models, &mut self.selected_model);
+                        // Model hot-swapped from the chat header: sync UI +
+                        // make SAVE CONFIG persist the new default.
+                        if self.selected_model != before {
+                            tracing::info!("Model switched to {}", self.selected_model);
+                            self.sidebar.model_name = self.selected_model.clone();
+                            self.config.ollama.model_name = self.selected_model.clone();
+                            self.chat_panel.add_message(
+                                MessageRole::System,
+                                format!("Switched model to {}", self.selected_model),
+                                String::new(),
+                                0.0,
+                                0,
+                            );
+                        }
+                    }
                     ActivePanel::Health => self.health_panel.render(ui),
                     ActivePanel::Config => self.config_panel.render(ui),
                     ActivePanel::Rag => self.render_rag_panel(ui),
                 }
             });
+
+        // Refresh the installed-model list on demand
+        if self.chat_panel.refresh_models_requested {
+            self.chat_panel.refresh_models_requested = false;
+            if self.ollama_connected {
+                let client2 = self.client.clone();
+                match self.runtime.block_on(client2.list_models()) {
+                    Ok(models) => {
+                        let names: Vec<String> = models.iter().map(|m| m.name.clone()).collect();
+                        self.available_models = names;
+                    }
+                    Err(e) => tracing::warn!("Could not refresh models: {}", e),
+                }
+            }
+        }
     }
 }
 

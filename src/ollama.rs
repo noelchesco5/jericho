@@ -165,12 +165,12 @@ pub struct ModelInfo {
     pub modified_at: Option<String>,
 }
 
-/// Ollama client - handles all communication with the local inference server
+/// Ollama client - handles all communication with the local inference server.
+/// Model is chosen per-request so users can hot-swap between installed models.
 #[derive(Clone)]
 pub struct OllamaClient {
     http: Client,
     base_url: String,
-    model: String,
 }
 
 impl OllamaClient {
@@ -185,7 +185,6 @@ impl OllamaClient {
         Self {
             http,
             base_url: config.base_url.clone(),
-            model: config.model_name.clone(),
         }
     }
 
@@ -265,9 +264,11 @@ impl OllamaClient {
     }
 
     /// Send a chat and stream the response back via channel
-    /// Returns reasoning (thinking tags) separately from final content
+    /// Returns reasoning (thinking tags) separately from final content.
+    /// `model` is passed per-request so it can be hot-swapped at runtime.
     pub async fn chat_stream(
         &self,
+        model: &str,
         messages: Vec<Message>,
         options: &ModelOptions,
         content_tx: mpsc::Sender<String>,
@@ -276,7 +277,7 @@ impl OllamaClient {
     ) -> Result<(), String> {
         let url = format!("{}/api/chat", self.base_url);
         let request = ChatRequest {
-            model: self.model.clone(),
+            model: model.to_string(),
             messages,
             stream: true,
             options: Some(options.clone()),
@@ -378,12 +379,13 @@ impl OllamaClient {
     /// Simple non-streaming chat (for quick tests)
     pub async fn chat_sync(
         &self,
+        model: &str,
         messages: Vec<Message>,
         options: &ModelOptions,
     ) -> Result<JerichoResponse, String> {
         let url = format!("{}/api/chat", self.base_url);
         let request = ChatRequest {
-            model: self.model.clone(),
+            model: model.to_string(),
             messages,
             stream: false,
             options: Some(options.clone()),
@@ -436,15 +438,6 @@ impl OllamaClient {
             reasoning,
             stats,
         })
-    }
-
-    /// Update the model this client uses
-    pub fn set_model(&mut self, model: String) {
-        self.model = model;
-    }
-
-    pub fn get_model(&self) -> &str {
-        &self.model
     }
 }
 
