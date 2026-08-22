@@ -47,7 +47,7 @@ impl MedicalMatcher {
         Self {
             symptoms: vec![
                 Symptom {
-                    swahili: vec!["homa", "joto", "joto kali"],
+                    swahili: vec!["homa", "joto", "joto kali", "hioma", "nina homa", "na homa"],
                     english: "fever",
                     severity: Severity::Moderate,
                     advice_sw: "Unaweza kuwa na homu. Kunywa maji mengi, kupumzika, na tembelea daktari ikiwa homu inaendelea zaidi ya siku moja.",
@@ -75,14 +75,14 @@ impl MedicalMatcher {
                     advice_en: "Stomach pain can indicate various issues. Drink water, avoid greasy food, and see a doctor if the pain is severe or persistent.",
                 },
                 Symptom {
-                    swahili: vec!["maumivu ya kifua", "kifua kinaniuma"],
+                    swahili: vec!["maumivu ya kifua", "kifua kinaniuma", "kifua kinabana", "kifua kinasonga", "maumivu ya kifua"],
                     english: "chest pain",
                     severity: Severity::Emergency,
                     advice_sw: "MAUMIVU YA KIFUA NI DALILI YA DHATI. Piga nambari ya dharura MARA MOJA. Usisubiri.",
                     advice_en: "CHEST PAIN IS A SERIOUS SYMPTOM. Call emergency number IMMEDIATELY. Do not wait.",
                 },
                 Symptom {
-                    swahili: vec!["kupumua vibaya", "kupumua kwa shida", "hamshindwi kupumua"],
+                    swahili: vec!["kupumua vibaya", "kupumua kwa shida", "hamshindwi kupumua", "kupumua kwa ugumu", "hupweki vizuri"],
                     english: "difficulty breathing",
                     severity: Severity::Emergency,
                     advice_sw: "KUPUMUA KWA SHIDA NI DALILI YA DHATI. Piga nambari ya dharura MARA MOJA. Jitayarisha kukaa chini na kichwa juu kidogo.",
