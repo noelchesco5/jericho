@@ -1,0 +1,101 @@
+ID,Swahili Sentence,English Translation,Key Structure / Focus
+1,Mimi ni mwalimu.,I am a teacher.,Equative ni
+2,Wewe ni rafiki yangu.,You are my friend.,Possessive agreement (Class 1)
+3,Huyu ni mtoto.,This is a child.,Demonstrative huyu (Class 1)
+4,Watoto wanacheza.,The children are playing.,Subject prefix wa- (Class 2)
+5,Mti huyu ni mrefu.,This tree is tall.,Adjective agreement (Class 3)
+6,Miti hii ni mirefu.,These trees are tall.,Plural agreement (Class 4)
+7,Jicho langu linauma.,My eye hurts.,Possessive/Subject li- (Class 5)
+8,Meno yako ni meupe.,Your teeth are white.,Plural agreement (Class 6)
+9,Kitabu kipo mezani.,The book is on the table.,Locative -ni + Class 7 agreement
+10,Viti hivi vimevunjika.,These chairs are broken.,Class 8 agreement + Perfective -me-
+11,Nyumba hii ni kubwa.,This house is big.,Class 9 agreement
+12,Nyumba hizi ni kubwa.,These houses are big.,Class 10 agreement
+13,Ukuta huu ni imara.,This wall is strong.,Class 11 agreement
+14,Ufunguo upo wapi?,Where is the key?,Locative interrogative
+15,Kuimba kwake ni kuzuri.,His/her singing is good.,Verbal noun (Class 15)
+16,Mahali hapa ni patulivu.,This place is calm.,Locative agreement (Class 16 - Pa)
+17,Ndani mnamo giza.,Inside there is darkness.,Locative agreement (Class 18 - Mu)
+18,Hamna shida.,There is no problem.,Locative negative ha-m-na
+19,Nina simu mkononi.,I have a phone in hand.,Present possessive na
+20,Hana pesa za kutosha.,He/she has no enough money.,Negative possessive ha-na
+21,Ninasoma kitabu sasa.,I am reading a book now.,Present continuous -na-
+22,Alisoma kitabu jana.,He/she read a book yesterday.,Past definite -li-
+23,Atasoma kitabu kesho.,He/she will read a book tomorrow.,Future tense -ta-
+24,Tumeshapata chakula.,We have already gotten food.,Perfective -me- + Already -sha-
+25,Unafanya nini hapa?,What are you doing here?,Interrogative nini
+26,Watakuja lini nyumbani?,When will they come home?,Interrogative lini
+27,Sisi tunakula wali.,We are eating rice.,Subject prefix tu-
+28,Mnakunywa maji mengi.,You (plural) are drinking lots of water.,Subject prefix m- + Irregular stem -nywa
+29,Wanafunzi walielewa somo.,The students understood the lesson.,Past tense wa-li-elewa
+30,Nitarudi baadaye.,I will return later.,First person future ni-ta-rudi
+31,Tulikaa mjini muda mrefu.,We stayed in town for a long time.,Past tense tu-li-kaa
+32,Mwaka jana alitembelea Tanga.,Last year he/she visited Tanga.,Past tense a-li-tembelea
+33,Mbwa analala chini.,The dog is sleeping on the floor.,Animal agreement (Class 9 -> Class 1 rules)
+34,Paka anaruka ukutani.,The cat is jumping on the wall.,Animal agreement
+35,Ndege inaruka angani.,The airplane is flying in the sky.,Non-animate Class 9 subject i-
+36,Treni imewasili kituoni.,The train has arrived at the station.,Perfective i-me-wasili
+37,Mvua inanyesha sana.,It is raining heavily.,Class 9 subject i-na-nyesha
+38,Jua linawaka leo.,The sun is shining today.,Class 5 subject li-na-waka
+39,Upepo unavuma kwa nguvu.,The wind is blowing strongly.,Class 11 subject u-na-vuma
+40,Moto unawaka jikoni.,Fire is burning in the kitchen.,Class 3 subject u-na-waka
+41,Ananipenda sana.,He/she loves me very much.,Object insert -ni- (1st person)
+42,Nitakusaidia kesho.,I will help you tomorrow.,Object insert -ku- (2nd person)
+43,Tulimwona sokoni.,We saw him/her at the market.,Object insert -m- (3rd person)
+44,Alitualika kwenye sherehe.,He/she invited us to the party.,Object insert -tu- (1st person pl)
+45,Nitawaambia ukweli.,I will tell you (plural) / them the truth.,Object insert -wa-
+46,Nilikinunua kitabu hiki.,I bought this book.,Object marker -ki- (Class 7)
+47,Walivivunja viti vile.,They broke those chairs.,Object marker -vi- (Class 8)
+48,Mtu aliyekuja jana ameondoka.,The person who came yesterday has left.,Relative infix -ye- (Class 1)
+49,Vitabu vilivyopotea vimepatikana.,The books that were lost have been found.,Relative infix -vyo- (Class 8)
+50,Barua iliyoandikwa imefika.,The letter that was written has arrived.,Relative infix -yo- (Class 9)
+51,Nyumba ninayokaa ni ndogo.,The house in which I live is small.,Relative marker -yo-
+52,Chakula nilichokula kilikuwa kitamu.,The food that I ate was delicious.,Relative marker -cho- (Class 7)
+53,Njia inayoelekea hospitali ni hii.,The road that leads to the hospital is this one.,Relative marker -yo- (Class 9)
+54,Walimu wanaofundisha hapa ni wazuri.,The teachers who teach here are good.,Relative marker -o- (Class 2)
+55,Mti ulioanguka uliziba barabara.,The tree that fell blocked the road.,Relative marker -o- (Class 3)
+56,Gari lililonunuliwa ni jipya.,The car that was bought is new.,Relative marker -lo- (Class 5)
+57,Maneno aliyosema ni ya kweli.,The words he/she spoke are true.,Relative marker -yo- (Class 6)
+58,Kitu kinachouma ni jino.,The thing that hurts is a tooth.,Relative marker -cho- (Class 7)
+59,Sehemu tunayokwenda ni mbali.,The place we are going to is far.,Relative marker -yo- (Class 9/16)
+60,Wakati utakapowasili nitakuwepo.,When you arrive I will be present.,Time relative -taka-po-
+61,Sisomi kitabu hiki.,I am not reading this book.,Present negative Si-
+62,Hali chakula hiki.,He/she does not eat this food.,Present negative Ha-...-i
+63,Hatutakwenda kesho.,We will not go tomorrow.,Future negative Hatu-ta-
+64,Sikumuona jana.,I did not see him/her yesterday.,Past negative Siku-
+65,Hamjamaliza kazi bado.,You (plural) have not finished work yet.,Perfective negative Hamja-
+66,Soma kitabu!,Read the book!,Singular imperative
+67,Someni vitabu!,Read (plural) the books!,Plural imperative -ni
+68,Usiende kule!,Do not go there!,Negative imperative Usi-
+69,Msile chakula hiki!,Do not (plural) eat this food!,Plural negative imperative Msi-
+70,Ndizi hazijawiva.,The bananas have not yet ripened.,Class 10 negative ha-zi-ja-
+71,Mfuko huu hauna kitu.,This bag has nothing inside.,Class 3 negative ha-u-na
+72,Magari hayo hayafanyi kazi.,Those cars do not work.,Class 6 negative ha-ya-
+73,Sijui jina lake.,I do not know his/her name.,Negative present Si-jui
+74,Hakuna mtu nyumbani.,There is nobody at home.,Locative negation Ha-ku-na
+75,Huwa sili nyama.,I usually do not eat meat.,Habitual negation Huwa sili
+76,Barua hii imeandikwa vizuri.,This letter is written well.,Passive extension -wa (andika -> andikwa)
+77,Mlango ulifunguka kwa upepo.,The door opened due to the wind.,Stative extension -ka (fungua -> funguka)
+78,Walisaidiana wakati wa shida.,They helped each other in time of trouble.,Reciprocal extension -ana (saidia -> saidiana)
+79,Alimwandikia rafiki yake barua.,He/she wrote a letter to/for his/her friend.,Prepositional extension -ia (andika -> andikia)
+80,Mwalimu alimfanyisha mwanafunzi mazoezi.,The teacher made the student do exercises.,Causative extension -isha (fanya -> fanyisha)
+81,Kioo kimevunjika.,The glass is broken.,Stative extension -ka (vunja -> vunjika)
+82,Chakula hiki kinalika.,This food is edible.,Potential/Stative -lika (la -> lika)
+83,Wanapendana sana.,They love each other very much.,Reciprocal extension -ana (penda -> pendana)
+84,Alimpatisha kazi mpya.,He/she caused him/her to get a new job.,Causative extension -isha (pata -> patisha)
+85,Alimnunulia mtoto viatu.,He/she bought shoes for the child.,Prepositional extension -ia (nunua -> nunulia)
+86,Nyumba ilijengwa mwaka jana.,The house was built last year.,Passive extension -wa (jenga -> jengwa)
+87,Swali hili linajulikana.,This question is known.,Stative extension -kana (jua -> julikana)
+88,Alinieleza habari zote.,He/she explained all the news to me.,Prepositional/Causative combo
+89,Mikutano hii inaingiliana.,These meetings overlap each other.,Reciprocal extension -ana
+90,Kazi hii inafanyika kwa urahisi.,This work is doable easily.,Stative extension -kika (fanya -> fanyika)
+91,Ukisoma kwa bidii utafaulu.,If you study hard you will pass.,Real condition -ki-
+92,Kama ungalijua usingekwenda.,"Had you known (past unfulfilled), you wouldn't have gone.",Past unfulfilled condition -ngali-
+93,Ningekuwa na pesa ningenunua gari.,"If I had money (present hypothetical), I would buy a car.",Present hypothetical -nge-
+94,Nenda dukani ukanunue maziwa.,Go to the store and buy milk.,Subjunctive marker -e + Consecutive -ka-
+95,Ni lazima tuondoke sasa.,It is necessary that we leave now.,Obligation + Subjunctive final vowel -e
+96,Alisema kwamba atakuja kesho.,He/she said that he/she will come tomorrow.,Complementizer kwamba
+97,Ungawa ni mgonjwa anafanya kazi.,"Although he/she is sick, he/she works.",Concession Ungawa
+98,Isipokuwa mvua inanyesha tutakwenda.,"Unless it rains, we will go.",Negative conditional Isipokuwa
+99,Aliondoka bila kusema kwa heri.,He/she left without saying goodbye.,Preposition bila + Infinitive kusema
+100,Iwapo utahitaji msaada nipigie simu.,"In case you need help, call me.",Conditional conjunction Iwapo

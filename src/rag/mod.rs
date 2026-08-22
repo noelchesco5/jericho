@@ -532,3 +532,120 @@ impl RagPipeline {
         s
     }
 }
+
+// ---- Swahili benchmark (run: cargo test --release swahili_bench -- --ignored --nocapture) ----
+
+#[cfg(test)]
+mod swahili_bench {
+    use super::*;
+    use crate::sema_anchor::Anchor;
+    use std::time::Instant;
+
+    fn load_sentences() -> Vec<String> {
+        let manifest = env!("CARGO_MANIFEST_DIR");
+        let csv = std::fs::read_to_string(format!("{}/testdata/swahili_sentences.csv", manifest))
+            .expect("testdata/swahili_sentences.csv missing");
+        csv.lines()
+            .skip(1)
+            .filter(|l| !l.trim().is_empty())
+            .map(|l| l.split(',').nth(1).unwrap_or("").to_string())
+            .filter(|s| !s.is_empty())
+            .collect()
+    }
+
+    /// Morphological variants of corpus sentences. A human sees query and
+    /// target as the same meaning; raw TF-IDF cannot, lemmatized TF-IDF can.
+    const VARIANTS: &[(&str, usize)] = &[
+        ("anacheza vizuri", 3),          // #4 Watoto wanacheza
+        ("walisoma vitabu jana", 21),    // #22 Alisoma kitabu jana
+        ("nitasoma kitabu kesho", 22),   // #23 Atasoma kitabu kesho
+        ("nimeshapata chakula", 23),     // #24 Tumeshapata chakula
+        ("mtakuja lini nyumbani", 25),   // #26 Watakuja lini nyumbani
+        ("miti hii ni mirefu", 5),       // #6 == plural of #5 Mti huyu ni mrefu
+        ("tunasoma kitabu sasa", 20),    // #21 Ninasoma kitabu sasa
+        ("mnafanya nini hapa", 24),      // #25 Unafanya nini hapa
+        ("jino langu linauma", 6),       // #7 Jicho langu linauma
+        ("hatuna shida kabisa", 17),     // #18 Hamna shida
+    ];
+
+    #[test]
+    #[ignore]
+    fn swahili_bench() {
+        let sentences = load_sentences();
+        println!("\ncorpus: {} sentences", sentences.len());
+
+        // ---- Part A: anchor pass through Jericho's Sema integration ----
+        let manifest = env!("CARGO_MANIFEST_DIR");
+        let anchor = Anchor::load(format!("{}/data/swahili.distilled.jsonl", manifest))
+            .expect("shipped lexicon must load");
+        let mut anchored = 0;
+        let mut total_anchors = 0;
+        let mut t_anchor = 0.0f64;
+        for s in &sentences {
+            let t0 = Instant::now();
+            let block = anchor.prompt_block(s);
+            t_anchor += t0.elapsed().as_secs_f64() * 1e6;
+            if !block.is_empty() {
+                anchored += 1;
+                total_anchors += anchor.anchor_text(s).anchors.len();
+            }
+        }
+        println!(
+            "anchor pass: {}/{} sentences produced blocks, {} anchors total, avg {:.1}us/sentence",
+            anchored,
+            sentences.len(),
+            total_anchors,
+            t_anchor / sentences.len() as f64
+        );
+
+        // ---- Part B: RAG retrieval, raw vs Sema-lemmatized ----
+        let run_mode = |lemmatize: bool| {
+            let mut emb = LocalEmbedder::new(128);
+            if lemmatize {
+                emb.set_lemmatizer(Some(anchor.lexicon()));
+            }
+            let t0 = Instant::now();
+            emb.fit(&sentences);
+            let fit_ms = t0.elapsed().as_secs_f64() * 1e3;
+            let doc_vecs: Vec<Vec<f32>> =
+                sentences.iter().map(|s| emb.embed(s)).collect();
+            let mut hits = 0usize;
+            let mut mrr = 0.0f32;
+            for (query, expected) in VARIANTS {
+                let q = emb.embed(query);
+                let mut scored: Vec<(usize, f32)> = doc_vals(&doc_vecs, &q);
+                scored.sort_by(|a, b| b.1.partial_cmp(&a.1).unwrap());
+                if scored[0].0 == *expected {
+                    hits += 1;
+                }
+                if let Some(rank) = scored.iter().position(|(i, _)| i == expected) {
+                    mrr += 1.0 / (rank + 1) as f32;
+                }
+                println!(
+                    "  [{}] q='{}' -> best='{}' ({:.2})",
+                    if scored[0].0 == *expected { "HIT " } else { "MISS" },
+                    query,
+                    sentences[scored[0].0],
+                    scored[0].1
+                );
+            }
+            (hits, mrr / VARIANTS.len() as f32, fit_ms)
+        };
+        // keep closure output referenced before re-borrowing emb internals
+        let (raw_hits, raw_mrr, raw_fit) = run_mode(false);
+        let (lem_hits, lem_mrr, lem_fit) = run_mode(true);
+
+        println!("\ntop-1 hit rate : raw {}/10   sema-lemmatized {}/10", raw_hits, lem_hits);
+        println!("MRR            : raw {:.2}   sema-lemmatized {:.2}", raw_mrr, lem_mrr);
+        println!("fit time       : raw {:.0}ms   sema-lemmatized {:.0}ms", raw_fit, lem_fit);
+        assert!(lem_hits >= raw_hits, "lemmatization must not hurt retrieval");
+    }
+
+    fn doc_vals(doc_vecs: &[Vec<f32>], q: &[f32]) -> Vec<(usize, f32)> {
+        doc_vecs
+            .iter()
+            .enumerate()
+            .map(|(i, d)| (i, LocalEmbedder::cosine_similarity(q, d)))
+            .collect()
+    }
+}
