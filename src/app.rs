@@ -269,7 +269,7 @@ impl JerichoApp {
         let client = self.client.clone();
         let model = self.selected_model.clone();
         self.chat_panel.active_model = model.clone();
-        let system_prompt = self.config.model.system_prompt.clone();
+        let base_system_prompt = self.config.model.system_prompt.clone();
         let options = ModelOptions {
             temperature: self.config.model.temperature,
             top_p: self.config.model.top_p,
@@ -279,19 +279,19 @@ impl JerichoApp {
             repeat_penalty: self.config.model.repeat_penalty,
         };
 
-        // Anchor pass (Sema): resolve Swahili input into English word-level
-        // skeletons, fully offline, before the model sees it. English text
-        // passes through untouched.
-        let user_content = match &self.anchor {
+        // Anchor pass (Sema): inject English word-level glosses into the
+        // SYSTEM prompt so the model has authoritative context before the
+        // user message arrives. The user message stays as-is.
+        let (system_prompt, user_content) = match &self.anchor {
             Some(anchor) => {
-                let block = anchor.prompt_block(&input);
-                if block.is_empty() {
-                    input.clone()
+                let addon = anchor.system_prompt_addon(&input);
+                if addon.is_empty() {
+                    (base_system_prompt, input.clone())
                 } else {
-                    format!("{block}\n---\nUser message (original): {input}")
+                    (format!("{base_system_prompt}{addon}"), input.clone())
                 }
             }
-            None => input.clone(),
+            None => (base_system_prompt, input.clone()),
         };
 
         self.runtime.spawn(async move {
@@ -328,15 +328,14 @@ impl eframe::App for JerichoApp {
             self.health_panel.update(health, history);
 
             for alert in self.monitor.check_throttle() {
-                // Surface at most once per resource type every 30 seconds
-                let key = format!("{}:{:?}", alert.resource, alert.severity);
+                // Surface at most once per resource type every 60 seconds
                 let now = std::time::Instant::now();
-                let show = match self.alert_cooldowns.get(&key) {
-                    Some(last) if now.duration_since(*last).as_secs() < 30 => false,
+                let show = match self.alert_cooldowns.get(&alert.resource) {
+                    Some(last) if now.duration_since(*last).as_secs() < 60 => false,
                     _ => true,
                 };
                 if show {
-                    self.alert_cooldowns.insert(key, now);
+                    self.alert_cooldowns.insert(alert.resource.clone(), now);
                     tracing::warn!("Harness alert: {}", alert.message);
                     let severity = match alert.severity {
                         crate::system::AlertSeverity::Critical => "CRITICAL",

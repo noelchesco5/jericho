@@ -71,17 +71,37 @@ impl Anchor {
         AnchoredInput { anchors, unresolved }
     }
 
-    /// Build the prompt block prepended to the user message. Returns an
-    /// empty string when nothing resolved (English/unknown input passes
-    /// through untouched rather than spamming unresolved noise).
+    /// Build a word-list for the SYSTEM prompt so the model sees the
+    /// English glosses as authoritative context *before* the user message.
+    /// Returns an empty string when nothing resolved.
+    pub fn system_prompt_addon(&self, text: &str) -> String {
+        let anchored = self.anchor_text(text);
+        if anchored.anchors.is_empty() {
+            return String::new();
+        }
+        let mut out = String::from("\nThe user is writing in Swahili. ");
+        out.push_str("Here is a word-by-word English key to help you understand:\n");
+        for sk in &anchored.anchors {
+            out.push_str(&format!("  {}: {} ({})", sk.surface, tidy_gloss(&sk.gloss), sk.pos));
+            if let Some(r) = &sk.root {
+                out.push_str(&format!(" root={r}"));
+            }
+            out.push('\n');
+        }
+        if !anchored.unresolved.is_empty() {
+            out.push_str(&format!("  unknown words: {}\n", anchored.unresolved.join(", ")));
+        }
+        out.push_str("Reply helpfully in English. Do NOT explain the translation, just answer.\n");
+        out
+    }
+
+    /// Legacy block-format anchor for backward compat / testing.
     pub fn prompt_block(&self, text: &str) -> String {
         let anchored = self.anchor_text(text);
         if anchored.anchors.is_empty() {
             return String::new();
         }
-        let mut out = String::from(
-            "[SEMANTIC ANCHORS - the user's Swahili words resolved offline to English]\n",
-        );
+        let mut out = String::new();
         for sk in &anchored.anchors {
             out.push_str(&format!(
                 "{} -> {} ({}): '{}'",
@@ -98,9 +118,7 @@ impl Anchor {
         if !anchored.unresolved.is_empty() {
             out.push_str(&format!("unresolved: {}\n", anchored.unresolved.join(", ")));
         }
-        out.push_str(
-            "Use these anchors to understand the original message below. Reply helpfully.\n",
-        );
+        out.push_str("\nREPLY TO THE USER IN ENGLISH. Do not analyze or translate.");
         out
     }
 }
@@ -151,6 +169,7 @@ mod tests {
         assert!(block.contains("root=-fika"), "block:\n{block}");
         assert!(block.contains("unresolved: zzinga"), "block:\n{block}");
         assert!(!block.contains('?'), "punctuation must not leak in: {block}");
+        assert!(block.contains("REPLY"), "must have directive: {block}");
     }
 
     #[test]
