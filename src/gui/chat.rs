@@ -53,6 +53,8 @@ pub struct ChatPanel {
     pub scroll_to_bottom: bool,
     pub current_tps: f64,
     pub total_tokens: u64,
+    /// Set to true only when user presses Enter or clicks SEND
+    pub send_requested: bool,
 }
 
 impl ChatPanel {
@@ -77,6 +79,7 @@ impl ChatPanel {
             scroll_to_bottom: false,
             current_tps: 0.0,
             total_tokens: 0,
+            send_requested: false,
         }
     }
 
@@ -180,13 +183,16 @@ impl ChatPanel {
                 .min_size(Vec2::new(70.0, 36.0)),
             );
 
-            // Enter to send
-            if response.lost_focus() && ui.input(|i| i.key_pressed(egui::Key::Enter)) {
+            // Enter to send - check while focused OR on lost_focus (Enter causes defocus in egui)
+            let enter_pressed = ui.input(|i| i.key_pressed(egui::Key::Enter));
+            if enter_pressed && (response.has_focus() || response.lost_focus()) {
                 self.scroll_to_bottom = true;
+                self.send_requested = true;
             }
 
             if send_btn.clicked() && send_enabled {
                 self.scroll_to_bottom = true;
+                self.send_requested = true;
             }
         });
     }
@@ -381,11 +387,13 @@ impl ChatPanel {
         self.streaming_reasoning.clear();
     }
 
-    /// Check if user submitted input
+    /// Check if user submitted input (only when Enter pressed or SEND clicked)
     pub fn take_input(&mut self) -> Option<String> {
-        if self.input_buffer.trim().is_empty() || self.is_generating {
+        if !self.send_requested || self.is_generating || self.input_buffer.trim().is_empty() {
+            self.send_requested = false;
             return None;
         }
+        self.send_requested = false;
         let input = self.input_buffer.trim().to_string();
         self.messages.push(ChatMessage {
             role: MessageRole::User,
