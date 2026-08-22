@@ -23,17 +23,35 @@ pub struct AnchoredInput {
 
 /// When every gloss of an entry is Wiktionary form-of boilerplate
 /// ("Applicative form of -fika: to arrive at"), surface the meaningful part.
+/// Strip Wiktionary boilerplate aggressively. For a 0.5B model, the
+/// gloss needs to be a clean English word, not a grammar lecture.
 fn tidy_gloss(gloss: &str) -> String {
     let t = gloss.trim();
-    if t.contains("form of") || t.starts_with("Inflection of") {
-        if let Some(pos) = t.find(':') {
-            let rest = t[pos + 1..].trim();
-            if !rest.is_empty() {
-                return rest.to_string();
-            }
+    // "Applicative form of -fika: to arrive at" → "to arrive at"
+    if let Some(pos) = t.find(':') {
+        let rest = t[pos + 1..].trim();
+        if !rest.is_empty() {
+            return rest.to_string();
         }
     }
-    t.to_string()
+    // Remove class_((...)) annotations
+    let mut clean = t.to_string();
+    while let Some(start) = clean.find("class_((") {
+        if let Some(end) = clean[start..].find("))") {
+            clean = format!("{}{}", &clean[..start], &clean[start+end+2..]);
+        } else { break; }
+    }
+    let clean = clean.trim().to_string();
+    // If it still contains grammatical descriptions, it's not a usable gloss
+    let garbage = ["inflected form of", "infinitive of", "alternative form of",
+        "first-person", "second-person", "present affirmative of",
+        "positive degree present of", "plural of", "inflection of"];
+    for g in &garbage {
+        if clean.to_lowercase().contains(g) { return String::new(); }
+    }
+    // Dash-prefixed roots and very short leftovers are not useful
+    if clean.starts_with('-') || clean.len() <= 1 { return String::new(); }
+    clean
 }
 
 impl Anchor {
@@ -71,27 +89,21 @@ impl Anchor {
         AnchoredInput { anchors, unresolved }
     }
 
-    /// Build a word-list for the SYSTEM prompt so the model sees the
-    /// English glosses as authoritative context *before* the user message.
-    /// Returns an empty string when nothing resolved.
+    /// Compact gloss line for the system prompt. For a 0.5B model, less
+    /// is more — a wall of word tables triggers analysis mode instead of
+    /// natural conversation. One bracketed line works better.
     pub fn system_prompt_addon(&self, text: &str) -> String {
         let anchored = self.anchor_text(text);
         if anchored.anchors.is_empty() {
             return String::new();
         }
-        let mut out = String::from("\nThe user is writing in Swahili. ");
-        out.push_str("Here is a word-by-word English key to help you understand:\n");
-        for sk in &anchored.anchors {
-            out.push_str(&format!("  {}: {} ({})", sk.surface, tidy_gloss(&sk.gloss), sk.pos));
-            if let Some(r) = &sk.root {
-                out.push_str(&format!(" root={r}"));
-            }
-            out.push('\n');
-        }
+        let pairs: Vec<String> = anchored.anchors.iter().map(|sk| {
+            format!("{}={}", sk.surface, tidy_gloss(&sk.gloss))
+        }).collect();
+        let mut out = format!("[Swahili: {}]\n", pairs.join(", "));
         if !anchored.unresolved.is_empty() {
-            out.push_str(&format!("  unknown words: {}\n", anchored.unresolved.join(", ")));
+            out.push_str(&format!("[unknown: {}]\n", anchored.unresolved.join(", ")));
         }
-        out.push_str("Reply helpfully in English. Do NOT explain the translation, just answer.\n");
         out
     }
 
@@ -165,11 +177,21 @@ mod tests {
         let a = mini_lex();
         let block = a.prompt_block("umefikia wapi zzinga?");
         assert!(block.contains("fikia (verb)"), "block:\n{block}");
-        assert!(block.contains("'to arrive at'"), "block:\n{block}");
+        assert!(block.contains("to arrive at"), "block:\n{block}");
         assert!(block.contains("root=-fika"), "block:\n{block}");
         assert!(block.contains("unresolved: zzinga"), "block:\n{block}");
         assert!(!block.contains('?'), "punctuation must not leak in: {block}");
         assert!(block.contains("REPLY"), "must have directive: {block}");
+    }
+
+    #[test]
+    fn tidy_gloss_strips_class_boilerplate() {
+        assert_eq!(tidy_gloss("Applicative form of -fika: to arrive at"), "to arrive at");
+        assert_eq!(tidy_gloss("ji class_((V)) inflected form of -angu"), "");
+        assert_eq!(tidy_gloss("n class_((IX)) inflected form of -a"), "");
+        assert_eq!(tidy_gloss("plural of kitabu"), "");
+        assert_eq!(tidy_gloss("infinitive of -fika"), "");
+        assert_eq!(tidy_gloss("please"), "please");
     }
 
     #[test]
