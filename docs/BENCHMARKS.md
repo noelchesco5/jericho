@@ -144,7 +144,29 @@ the coding agent itself (~470 MB) and Defender (~220 MB). Total stack
 (Jericho GUI + lexicon + 0.5B model) fits comfortably in ~550 MB working set,
 consistent with the 4 GB budget in the README.
 
-## Reproducing
+## 6. Model size matters (0.5B vs 1.5B vs 3B)
+
+Tested on the same 8 sentences with Sema anchor system prompt:
+
+| Sentence | 0.5B | 1.5B |
+|---|---|---|
+| Mimi ni mwalimu | echoes | echoes (shorter) |
+| Jicho langu linauma | echoes | attempts English |
+| Ufunguo upo wapi? | echoes | partial |
+| Ninasoma kitabu sasa | echoes | partial |
+| Unafanya nini hapa? | echoes | **"What are you doing here?"** |
+| Tafadhali niambie... | echoes | attempts English |
+| Nina hamu ya kula... | echoes | **"Nina is longing for food..."** |
+| Tuko tayari... | echoes | **"I am ready for my trip"** |
+
+**Verdict:** qwen2.5:0.5b cannot follow "reply in English" when user writes
+Swahili. qwen2.5:1.5b is the minimum for usable conversational responses.
+qwen2.5:3b recommended but needs ~2GB free RAM (close Chrome on 8GB boxes).
+
+The 1.5B model uses the Sema glosses to compose proper English answers.
+The 0.5B ignores them and echoes the input.
+
+## 7. Reproducing
 
 ```sh
 # Sema side (in Nama-ResearchLab/Sema checkout)
