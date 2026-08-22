@@ -22,6 +22,11 @@ Project Jericho is a desktop application that:
 - **Ollama**: Installed and running (https://ollama.com)
 - **Model**: `qwen2.5:0.5b` (380MB, runs in <1GB RAM)
 
+> **For Sema Swahili mode**: `qwen2.5:1.5b` (986MB) is the minimum model
+> that can compose English replies from the anchored glosses. The 0.5B
+> model runs Jericho fine but echoes Swahili input instead of answering.
+> See [docs/BENCHMARKS.md](docs/BENCHMARKS.md#6-model-size-matters-05b-vs-15b-vs-3b).
+
 ## Quick Start
 
 ```bash
@@ -30,8 +35,9 @@ Project Jericho is a desktop application that:
 # Linux/macOS:
 curl -fsSL https://ollama.com | sh
 
-# 2. Pull the model
-ollama pull qwen2.5:0.5b
+# 2. Pull a model (0.5B for basic use, 1.5B for Swahili Sema mode)
+ollama pull qwen2.5:0.5b     # 380MB, minimal
+ollama pull qwen2.5:1.5b     # 986MB, recommended for Sema
 
 # 3. Start Ollama (it auto-starts on most systems)
 ollama serve

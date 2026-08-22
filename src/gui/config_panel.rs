@@ -364,6 +364,12 @@ impl ConfigPanel {
                         .monospace()
                         .size(10.0),
                 );
+                ui.label(
+                    RichText::new("Tip: use qwen2.5:1.5b+ for Swahili replies. 0.5b echoes input.")
+                        .color(Color32::from_rgb(255, 180, 80))
+                        .monospace()
+                        .size(10.0),
+                );
             });
     }
 

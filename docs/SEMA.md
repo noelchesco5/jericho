@@ -23,6 +23,26 @@ Swahili input ----------> EN skeleton --------> Ollama model ---> response
 RAG query ------------------> TF-IDF over lemmatized corpus (src/rag/)
 ```
 
+## Model requirements
+
+Jericho runs on `qwen2.5:0.5b` (380MB) but that model **echoes Swahili
+input instead of answering**. It cannot follow "reply in English" when the
+user writes Swahili — the 0.5B simply lacks the capacity to hold glosses,
+parse instructions, and compose a response in 80 tokens.
+
+**Minimum for Sema Swahili mode: `qwen2.5:1.5b`** (986MB). This model
+can use the glosses to compose English replies (verified: "Unafanya nini
+hapa?" → "What are you doing here?").
+
+**Recommended: `qwen2.5:3b`** (~2GB Q4). Needs ~2GB free RAM; close
+Chrome on 8GB boxes. Produces fluent conversational responses.
+
+Switch in CONFIG > MODEL tab or edit `~/.config/jericho/config.toml`:
+```toml
+[ollama]
+model_name = "qwen2.5:1.5b"
+```
+
 ## Components
 
 ### 1. `src/sema_anchor.rs` - the anchor layer
