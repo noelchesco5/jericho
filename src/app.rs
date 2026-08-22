@@ -7,7 +7,6 @@ use crate::ollama::{self, OllamaClient, Message, ModelOptions, SharedClient};
 use crate::rag::{self, RagPipeline, RagConfig};
 use crate::sema_anchor::{self, Anchor};
 use crate::system::{SystemMonitor, SharedMonitor};
-use std::collections::HashSet;
 use std::sync::Arc;
 use tokio::sync::RwLock;
 use tokio::sync::mpsc;
@@ -36,8 +35,8 @@ pub struct JerichoApp {
     initialized: bool,
     pending_send: bool,
     health_timer: f64,
-    /// Throttle alerts already surfaced to the user (dedupe)
-    shown_alerts: HashSet<String>,
+    /// Throttle alerts: cooldown per resource type (30s)
+    alert_cooldowns: std::collections::HashMap<String, std::time::Instant>,
     /// Models reported by the Ollama server
     available_models: Vec<String>,
     /// Model chosen for this session (hot-swappable from chat header)
@@ -118,7 +117,7 @@ impl JerichoApp {
             initialized: false,
             pending_send: false,
             health_timer: 0.0,
-            shown_alerts: HashSet::new(),
+            alert_cooldowns: std::collections::HashMap::new(),
             available_models: Vec::new(),
             selected_model,
         }
@@ -329,7 +328,15 @@ impl eframe::App for JerichoApp {
             self.health_panel.update(health, history);
 
             for alert in self.monitor.check_throttle() {
-                if self.shown_alerts.insert(alert.message.clone()) {
+                // Surface at most once per resource type every 30 seconds
+                let key = format!("{}:{:?}", alert.resource, alert.severity);
+                let now = std::time::Instant::now();
+                let show = match self.alert_cooldowns.get(&key) {
+                    Some(last) if now.duration_since(*last).as_secs() < 30 => false,
+                    _ => true,
+                };
+                if show {
+                    self.alert_cooldowns.insert(key, now);
                     tracing::warn!("Harness alert: {}", alert.message);
                     let severity = match alert.severity {
                         crate::system::AlertSeverity::Critical => "CRITICAL",
