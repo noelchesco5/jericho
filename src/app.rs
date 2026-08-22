@@ -4,7 +4,6 @@ use crate::gui::config_panel::ConfigPanel;
 use crate::gui::health::HealthPanel;
 use crate::gui::sidebar::{Sidebar, ActivePanel};
 use crate::ollama::{self, OllamaClient, Message, ModelOptions, SharedClient};
-use crate::medical::MedicalMatcher;
 use crate::rag::{self, RagPipeline, RagConfig};
 use crate::sema_anchor::{self, Anchor};
 use crate::system::{SystemMonitor, SharedMonitor};
@@ -22,8 +21,6 @@ pub struct JerichoApp {
     rag: Option<RagPipeline>,
     /// Offline Swahili semantic anchoring (Sema), when enabled + lexicon found
     anchor: Option<Anchor>,
-    /// Medical symptom matcher — bypasses LLM for health queries
-    medical: MedicalMatcher,
     sidebar: Sidebar,
     chat_panel: ChatPanel,
     health_panel: HealthPanel,
@@ -106,7 +103,6 @@ impl JerichoApp {
             monitor,
             rag,
             anchor,
-            medical: MedicalMatcher::new(),
             sidebar: Sidebar::new(),
             chat_panel: ChatPanel::new(),
             health_panel: HealthPanel::new(),
@@ -273,7 +269,7 @@ impl JerichoApp {
         let client = self.client.clone();
         let model = self.selected_model.clone();
         self.chat_panel.active_model = model.clone();
-        let base_system_prompt = self.config.model.system_prompt.clone();
+        let system_prompt = self.config.model.system_prompt.clone();
         let options = ModelOptions {
             temperature: self.config.model.temperature,
             top_p: self.config.model.top_p,
@@ -283,36 +279,18 @@ impl JerichoApp {
             repeat_penalty: self.config.model.repeat_penalty,
         };
 
-        // Anchor pass (Sema): inject English word-level glosses into the
-        // SYSTEM prompt so the model has authoritative context before the
-        // user message arrives. The user message stays as-is.
-        //
-        // Medical template bypass: when Sema detects medical keywords,
-        // render from pre-defined bilingual templates instead of calling
-        // the LLM. This is the "render" layer — accurate, safe, instant.
-        if self.anchor.is_some() {
-            if let Some(medical) = self.medical.match_medical(&input) {
-                self.chat_panel.add_message(
-                    MessageRole::System,
-                    format!("{}\n\n{}", medical.reply_sw, medical.reply_en),
-                    String::new(),
-                    0.0,
-                    0,
-                );
-                return;
-            }
-        }
-
-        let (system_prompt, user_content) = match &self.anchor {
+        // Anchor pass (Sema): prepend English glosses to user message so
+        // the model has word-level context. English passes through untouched.
+        let user_content = match &self.anchor {
             Some(anchor) => {
-                let addon = anchor.system_prompt_addon(&input);
-                if addon.is_empty() {
-                    (base_system_prompt, input.clone())
+                let block = anchor.prompt_block(&input);
+                if block.is_empty() {
+                    input.clone()
                 } else {
-                    (format!("{base_system_prompt}{addon}"), input.clone())
+                    format!("{block}\n---\n{input}")
                 }
             }
-            None => (base_system_prompt, input.clone()),
+            None => input.clone(),
         };
 
         self.runtime.spawn(async move {

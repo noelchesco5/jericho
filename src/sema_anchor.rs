@@ -89,24 +89,6 @@ impl Anchor {
         AnchoredInput { anchors, unresolved }
     }
 
-    /// Compact gloss line for the system prompt. For a 0.5B model, less
-    /// is more — a wall of word tables triggers analysis mode instead of
-    /// natural conversation. One bracketed line works better.
-    pub fn system_prompt_addon(&self, text: &str) -> String {
-        let anchored = self.anchor_text(text);
-        if anchored.anchors.is_empty() {
-            return String::new();
-        }
-        let pairs: Vec<String> = anchored.anchors.iter().map(|sk| {
-            format!("{}={}", sk.surface, tidy_gloss(&sk.gloss))
-        }).collect();
-        let mut out = format!("[Swahili: {}]\n", pairs.join(", "));
-        if !anchored.unresolved.is_empty() {
-            out.push_str(&format!("[unknown: {}]\n", anchored.unresolved.join(", ")));
-        }
-        out
-    }
-
     /// Legacy block-format anchor for backward compat / testing.
     pub fn prompt_block(&self, text: &str) -> String {
         let anchored = self.anchor_text(text);
