@@ -10,6 +10,8 @@ pub struct JerichoConfig {
     pub resources: ResourceLimits,
     pub model: ModelConfig,
     pub rag: RagConfig,
+    /// Optional for backward compatibility with pre-Sema config files
+    #[serde(default)]
     pub sema: SemaConfig,
     pub gui: GuiConfig,
 }
@@ -80,7 +82,7 @@ pub struct RagConfig {
     pub supported_extensions: Vec<String>,
 }
 
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct SemaConfig {
     /// Enable offline Swahili semantic anchoring before inference
     pub enabled: bool,
