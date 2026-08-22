@@ -82,7 +82,7 @@ pub struct RagConfig {
     pub supported_extensions: Vec<String>,
 }
 
-#[derive(Debug, Clone, Default, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct SemaConfig {
     /// Enable offline Swahili semantic anchoring before inference
     pub enabled: bool,
@@ -90,6 +90,16 @@ pub struct SemaConfig {
     pub lexicon_path: String,
     /// Lemmatize RAG tokens with Sema (fixes Swahili morphology in TF-IDF)
     pub lemmatize_rag: bool,
+}
+
+impl Default for SemaConfig {
+    fn default() -> Self {
+        Self {
+            enabled: true,
+            lexicon_path: "data/swahili.distilled.jsonl".to_string(),
+            lemmatize_rag: true,
+        }
+    }
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

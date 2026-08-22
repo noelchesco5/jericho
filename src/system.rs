@@ -110,9 +110,11 @@ impl SystemMonitor {
             sys,
             last_health: Self::empty_health(),
             history: Vec::new(),
-            max_history: 300, // 5 min at 1 sample/sec
+            max_history: 300,
             ram_limit_mb,
-            cpu_limit_percent,
+            // Config stores CPU limit as 0.0-1.0 fraction; internal
+            // comparison uses 0-100 percent to match sysinfo's output.
+            cpu_limit_percent: cpu_limit_percent * 100.0,
         }
     }
 
@@ -163,7 +165,8 @@ impl SystemMonitor {
             alerts.push(ThrottleAlert {
                 severity: AlertSeverity::Critical,
                 resource: "RAM".to_string(),
-                message: format!("RAM at {:.1}% - limit {}MB", h.ram.usage_percent, self.ram_limit_mb),
+                // Round to nearest integer to dedupe noisy per-sample alerts
+                message: format!("RAM at {:.0}% - limit {}MB", h.ram.usage_percent, self.ram_limit_mb),
                 current: h.ram.used_mb as f64,
                 limit: self.ram_limit_mb as f64,
             });
@@ -171,7 +174,7 @@ impl SystemMonitor {
             alerts.push(ThrottleAlert {
                 severity: AlertSeverity::Warning,
                 resource: "RAM".to_string(),
-                message: format!("RAM at {:.1}%", h.ram.usage_percent),
+                message: format!("RAM at {:.0}%", h.ram.usage_percent),
                 current: h.ram.used_mb as f64,
                 limit: self.ram_limit_mb as f64,
             });
@@ -182,7 +185,7 @@ impl SystemMonitor {
                 severity: AlertSeverity::Warning,
                 resource: "CPU".to_string(),
                 message: format!(
-                    "CPU at {:.1}% (limit {:.0}%)",
+                    "CPU at {:.0}% (limit {:.0}%)",
                     h.cpu.usage_percent, self.cpu_limit_percent
                 ),
                 current: h.cpu.usage_percent as f64,
@@ -203,7 +206,7 @@ impl SystemMonitor {
 
     pub fn update_limits(&mut self, ram_mb: u64, cpu_percent: f32) {
         self.ram_limit_mb = ram_mb;
-        self.cpu_limit_percent = cpu_percent;
+        self.cpu_limit_percent = cpu_percent * 100.0;
     }
 
     // ---- Internal sampling methods ----
