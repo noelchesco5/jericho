@@ -131,7 +131,7 @@ impl MedicalMatcher {
                     advice_en: "Frequent vomiting can cause dehydration. Drink small amounts of water, avoid food for a while, and see a doctor if there is blood.",
                 },
                 Symptom {
-                    swahili: vec!["choo kigumu", "constipation", "kukosa choo"],
+                    swahili: vec!["choo kigumu", "cho kigumu", "constipation", "kukosa choo"],
                     english: "constipation",
                     severity: Severity::Mild,
                     advice_sw: "Choo kigumu ni tatizo la kawaida. Kunywa maji mengi, kula vyakula vyenye nyuzi, na fanya mazoezi ya mwili. Tembelea daktari ikiwa inaendelea.",
@@ -166,7 +166,7 @@ impl MedicalMatcher {
                     advice_en: "Sore throat is a common symptom. Drink warm water with honey, rest, and see a doctor if pain persists for more than a week.",
                 },
                 Symptom {
-                    swahili: vec!["maumivu ya pua", "pua inaniuma", "kutokwa na maambukizi"],
+                    swahili: vec!["maumivu ya pua", "pua inaniuma", "kutokwa na maambukizi", "maambukizi ya pua", "maambukizi ya sinusi"],
                     english: "nose pain / sinus",
                     severity: Severity::Mild,
                     advice_sw: "Maumivu ya pua yanaweza kuwa dalili ya maambukizi ya sinusi. Kunywa maji ya moto, vuta mvuke, na tembelea daktari ikiwa dalili zinaendelea.",
