@@ -4,6 +4,7 @@ use crate::gui::config_panel::ConfigPanel;
 use crate::gui::health::HealthPanel;
 use crate::gui::sidebar::{Sidebar, ActivePanel};
 use crate::ollama::{self, OllamaClient, Message, ModelOptions, SharedClient};
+use crate::medical::MedicalMatcher;
 use crate::rag::{self, RagPipeline, RagConfig};
 use crate::sema_anchor::{self, Anchor};
 use crate::system::{SystemMonitor, SharedMonitor};
@@ -21,6 +22,8 @@ pub struct JerichoApp {
     rag: Option<RagPipeline>,
     /// Offline Swahili semantic anchoring (Sema), when enabled + lexicon found
     anchor: Option<Anchor>,
+    /// Medical symptom matcher — bypasses LLM for health queries
+    medical: MedicalMatcher,
     sidebar: Sidebar,
     chat_panel: ChatPanel,
     health_panel: HealthPanel,
@@ -103,6 +106,7 @@ impl JerichoApp {
             monitor,
             rag,
             anchor,
+            medical: MedicalMatcher::new(),
             sidebar: Sidebar::new(),
             chat_panel: ChatPanel::new(),
             health_panel: HealthPanel::new(),
@@ -282,6 +286,23 @@ impl JerichoApp {
         // Anchor pass (Sema): inject English word-level glosses into the
         // SYSTEM prompt so the model has authoritative context before the
         // user message arrives. The user message stays as-is.
+        //
+        // Medical template bypass: when Sema detects medical keywords,
+        // render from pre-defined bilingual templates instead of calling
+        // the LLM. This is the "render" layer — accurate, safe, instant.
+        if self.anchor.is_some() {
+            if let Some(medical) = self.medical.match_medical(&input) {
+                self.chat_panel.add_message(
+                    MessageRole::System,
+                    format!("{}\n\n{}", medical.reply_sw, medical.reply_en),
+                    String::new(),
+                    0.0,
+                    0,
+                );
+                return;
+            }
+        }
+
         let (system_prompt, user_content) = match &self.anchor {
             Some(anchor) => {
                 let addon = anchor.system_prompt_addon(&input);

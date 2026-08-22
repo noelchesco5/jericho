@@ -1,5 +1,6 @@
 mod app;
 mod config;
+mod medical;
 mod ollama;
 mod rag;
 mod sema_anchor;
