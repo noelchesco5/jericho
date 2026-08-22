@@ -1,0 +1,161 @@
+//! Sema anchor layer - offline Swahili -> English semantic skeletons.
+//!
+//! Wraps the `sema` crate (Nama-ResearchLab). Small models are strongest in
+//! English; this module resolves each Swahili word to a lemma, part of
+//! speech and English gloss (fully offline) so the LLM can reason on an
+//! English skeleton instead of guessing at morphology it has never seen.
+
+use sema::lexicon::segment_words;
+use sema::{Lexicon, Skeleton};
+use std::path::{Path, PathBuf};
+use std::sync::Arc;
+
+/// Loads and applies the distilled lexicon.
+pub struct Anchor {
+    lex: Arc<Lexicon>,
+}
+
+/// Result of anchoring one user message.
+pub struct AnchoredInput {
+    pub anchors: Vec<Skeleton>,
+    pub unresolved: Vec<String>,
+}
+
+/// When every gloss of an entry is Wiktionary form-of boilerplate
+/// ("Applicative form of -fika: to arrive at"), surface the meaningful part.
+fn tidy_gloss(gloss: &str) -> String {
+    let t = gloss.trim();
+    if t.contains("form of") || t.starts_with("Inflection of") {
+        if let Some(pos) = t.find(':') {
+            let rest = t[pos + 1..].trim();
+            if !rest.is_empty() {
+                return rest.to_string();
+            }
+        }
+    }
+    t.to_string()
+}
+
+impl Anchor {
+    /// Load a distilled JSONL lexicon (Swahili affix table is embedded in sema).
+    pub fn load(path: impl AsRef<Path>) -> std::io::Result<Self> {
+        let lex = Lexicon::load(path)?;
+        Ok(Self {
+            lex: Arc::new(lex),
+        })
+    }
+
+    /// Shared handle for other subsystems (RAG lemmatization).
+    pub fn lexicon(&self) -> Arc<Lexicon> {
+        Arc::clone(&self.lex)
+    }
+
+    pub fn lemma_count(&self) -> usize {
+        self.lex.len()
+    }
+
+    /// Resolve every word of `text` against the lexicon.
+    pub fn anchor_text(&self, text: &str) -> AnchoredInput {
+        let mut anchors = Vec::new();
+        let mut unresolved = Vec::new();
+        for tok in segment_words(text) {
+            // Skip standalone punctuation tokens produced by the segmenter.
+            if tok.chars().all(|c| !c.is_alphabetic()) {
+                continue;
+            }
+            match self.lex.skeleton_for(&tok) {
+                Some(sk) => anchors.push(sk),
+                None => unresolved.push(tok),
+            }
+        }
+        AnchoredInput { anchors, unresolved }
+    }
+
+    /// Build the prompt block prepended to the user message. Returns an
+    /// empty string when nothing resolved (English/unknown input passes
+    /// through untouched rather than spamming unresolved noise).
+    pub fn prompt_block(&self, text: &str) -> String {
+        let anchored = self.anchor_text(text);
+        if anchored.anchors.is_empty() {
+            return String::new();
+        }
+        let mut out = String::from(
+            "[SEMANTIC ANCHORS - the user's Swahili words resolved offline to English]\n",
+        );
+        for sk in &anchored.anchors {
+            out.push_str(&format!(
+                "{} -> {} ({}): '{}'",
+                sk.surface,
+                sk.lemma,
+                sk.pos,
+                tidy_gloss(&sk.gloss)
+            ));
+            if let Some(r) = &sk.root {
+                out.push_str(&format!(" root={r}"));
+            }
+            out.push('\n');
+        }
+        if !anchored.unresolved.is_empty() {
+            out.push_str(&format!("unresolved: {}\n", anchored.unresolved.join(", ")));
+        }
+        out.push_str(
+            "Use these anchors to understand the original message below. Reply helpfully.\n",
+        );
+        out
+    }
+}
+
+/// Try the configured path first, then common repo layouts.
+pub fn load_anchor(configured: &str) -> std::io::Result<Anchor> {
+    let mut tried = Vec::new();
+    let mut candidates = vec![PathBuf::from(configured)];
+    candidates.push(PathBuf::from("data/swahili.distilled.jsonl"));
+    candidates.push(PathBuf::from("../sema/data/swahili.distilled.jsonl"));
+    candidates.push(PathBuf::from("./swahili.distilled.jsonl"));
+    for cand in candidates {
+        match Anchor::load(&cand) {
+            Ok(a) => return Ok(a),
+            Err(e) => tried.push(format!("{} ({e})", cand.display())),
+        }
+    }
+    Err(std::io::Error::new(
+        std::io::ErrorKind::NotFound,
+        format!("lexicon not found; tried: {}", tried.join("; ")),
+    ))
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn mini_lex() -> Anchor {
+        let tmp = std::env::temp_dir().join("jericho_sema_test.jsonl");
+        std::fs::write(
+            &tmp,
+            concat!(
+                r#"{"w":"fikia","p":"verb","g":["Applicative form of -fika: to arrive at"],"r":"-fika"}"#,
+                "\n",
+                r#"{"w":"wapi","p":"adv","g":["where"]}"#
+            ),
+        )
+        .unwrap();
+        Anchor::load(&tmp).unwrap()
+    }
+
+    #[test]
+    fn prompt_block_resolves_affixes() {
+        let a = mini_lex();
+        let block = a.prompt_block("umefikia wapi zzinga?");
+        assert!(block.contains("fikia (verb)"), "block:\n{block}");
+        assert!(block.contains("'to arrive at'"), "block:\n{block}");
+        assert!(block.contains("root=-fika"), "block:\n{block}");
+        assert!(block.contains("unresolved: zzinga"), "block:\n{block}");
+        assert!(!block.contains('?'), "punctuation must not leak in: {block}");
+    }
+
+    #[test]
+    fn english_passthrough_is_empty() {
+        let a = mini_lex();
+        assert!(a.prompt_block("hello there friend").is_empty());
+    }
+}

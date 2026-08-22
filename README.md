@@ -138,6 +138,29 @@ Jericho includes a **zero-dependency RAG pipeline**:
 
 Place documents in `./documents/` or configure directories in the GUI.
 
+## Swahili Mode (Sema)
+
+Jericho integrates [Sema](https://github.com/Nama-ResearchLab/Sema) - offline
+Swahili semantic anchoring. Small local models are English-trained; Sema
+resolves each Swahili word to a lemma, part of speech and English gloss
+*before* inference, so the model reasons on an English skeleton:
+
+```
+umefikia wapi?
+  -> umefikia[fikia:verb 'arrive at' root=-fika]
+  -> wapi[wapi:adv 'where']
+```
+
+- **Anchor pass**: prepended to chat messages automatically when enabled
+  (`[sema] enabled` in config / RAG tab in the GUI). English input passes
+  through untouched.
+- **RAG lemmatization**: Swahili is agglutinative - `umefikia`, `wamefika`
+  and `fikia` are the same word to a human but different tokens to TF-IDF.
+  With `lemmatize_rag = true`, both documents and queries are lemmatized via
+  Sema, fixing retrieval for Swahili documents.
+- **Fully offline**: 19,717 lemmas ship in `data/swahili.distilled.jsonl`
+  (1.8 MB). No network, no API keys, no models.
+
 ## Resource Budget (4GB RAM)
 
 | Component | RAM Usage |
@@ -149,4 +172,7 @@ Place documents in `./documents/` or configure directories in the GUI.
 
 ## License
 
-MIT
+Code: MIT
+
+Data: `data/swahili.distilled.jsonl` derives from Wiktionary (via
+kaikki.org) and is licensed CC BY-SA 4.0 - see `data/NOTICE.md`.

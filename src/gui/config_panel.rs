@@ -339,6 +339,31 @@ impl ConfigPanel {
                         .monospace()
                         .size(10.0),
                 );
+
+                ui.add_space(8.0);
+                ui.separator();
+                ui.label(
+                    RichText::new("SEMA (SWAHILI ANCHORING)")
+                        .color(Color32::from_rgb(255, 200, 100))
+                        .strong()
+                        .monospace(),
+                );
+                ui.add_space(4.0);
+                ui.checkbox(&mut self.config.sema.enabled, "Anchor Swahili input before inference");
+                ui.checkbox(&mut self.config.sema.lemmatize_rag, "Lemmatize RAG tokens with Sema");
+                ui.horizontal(|ui| {
+                    ui.label(RichText::new("Lexicon:").monospace().size(11.0));
+                    ui.add(
+                        egui::TextEdit::singleline(&mut self.config.sema.lexicon_path)
+                            .desired_width(280.0),
+                    );
+                });
+                ui.label(
+                    RichText::new("Data: Wiktionary via kaikki.org - CC BY-SA 4.0 (see data/NOTICE)")
+                        .color(Color32::GRAY)
+                        .monospace()
+                        .size(10.0),
+                );
             });
     }
 

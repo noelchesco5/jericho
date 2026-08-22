@@ -45,6 +45,9 @@ bytes = "1"
 # Text processing for RAG chunking
 regex = "1"
 
+# Sema - offline Swahili semantic anchoring (anchor layer: SW -> EN skeletons)
+sema = { git = "https://github.com/noelchesco5/Sema" }
+
 [profile.release]
 opt-level = 2
 lto = "thin"

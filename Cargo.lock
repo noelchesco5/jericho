@@ -2882,6 +2882,7 @@ dependencies = [
  "futures",
  "regex",
  "reqwest",
+ "sema",
  "serde",
  "serde_json",
  "sysinfo",
@@ -3266,6 +3267,16 @@ checksum = "6ce2691df843ecc5d231c0b14ece2acc3efb62c0a398c7e1d875f3983ce020e3"
 dependencies = [
  "core-foundation-sys",
  "libc",
+]
+
+[[package]]
+name = "sema"
+version = "0.1.0"
+source = "git+https://github.com/noelchesco5/Sema#97739e0b72c81ac2c3b9e17a01d6b96378233769"
+dependencies = [
+ "serde",
+ "serde_json",
+ "toml",
 ]
 
 [[package]]

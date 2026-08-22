@@ -10,6 +10,7 @@ pub struct JerichoConfig {
     pub resources: ResourceLimits,
     pub model: ModelConfig,
     pub rag: RagConfig,
+    pub sema: SemaConfig,
     pub gui: GuiConfig,
 }
 
@@ -80,6 +81,16 @@ pub struct RagConfig {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct SemaConfig {
+    /// Enable offline Swahili semantic anchoring before inference
+    pub enabled: bool,
+    /// Path to the distilled lexicon (JSONL, CC BY-SA 4.0 - see data/NOTICE)
+    pub lexicon_path: String,
+    /// Lemmatize RAG tokens with Sema (fixes Swahili morphology in TF-IDF)
+    pub lemmatize_rag: bool,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct GuiConfig {
     /// Refresh rate for system stats (ms)
     pub stats_refresh_ms: u64,
@@ -134,6 +145,11 @@ impl Default for JerichoConfig {
                     ".py".to_string(),
                     ".json".to_string(),
                 ],
+            },
+            sema: SemaConfig {
+                enabled: true,
+                lexicon_path: "data/swahili.distilled.jsonl".to_string(),
+                lemmatize_rag: true,
             },
             gui: GuiConfig {
                 stats_refresh_ms: 500,

@@ -1,6 +1,8 @@
 use serde::{Deserialize, Serialize};
+use sema::Lexicon;
 use std::collections::HashMap;
 use std::path::{Path, PathBuf};
+use std::sync::Arc;
 use uuid::Uuid;
 use regex::Regex;
 
@@ -68,6 +70,9 @@ pub struct LocalEmbedder {
     idf: Vec<f32>,
     /// Dimension of output vectors
     dim: usize,
+    /// Optional Sema lexicon: lemmatize tokens so Swahili inflected forms
+    /// (umefikia, wamefika...) collapse to their lemma (fikia) before TF-IDF
+    lemmatizer: Option<Arc<Lexicon>>,
 }
 
 impl LocalEmbedder {
@@ -76,7 +81,13 @@ impl LocalEmbedder {
             vocab: HashMap::new(),
             idf: Vec::new(),
             dim,
+            lemmatizer: None,
         }
+    }
+
+    /// Attach a Sema lexicon for morphology-aware tokenization.
+    pub fn set_lemmatizer(&mut self, lex: Option<Arc<Lexicon>>) {
+        self.lemmatizer = lex;
     }
 
     /// Build vocabulary and IDF from a corpus of text chunks
@@ -86,7 +97,7 @@ impl LocalEmbedder {
 
         // Tokenize and count document frequency
         for doc in corpus {
-            let words = Self::tokenize(doc);
+            let words = self.tokenize_text(doc);
             let unique: std::collections::HashSet<_> = words.into_iter().collect();
             for word in unique {
                 *doc_freq.entry(word).or_insert(0) += 1;
@@ -115,7 +126,7 @@ impl LocalEmbedder {
 
     /// Embed a text into a fixed-dimension vector using TF-IDF + hash projection
     pub fn embed(&self, text: &str) -> Vec<f32> {
-        let words = Self::tokenize(text);
+        let words = self.tokenize_text(text);
         let mut tf: HashMap<usize, f32> = HashMap::new();
         let total = words.len() as f32;
 
@@ -189,6 +200,19 @@ impl LocalEmbedder {
             .collect()
     }
 
+    /// Tokenize, then lemmatize each token when a Sema lexicon is attached.
+    /// `umefikia` -> `fikia`, so agglutinative Swahili no longer fragments
+    /// TF-IDF term statistics.
+    fn tokenize_text(&self, text: &str) -> Vec<String> {
+        match &self.lemmatizer {
+            Some(lex) => Self::tokenize(text)
+                .into_iter()
+                .map(|w| lex.lookup(&w).map(|(e, _)| e.w.clone()).unwrap_or(w))
+                .collect(),
+            None => Self::tokenize(text),
+        }
+    }
+
     fn simple_hash(input: usize) -> u32 {
         let mut h = input as u32;
         h = h.wrapping_mul(0x45d9f3b);
@@ -215,6 +239,11 @@ impl VectorStore {
             embeddings: Vec::new(),
             embedder: LocalEmbedder::new(dim),
         }
+    }
+
+    /// Attach/detach the Sema lemmatizer (re-fit happens on next ingest).
+    pub fn set_lemmatizer(&mut self, lex: Option<Arc<Lexicon>>) {
+        self.embedder.set_lemmatizer(lex);
     }
 
     /// Add a chunk with its pre-computed embedding
@@ -375,6 +404,11 @@ impl RagPipeline {
             documents: Vec::new(),
             config,
         }
+    }
+
+    /// Attach/detach the Sema lemmatizer used by the embedder.
+    pub fn set_lemmatizer(&mut self, lex: Option<Arc<Lexicon>>) {
+        self.store.set_lemmatizer(lex);
     }
 
     /// Ingest a text file into the vector store

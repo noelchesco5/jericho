@@ -5,6 +5,7 @@ use crate::gui::health::HealthPanel;
 use crate::gui::sidebar::{Sidebar, ActivePanel};
 use crate::ollama::{self, OllamaClient, Message, ModelOptions, SharedClient};
 use crate::rag::{self, RagPipeline, RagConfig};
+use crate::sema_anchor::{self, Anchor};
 use crate::system::{SystemMonitor, SharedMonitor};
 use std::collections::HashSet;
 use std::sync::Arc;
@@ -19,6 +20,8 @@ pub struct JerichoApp {
     client: OllamaClient,
     monitor: SystemMonitor,
     rag: Option<RagPipeline>,
+    /// Offline Swahili semantic anchoring (Sema), when enabled + lexicon found
+    anchor: Option<Anchor>,
     sidebar: Sidebar,
     chat_panel: ChatPanel,
     health_panel: HealthPanel,
@@ -62,7 +65,7 @@ impl JerichoApp {
             config.resources.max_ram_mb,
             config.resources.max_cpu_percent,
         );
-        let rag = if config.rag.enabled {
+        let mut rag = if config.rag.enabled {
             Some(RagPipeline::new(RagConfig {
                 chunk_size: config.rag.chunk_size,
                 chunk_overlap: config.rag.chunk_overlap,
@@ -73,6 +76,25 @@ impl JerichoApp {
         } else {
             None
         };
+        let anchor = if config.sema.enabled {
+            match sema_anchor::load_anchor(&config.sema.lexicon_path) {
+                Ok(a) => {
+                    tracing::info!("Sema lexicon loaded: {} lemmas", a.lemma_count());
+                    Some(a)
+                }
+                Err(e) => {
+                    tracing::warn!("Sema enabled but lexicon unavailable: {}", e);
+                    None
+                }
+            }
+        } else {
+            None
+        };
+        if let (Some(anchor), Some(rag)) = (&anchor, rag.as_mut()) {
+            if config.sema.lemmatize_rag {
+                rag.set_lemmatizer(Some(anchor.lexicon()));
+            }
+        }
         let runtime = tokio::runtime::Runtime::new().expect("Failed to create Tokio runtime");
         let selected_model = config.ollama.model_name.clone();
 
@@ -81,6 +103,7 @@ impl JerichoApp {
             client,
             monitor,
             rag,
+            anchor,
             sidebar: Sidebar::new(),
             chat_panel: ChatPanel::new(),
             health_panel: HealthPanel::new(),
@@ -170,6 +193,37 @@ impl JerichoApp {
 
         self.sidebar.model_name = self.selected_model.clone();
 
+        match &self.anchor {
+            Some(a) => {
+                let rag_note = if self.config.sema.lemmatize_rag && self.rag.is_some() {
+                    " + RAG lemmatization"
+                } else {
+                    ""
+                };
+                self.chat_panel.add_message(
+                    MessageRole::System,
+                    format!(
+                        "Sema anchoring active: {} Swahili lemmas{}",
+                        a.lemma_count(),
+                        rag_note
+                    ),
+                    String::new(),
+                    0.0,
+                    0,
+                );
+            }
+            None if self.config.sema.enabled => {
+                self.chat_panel.add_message(
+                    MessageRole::System,
+                    "Sema enabled but lexicon not found - expected at data/swahili.distilled.jsonl".to_string(),
+                    String::new(),
+                    0.0,
+                    0,
+                );
+            }
+            _ => {}
+        }
+
         let health = self.monitor.refresh();
         self.health_panel.update(health, self.monitor.get_history().to_vec());
 
@@ -226,6 +280,21 @@ impl JerichoApp {
             repeat_penalty: self.config.model.repeat_penalty,
         };
 
+        // Anchor pass (Sema): resolve Swahili input into English word-level
+        // skeletons, fully offline, before the model sees it. English text
+        // passes through untouched.
+        let user_content = match &self.anchor {
+            Some(anchor) => {
+                let block = anchor.prompt_block(&input);
+                if block.is_empty() {
+                    input.clone()
+                } else {
+                    format!("{block}\n---\nUser message (original): {input}")
+                }
+            }
+            None => input.clone(),
+        };
+
         self.runtime.spawn(async move {
             let mut messages = Vec::with_capacity(history.len() + 2);
             messages.push(Message {
@@ -235,7 +304,7 @@ impl JerichoApp {
             messages.extend(history);
             messages.push(Message {
                 role: "user".to_string(),
-                content: input,
+                content: user_content,
             });
 
             if let Err(e) = client
@@ -361,6 +430,32 @@ impl eframe::App for JerichoApp {
                 self.config.resources.max_ram_mb,
                 self.config.resources.max_cpu_percent,
             );
+            // Sema toggles apply live: load/unload the lexicon, rewire RAG.
+            if !self.config.sema.enabled {
+                self.anchor = None;
+                if let Some(rag) = self.rag.as_mut() {
+                    rag.set_lemmatizer(None);
+                }
+            } else if self.anchor.is_none() {
+                match sema_anchor::load_anchor(&self.config.sema.lexicon_path) {
+                    Ok(a) => {
+                        tracing::info!("Sema lexicon loaded: {} lemmas", a.lemma_count());
+                        if self.config.sema.lemmatize_rag {
+                            if let Some(rag) = self.rag.as_mut() {
+                                rag.set_lemmatizer(Some(a.lexicon()));
+                            }
+                        }
+                        self.anchor = Some(a);
+                    }
+                    Err(e) => tracing::warn!("Sema lexicon still unavailable: {}", e),
+                }
+            } else if let (Some(anchor), Some(rag)) = (&self.anchor, self.rag.as_mut()) {
+                rag.set_lemmatizer(if self.config.sema.lemmatize_rag {
+                    Some(anchor.lexicon())
+                } else {
+                    None
+                });
+            }
             self.config_panel.dirty = false;
         }
 
