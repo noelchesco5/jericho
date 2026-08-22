@@ -161,6 +161,12 @@ umefikia wapi?
 - **Fully offline**: 19,717 lemmas ship in `data/swahili.distilled.jsonl`
   (1.8 MB). No network, no API keys, no models.
 
+Docs: [implementation notes](docs/SEMA.md) and
+[benchmark findings](docs/BENCHMARKS.md) - 86.5% word-level anchor coverage
+on a 100-sentence grammar-focused test set (`testdata/swahili_sentences.csv`,
+usable as a resource for your own runs), RAG top-1 retrieval 7/10 -> 10/10
+with lemmatization, and full resource-expenditure measurements.
+
 ## Resource Budget (4GB RAM)
 
 | Component | RAM Usage |
