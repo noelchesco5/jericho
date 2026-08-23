@@ -279,18 +279,20 @@ impl JerichoApp {
             repeat_penalty: self.config.model.repeat_penalty,
         };
 
-        // Anchor pass (Sema): prepend English glosses to user message so
-        // the model has word-level context. English passes through untouched.
-        let user_content = match &self.anchor {
+        // Anchor pass (Sema): role-tag the input and inject structured
+        // grammar into the system prompt. The model sees POS tags it can
+        // reason over. English input passes through untouched.
+        let (system_prompt, user_content) = match &self.anchor {
             Some(anchor) => {
-                let block = anchor.prompt_block(&input);
-                if block.is_empty() {
-                    input.clone()
+                let tag = anchor.tag_sentence(&input);
+                if tag.has_roles() {
+                    // Role-tagged: inject grammar into system prompt
+                    (format!("{system_prompt}\nGrammar: {}", tag.to_summary()), input.clone())
                 } else {
-                    format!("{block}\n---\n{input}")
+                    (system_prompt, input.clone())
                 }
             }
-            None => input.clone(),
+            None => (system_prompt, input.clone()),
         };
 
         self.runtime.spawn(async move {

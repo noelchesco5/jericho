@@ -196,6 +196,42 @@ Tested 9 sentences across 3 domains through qwen2.5:1.5b with/without role taggi
 Role tagging provides grammatical structure (S/V/O/M) the model can
 reason over. This is Sema's value on constrained domains.
 
+## Phase 2: Render layer
+
+Built a curated English→Swahili gloss table (70+ entries across medical,
+education, agriculture domains). Model generates English, Sema adds
+Swahili annotations:
+
+```
+Water(maji) is an important(muhimu) aspect of agriculture.(kilimo)
+```
+
+Curated table chosen over auto-reverse because lexicon glosses are too
+noisy for automatic English→Swahili mapping.
+
+## Phase 3: Full pipeline
+
+Wired role tagger into Jericho's chat. System prompt now includes
+`Grammar: S=noun V=verb O=object M=modifier` for Swahili input.
+
+## Phase 4: Swahili document ingestion
+
+Tested RAG retrieval with 3 Swahili documents (medical, education,
+agriculture) and 10 inflected queries.
+
+**Finding:** On small corpora (3 documents), lemmatization shows no
+improvement because documents and queries happen to use the same word
+forms. The real value appears with larger corpora (100+ documents) where
+the same concept appears in many different inflected forms.
+
+**Affix stripping resolution:** 82% of common verb conjugations resolve
+(walipanda→panda, ninasoma→soma, etc.). Complex multi-prefix forms
+(tumeshapata, hatutakwenda) fail.
+
+**Limitation:** Noun plurals (vitabu→kitabu) don't resolve via affix
+strip — the forms index handles this but requires the plural to be
+listed in the entry's `f` field.
+
 ## Affix stripping (proven)
 
 Tested 16 inflected Swahili forms against the Sema lexicon:

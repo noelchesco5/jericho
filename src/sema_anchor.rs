@@ -54,6 +54,34 @@ fn tidy_gloss(gloss: &str) -> String {
     clean
 }
 
+/// A single word tagged with its grammatical role.
+#[derive(Debug, Clone)]
+pub struct TaggedWord {
+    pub surface: String,
+    pub pos: String,
+    pub gloss: String,
+    pub role: &'static str,
+}
+
+/// Role-tagged parse of a sentence.
+#[derive(Debug)]
+pub struct SentenceTag {
+    pub words: Vec<TaggedWord>,
+    pub unresolved: Vec<String>,
+}
+
+impl SentenceTag {
+    pub fn has_roles(&self) -> bool {
+        !self.words.is_empty()
+    }
+
+    pub fn to_summary(&self) -> String {
+        self.words.iter().map(|w| {
+            format!("{}={}[{}]", w.surface, w.gloss, w.role)
+        }).collect::<Vec<_>>().join(" ")
+    }
+}
+
 impl Anchor {
     /// Load a distilled JSONL lexicon (Swahili affix table is embedded in sema).
     pub fn load(path: impl AsRef<Path>) -> std::io::Result<Self> {
@@ -70,6 +98,41 @@ impl Anchor {
 
     pub fn lemma_count(&self) -> usize {
         self.lex.len()
+    }
+
+    /// Role-tag a sentence: segment, resolve, assign S/V/O/M by POS.
+    pub fn tag_sentence(&self, text: &str) -> SentenceTag {
+        let mut words = Vec::new();
+        let mut unresolved = Vec::new();
+        let mut seen_verb = false;
+
+        for tok in segment_words(text) {
+            if !tok.chars().any(|c| c.is_alphabetic()) {
+                continue;
+            }
+            match self.lex.skeleton_for(&tok) {
+                Some(sk) => {
+                    let gloss = tidy_gloss(&sk.gloss);
+                    let role = match sk.pos.as_str() {
+                        "verb" => { seen_verb = true; "V" }
+                        "noun" | "name" | "pron" => {
+                            if !seen_verb { "S" } else { "O" }
+                        }
+                        "adj" | "adv" => "M",
+                        _ => "M",
+                    };
+                    words.push(TaggedWord {
+                        surface: sk.surface,
+                        pos: sk.pos,
+                        gloss,
+                        role,
+                    });
+                }
+                None => unresolved.push(tok),
+            }
+        }
+
+        SentenceTag { words, unresolved }
     }
 
     /// Resolve every word of `text` against the lexicon.
