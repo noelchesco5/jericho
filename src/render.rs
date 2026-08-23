@@ -44,34 +44,38 @@ impl RenderIndex {
     }
 }
 
-/// Map English model output to bilingual by finding Swahili equivalents
-/// for content words. Returns (Swahili skeleton, English original).
-pub fn render_to_swahili(model_output: &str, index: &RenderIndex) -> (String, String) {
-    let mut swahili_words = Vec::new();
-    let mut english_words: Vec<&str> = Vec::new();
+/// Produce bilingual output: English response with Swahili gloss annotations.
+///
+/// For each content word in the English response, find its Swahili equivalent
+/// and add it as a parenthetical annotation. The result is a bilingual
+/// response where the user can see both English and Swahili.
+pub fn render_bilingual(model_output: &str, index: &RenderIndex) -> String {
+    let mut annotated = Vec::new();
 
     for word in model_output.split_whitespace() {
         let clean: String = word.chars().filter(|c| c.is_alphabetic() || *c == '-' || *c == '\'').collect();
         if clean.len() < 3 {
-            english_words.push(word);
+            annotated.push(word.to_string());
             continue;
         }
         let lower = clean.to_lowercase();
         match index.lookup(&lower) {
             Some(entries) if !entries.is_empty() => {
                 let (sw, pos) = &entries[0];
-                swahili_words.push(format!("{}({})", sw, pos));
-                english_words.push(word);
+                // Only annotate content words (nouns, verbs, adjectives), not function words
+                if matches!(pos.as_str(), "noun" | "verb" | "adj" | "adv") {
+                    annotated.push(format!("{}({})", word, sw));
+                } else {
+                    annotated.push(word.to_string());
+                }
             }
             _ => {
-                english_words.push(word);
+                annotated.push(word.to_string());
             }
         }
     }
 
-    let sw = swahili_words.join(" ");
-    let en = english_words.join(" ");
-    (sw, en)
+    annotated.join(" ")
 }
 
 fn clean_gloss(gloss: &str) -> String {
@@ -95,17 +99,122 @@ fn clean_gloss(gloss: &str) -> String {
     if clean.starts_with('-') || clean.len() <= 1 { String::new() } else { clean }
 }
 
-/// Common Swahili content words to index for rendering.
-pub const SWAHILI_WORDS: &[&str] = &[
-    "habari","jina","mwalimu","mtoto","nyumba","kitabu","maji","chakula",
-    "safari","daktari","hospitali","homa","maumivu","kikohozi","kifua",
-    "tumbo","jicho","sikio","koo","meno","mguu","mkono","mgongo","ngozi",
-    "kikapu","meza","kiti","mlango","jua","mvua","tembo","ndege",
-    "fedha","kazi","shule","soko","barabara","gari","mpunga","mbegu",
-    "basi","dawa","elimu","usafiri","kilimo","mpango","nchi",
-    "asubuhi","jioni","usiku","sasa","baada","kabla",
-    "kuimba","kuchorea","kucheza","kusoma","kufundisha","kununua",
-    "kupanda","kuvuna","kupika","kulia","kulala","kuamka",
-    "kuzuri","mbaya","kubwa","ndogo","refu","fupi","jema","baya",
-    "moto","baridi","pana","embamba","nzito","nyepesi",
-];
+/// Curated English→Swahili gloss table for constrained domains.
+/// Manually verified mappings (lexicon glosses are too noisy for auto-reverse).
+pub fn curated_gloss() -> Vec<(&'static str, &'static str, &'static str)> {
+    vec![
+        // Medical
+        ("fever", "homa", "noun"),
+        ("pain", "maumivu", "noun"),
+        ("headache", "maumivu ya kichwa", "noun"),
+        ("cough", "kikohozi", "noun"),
+        ("chest", "kifua", "noun"),
+        ("stomach", "tumbo", "noun"),
+        ("eye", "jicho", "noun"),
+        ("ear", "sikio", "noun"),
+        ("throat", "koo", "noun"),
+        ("teeth", "meno", "noun"),
+        ("leg", "mguu", "noun"),
+        ("arm", "mkono", "noun"),
+        ("back", "mgongo", "noun"),
+        ("skin", "ngozi", "noun"),
+        ("doctor", "daktari", "noun"),
+        ("hospital", "hospitali", "noun"),
+        ("medicine", "dawa", "noun"),
+        ("diarrhea", "kuhara", "noun"),
+        ("vomiting", "kutapika", "noun"),
+        ("breathing", "kupumua", "verb"),
+        ("swelling", "uvimbe", "noun"),
+        ("rash", "gozi nyekundu", "noun"),
+        ("insomnia", "usingizi mbaya", "noun"),
+        ("fracture", "mfupa umevunjika", "noun"),
+        // Education
+        ("teacher", "mwalimu", "noun"),
+        ("student", "mwanafunzi", "noun"),
+        ("children", "watoto", "noun"),
+        ("school", "shule", "noun"),
+        ("book", "kitabu", "noun"),
+        ("education", "elimu", "noun"),
+        ("exams", "mitihani", "noun"),
+        ("library", "maktaba", "noun"),
+        ("science", "sayansi", "noun"),
+        ("mathematics", "hesabu", "noun"),
+        ("study", "kusoma", "verb"),
+        ("teach", "kufundisha", "verb"),
+        ("learn", "kujifunza", "verb"),
+        // Agriculture
+        ("farmer", "mkulima", "noun"),
+        ("rice", "mpunga", "noun"),
+        ("seed", "mbegu", "noun"),
+        ("agriculture", "kilimo", "noun"),
+        ("water", "maji", "noun"),
+        ("crops", "mazao", "noun"),
+        ("cattle", "ng'ombe", "noun"),
+        ("grass", "nyasi", "noun"),
+        ("fertilizer", "mbolea", "noun"),
+        ("rain", "mvua", "noun"),
+        ("farm", "shamba", "noun"),
+        ("irrigation", "umwagiliaji", "noun"),
+        ("poultry", "kuku", "noun"),
+        ("vegetables", "mboga", "noun"),
+        ("harvest", "kuvuna", "verb"),
+        ("plant", "kupanda", "verb"),
+        ("cultivate", "kulima", "verb"),
+        // Common
+        ("house", "nyumba", "noun"),
+        ("market", "soko", "noun"),
+        ("road", "barabara", "noun"),
+        ("car", "gari", "noun"),
+        ("sun", "jua", "noun"),
+        ("money", "fedha", "noun"),
+        ("work", "kazi", "noun"),
+        ("big", "kubwa", "adj"),
+        ("small", "ndogo", "adj"),
+        ("long", "refu", "adj"),
+        ("short", "fupi", "adj"),
+        ("good", "nzuri", "adj"),
+        ("bad", "mbaya", "adj"),
+        ("hot", "moto", "adj"),
+        ("cold", "baridi", "adj"),
+        ("important", "muhimu", "adj"),
+        ("safe", "salama", "adj"),
+        ("dangerous", "hatari", "adj"),
+        ("future", "mustakabali", "noun"),
+    ]
+}
+
+/// Build render index from curated gloss table.
+pub fn build_render_index() -> RenderIndex {
+    let mut map: HashMap<String, Vec<(String, String)>> = HashMap::new();
+    for (en, sw, pos) in curated_gloss() {
+        map.entry(en.to_lowercase())
+            .or_default()
+            .push((sw.to_string(), pos.to_string()));
+    }
+    RenderIndex { map }
+}
+
+/// Render English model output with Swahili gloss annotations.
+pub fn render_bilingual(model_output: &str, index: &RenderIndex) -> String {
+    let mut annotated = Vec::new();
+    for word in model_output.split_whitespace() {
+        let clean: String = word.chars().filter(|c| c.is_alphabetic() || *c == '-' || *c == '\'').collect();
+        if clean.len() < 3 {
+            annotated.push(word.to_string());
+            continue;
+        }
+        let lower = clean.to_lowercase();
+        match index.lookup(&lower) {
+            Some(entries) if !entries.is_empty() => {
+                let (sw, pos) = &entries[0];
+                if matches!(pos.as_str(), "noun" | "verb" | "adj" | "adv") {
+                    annotated.push(format!("{}({})", word, sw));
+                } else {
+                    annotated.push(word.to_string());
+                }
+            }
+            _ => annotated.push(word.to_string()),
+        }
+    }
+    annotated.join(" ")
+}
