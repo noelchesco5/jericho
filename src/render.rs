@@ -44,40 +44,6 @@ impl RenderIndex {
     }
 }
 
-/// Produce bilingual output: English response with Swahili gloss annotations.
-///
-/// For each content word in the English response, find its Swahili equivalent
-/// and add it as a parenthetical annotation. The result is a bilingual
-/// response where the user can see both English and Swahili.
-pub fn render_bilingual(model_output: &str, index: &RenderIndex) -> String {
-    let mut annotated = Vec::new();
-
-    for word in model_output.split_whitespace() {
-        let clean: String = word.chars().filter(|c| c.is_alphabetic() || *c == '-' || *c == '\'').collect();
-        if clean.len() < 3 {
-            annotated.push(word.to_string());
-            continue;
-        }
-        let lower = clean.to_lowercase();
-        match index.lookup(&lower) {
-            Some(entries) if !entries.is_empty() => {
-                let (sw, pos) = &entries[0];
-                // Only annotate content words (nouns, verbs, adjectives), not function words
-                if matches!(pos.as_str(), "noun" | "verb" | "adj" | "adv") {
-                    annotated.push(format!("{}({})", word, sw));
-                } else {
-                    annotated.push(word.to_string());
-                }
-            }
-            _ => {
-                annotated.push(word.to_string());
-            }
-        }
-    }
-
-    annotated.join(" ")
-}
-
 fn clean_gloss(gloss: &str) -> String {
     let t = gloss.trim();
     if let Some(pos) = t.find(':') {

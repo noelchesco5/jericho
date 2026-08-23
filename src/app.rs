@@ -5,6 +5,7 @@ use crate::gui::health::HealthPanel;
 use crate::gui::sidebar::{Sidebar, ActivePanel};
 use crate::ollama::{self, OllamaClient, Message, ModelOptions, SharedClient};
 use crate::rag::{self, RagPipeline, RagConfig};
+use crate::render;
 use crate::sema_anchor::{self, Anchor};
 use crate::system::{SystemMonitor, SharedMonitor};
 use std::sync::Arc;
@@ -21,6 +22,8 @@ pub struct JerichoApp {
     rag: Option<RagPipeline>,
     /// Offline Swahili semantic anchoring (Sema), when enabled + lexicon found
     anchor: Option<Anchor>,
+    /// Bilingual render index for English->Swahili annotation
+    render_index: Option<render::RenderIndex>,
     sidebar: Sidebar,
     chat_panel: ChatPanel,
     health_panel: HealthPanel,
@@ -97,12 +100,15 @@ impl JerichoApp {
         let runtime = tokio::runtime::Runtime::new().expect("Failed to create Tokio runtime");
         let selected_model = config.ollama.model_name.clone();
 
+        let render_index = if anchor.is_some() { Some(render::build_render_index()) } else { None };
+
         Self {
             config: config.clone(),
             client,
             monitor,
             rag,
             anchor,
+            render_index,
             sidebar: Sidebar::new(),
             chat_panel: ChatPanel::new(),
             health_panel: HealthPanel::new(),
@@ -202,7 +208,7 @@ impl JerichoApp {
                 self.chat_panel.add_message(
                     MessageRole::System,
                     format!(
-                        "Sema anchoring active: {} Swahili lemmas{}",
+                        "Sema active: {} lemmas{}",
                         a.lemma_count(),
                         rag_note
                     ),
@@ -210,6 +216,27 @@ impl JerichoApp {
                     0.0,
                     0,
                 );
+                // Auto-ingest Swahili documents into RAG on startup
+                if let Some(rag) = &mut self.rag {
+                    let exts: Vec<String> = self.config.rag.supported_extensions.clone();
+                    for dir_str in &self.config.rag.document_dirs {
+                        let path = std::path::Path::new(dir_str);
+                        if path.exists() {
+                            match rag.ingest_directory(path, &exts) {
+                                Ok(docs) if !docs.is_empty() => {
+                                    self.chat_panel.add_message(
+                                        MessageRole::System,
+                                        format!("RAG: ingested {} documents", docs.len()),
+                                        String::new(),
+                                        0.0,
+                                        0,
+                                    );
+                                }
+                                _ => {}
+                            }
+                        }
+                    }
+                }
             }
             None if self.config.sema.enabled => {
                 self.chat_panel.add_message(
@@ -398,6 +425,17 @@ impl eframe::App for JerichoApp {
         }
 
         if stream_done {
+            // Apply Sema render annotation to the completed message
+            if let Some(index) = &self.render_index {
+                if let Some(last) = self.chat_panel.messages.last_mut() {
+                    if matches!(last.role, MessageRole::Assistant) && !last.content.is_empty() {
+                        let annotated = render::render_bilingual(&last.content, index);
+                        if annotated != last.content {
+                            last.content = format!("{}\n\n{}", last.content, annotated);
+                        }
+                    }
+                }
+            }
             self.chat_panel.finish_streaming();
             self.content_rx = None;
             self.reasoning_rx = None;

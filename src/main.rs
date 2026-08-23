@@ -2,6 +2,7 @@ mod app;
 mod config;
 mod ollama;
 mod rag;
+mod render;
 mod sema_anchor;
 mod system;
 mod gui;
