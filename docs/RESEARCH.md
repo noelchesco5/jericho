@@ -232,6 +232,19 @@ the same concept appears in many different inflected forms.
 strip — the forms index handles this but requires the plural to be
 listed in the entry's `f` field.
 
+## Phase 5: Multi-language proof (planned)
+
+Sema's pipeline is language-agnostic: any language with a Wiktionary
+dump + affix table works. The proof-of-concept would be:
+
+1. Download Hausa/Yoruba/Luganda dump from kaikki.org
+2. Run `sema-distill` to produce a distilled JSONL
+3. Add an affix table (TOML) for the new language
+4. Test anchor→reason→render with the new lexicon
+
+This is a data pipeline, not a code change. The architecture already
+supports it — just needs data files.
+
 ## Affix stripping (proven)
 
 Tested 16 inflected Swahili forms against the Sema lexicon:
