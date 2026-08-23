@@ -1,0 +1,2187 @@
+{"w":"A","p":"character","g":["The first letter of the Hausa alphabet, written in the Latin script."]}
+{"w":"abada","p":"adv","g":["always"],"f":["àbàdâ"]}
+{"w":"Japan","p":"name","g":["Japan (a country in East Asia)"],"f":["Jàpân"]}
+{"w":"ci","p":"verb","g":["to eat, to eat soft things"]}
+{"w":"Pakistan","p":"name","g":["Pakistan (a country in South Asia)"],"f":["Pākistàn"]}
+{"w":"sol","p":"noun","g":["very white"]}
+{"w":"malam","p":"noun","g":["mister, Mr."],"f":["mālàm","mālàmā"]}
+{"w":"hole","p":"verb","g":["to relax, to enjoy oneself"],"f":["hōlḕ"]}
+{"w":"tutu","p":"noun","g":["poop"],"f":["tūtù","tūtùn"]}
+{"w":"bal","p":"noun","g":["ball"],"f":["bâl"]}
+{"w":"bel","p":"noun","g":["belt","seatbelt"],"f":["bêl"]}
+{"w":"safe","p":"adv","g":["in the morning"],"f":["sāfe"]}
+{"w":"kurwa","p":"noun","g":["soul"],"f":["kùrwā"]}
+{"w":"amana","p":"noun","g":["trust, mutual respect","honesty, reliability","alliance"]}
+{"w":"uba","p":"noun","g":["father","head, leader, patron"],"f":["ùbā","ùbànnī","ùban"]}
+{"w":"sama","p":"noun","g":["sky, heavens","top"],"f":["samà","sàmàmai","samàn"]}
+{"w":"sama","p":"adv","g":["on top","in the sky"],"f":["samà"]}
+{"w":"mama","p":"noun","g":["mother"]}
+{"w":"mama","p":"noun","g":["breast"]}
+{"w":"lam","p":"noun","g":["lam (letter of the Arabic alphabet)"]}
+{"w":"rake","p":"noun","g":["sugarcane"],"f":["ràkē","ràken"]}
+{"w":"sin","p":"noun","g":["sin (letter of the Arabic alphabet)"]}
+{"w":"shat","p":"noun","g":["shirt"],"f":["shât"]}
+{"w":"ice","p":"noun","g":["wood","tree","stick"],"f":["icḕ","icèn"]}
+{"w":"bil","p":"noun","g":["bill, invoice"],"f":["bîl"]}
+{"w":"sake","p":"noun","g":["slackness"],"f":["sàkē","sàken"]}
+{"w":"wal","p":"noun","g":["sudden flash of light"],"f":["wàl"]}
+{"w":"ni","p":"pron","g":["I (1st person singular pronoun)"],"f":["nī","níi"]}
+{"w":"Paris","p":"name","g":["Paris (a city in France)"]}
+{"w":"Ankara","p":"name","g":["Accra (the capital city of Ghana)"]}
+{"w":"mu","p":"pron","g":["we (1st person plural pronoun)"],"f":["mū"]}
+{"w":"ar","p":"intj","g":["damn it"]}
+{"w":"ca","p":"noun","g":["splattering of boiling fat"],"f":["cā","câ"]}
+{"w":"ti","p":"noun","g":["tea"],"f":["tî","tîn"]}
+{"w":"lu","p":"noun","g":["swinging motion"],"f":["lû"]}
+{"w":"po","p":"noun","g":["children's toilet"],"f":["pô","pôn"]}
+{"w":"baba","p":"noun","g":["father","Used as a term of address for a man of appropriate age to be one's father, or who shares one's father's name."]}
+{"w":"baba","p":"noun","g":["eunuch","impotent man"]}
+{"w":"baba","p":"noun","g":["paternal aunt"],"f":["bābà"]}
+{"w":"baba","p":"noun","g":["indigo (the plant, or the dye from it)"],"f":["bābā","bāban"]}
+{"w":"halal","p":"noun","g":["any halal act; any act permissible in Islam"],"f":["hàlâl"]}
+{"w":"ido","p":"noun","g":["eye"],"f":["idṑ","idòn"]}
+{"w":"Allah","p":"name","g":["Allah, God"]}
+{"w":"tire","p":"noun","g":["tray"]}
+{"w":"idi","p":"noun","g":["any Muslim holiday"],"f":["īdìn"]}
+{"w":"riga","p":"noun","g":["a robe","an agbada or similar, the standard garb of men","a dress, the standard garb of women"]}
+{"w":"kissa","p":"noun","g":["intrigue, underhand dealing, any deceitful means to accomplishing something"],"f":["kissà","kissōshī"]}
+{"w":"dari","p":"noun","g":["korrigum (a kind of antelope)"],"f":["darìn"]}
+{"w":"sum","p":"noun","g":["alternative form of gùm (“smelling bad”)"],"f":["sùm"]}
+{"w":"ton","p":"noun","g":["ton (unit of weight)"],"f":["tôn"]}
+{"w":"ja","p":"adj","g":["red"],"f":["jā","jā"]}
+{"w":"rana","p":"noun","g":["sun","heat of the sun","day"],"f":["rānā","ran"]}
+{"w":"rana","p":"adv","g":["in the daytime"],"f":["rāna"]}
+{"w":"tik","p":"noun","g":["something heavy falling"],"f":["tîk","bîf","tîm"]}
+{"w":"nun","p":"noun","g":["nun (letter of the Arabic alphabet)"]}
+{"w":"alkali","p":"noun","g":["alternative form of alƙali"],"f":["àlkālī","àlkālin"]}
+{"w":"kam","p":"noun","g":["firmly, tightly","adamant, insistent"],"f":["kam-kam"]}
+{"w":"abu","p":"noun","g":["thing, object","matter, affair, situation","possession, property"],"f":["àbù","àbā","àbin"]}
+{"w":"sata","p":"noun","g":["theft, robbery"]}
+{"w":"gum","p":"noun","g":["smelling bad"],"f":["gùm","sùm"]}
+{"w":"sa","p":"noun","g":["bull, ox, cattle"],"f":["sâ","sānìyā","shānū","sân"]}
+{"w":"kura","p":"noun","g":["hyena"],"f":["kūrā"]}
+{"w":"nono","p":"noun","g":["milk","a woman's breast"],"f":["nōnṑ","nōnòn"]}
+{"w":"matala","p":"noun","g":["mattress"],"f":["màtàlâ","màtàlân"]}
+{"w":"mesa","p":"noun","g":["python","rubber hose"],"f":["mēsōshī"]}
+{"w":"gato","p":"noun","g":["cake"]}
+{"w":"diga","p":"noun","g":["pickaxe"],"f":["digōgī"]}
+{"w":"nama","p":"noun","g":["meat","wild animal"],"f":["nāmū","nāmōmī","nāmàn"]}
+{"w":"gero","p":"noun","g":["pearl millet (Pennisetum glaucum)","a short-season, non photoperiod sensitive variety of pearl millet"],"f":["gērō","gēron"]}
+{"w":"kai","p":"pron","g":["you (2nd person singular subject pronoun)"]}
+{"w":"kai","p":"noun","g":["head"],"f":["kâi","kâin"]}
+{"w":"su","p":"pron","g":["they (third person plural independent subject pronoun)"],"f":["sū"]}
+{"w":"su","p":"noun","g":["slithering, sliding"]}
+{"w":"bana","p":"adv","g":["this year"]}
+{"w":"guma","p":"verb","g":["to fill one's mouth with a liquid"]}
+{"w":"mace","p":"noun","g":["woman","female"],"f":["màcḕ","mātā","màcèn"]}
+{"w":"Adam","p":"name","g":["Adam (biblical character)"],"f":["Adàm"]}
+{"w":"sauna","p":"noun","g":["fool, incompetent person"],"f":["saunōnī","saunàn"]}
+{"w":"haja","p":"noun","g":["goods, merchandise"],"f":["hājōjī"]}
+{"w":"kudu","p":"adv","g":["south, southwards"],"f":["kudù"]}
+{"w":"acca","p":"noun","g":["acha, fonio (Digitaria exilis)"]}
+{"w":"r̃","p":"character","g":["The Hausa letter r when transcribing a trill."]}
+{"w":"ɓ","p":"character","g":["The third letter of the Hausa alphabet, written in the Latin script. Preceded by B and followed by C, and representing /ɓ/."],"f":["Ɓ"]}
+{"w":"ƴ","p":"character","g":["A letter of the Hausa alphabet, written in the Latin script.."],"f":["Ƴ","ʼy"]}
+{"w":"tun","p":"prep","g":["since, ever since"]}
+{"w":"lada","p":"noun","g":["wages","reward"],"f":["lādā","lādan"]}
+{"w":"ita","p":"pron","g":["she (3rd person singular pronoun)"],"f":["shi","su"]}
+{"w":"laya","p":"noun","g":["a charm or talisman made of verses from the Qur'an"],"f":["lāyū"]}
+{"w":"hajji","p":"noun","g":["hajj (pilgrimage to Mecca)"],"f":["hajjì","hajjìn","haji"]}
+{"w":"manja","p":"noun","g":["alternative form of manjò"],"f":["manjà","manjōjī","manjàn"]}
+{"w":"guru","p":"noun","g":["A large leather belt, usually containing charms."]}
+{"w":"keso","p":"noun","g":["worn-out mat"],"f":["kēsṑ","kēsòn"]}
+{"w":"amo","p":"noun","g":["sound; noise"],"f":["amō","amon"]}
+{"w":"duma","p":"noun","g":["calabash, gourd (Lagenaria siceraria)"],"f":["dumā","duman"]}
+{"w":"duma","p":"verb","g":["To put one's mouth deeply into something","To strike a person with something"]}
+{"w":"fetal","p":"noun","g":["open"],"f":["fḕtal"]}
+{"w":"gam","p":"noun","g":["glue, paste"],"f":["gâm"]}
+{"w":"sage","p":"verb","g":["to become stiff or paralyzed"],"f":["sagḕ"]}
+{"w":"sago","p":"noun","g":["snake"],"f":["sagō","sagon"]}
+{"w":"farce","p":"noun","g":["fingernail"],"f":["farcḕ","farcèn"]}
+{"w":"mai","p":"noun","g":["oil, fat, grease","gasoline, petrol"],"f":["mâi","mâin"]}
+{"w":"babi","p":"noun","g":["chapter (section of a book)"],"f":["bābìn"]}
+{"w":"pil","p":"noun","g":["battery (especially of a flashlight)"],"f":["pîl"]}
+{"w":"kaf","p":"noun","g":["stealing everything"]}
+{"w":"shin","p":"noun","g":["shin (letter of the Arabic alphabet)"]}
+{"w":"manzo","p":"noun","g":["messenger"],"f":["mànzō","mànzànnī","mànzon"]}
+{"w":"minti","p":"noun","g":["minute (unit of time)"],"f":["mintōcī","mintìn"]}
+{"w":"minti","p":"noun","g":["peppermint candy"],"f":["mintìn"]}
+{"w":"ulu","p":"noun","g":["wool","wool thread"],"f":["ūlù","ūlùn"]}
+{"w":"sila","p":"noun","g":["cause"]}
+{"w":"nuna","p":"verb","g":["to show, point out, indicate"]}
+{"w":"fara","p":"noun","g":["locust, grasshopper"]}
+{"w":"dau","p":"noun","g":["deep"],"f":["dàu"]}
+{"w":"illa","p":"prep","g":["except"],"f":["illā"]}
+{"w":"illa","p":"noun","g":["fault, blemish"],"f":["illōlī"]}
+{"w":"gula","p":"noun","g":["a kind of drumstick with a large head (for beating drums)"],"f":["gulōlī"]}
+{"w":"banda","p":"noun","g":["meat or fish dried over a fire"],"f":["bàndā"]}
+{"w":"hula","p":"noun","g":["cap, hat - especially, the traditional embroidered cap worn by Hausa men"]}
+{"w":"baki","p":"noun","g":["mouth, beak","mouth of a vessel, opening, entrance","speaking, speech"]}
+{"w":"bindi","p":"noun","g":["tail","penis"],"f":["bindìn"]}
+{"w":"bori","p":"noun","g":["animistic spirit possession religion"],"f":["bṑrī","bṑrin"]}
+{"w":"titi","p":"noun","g":["street"],"f":["tītìn"]}
+{"w":"rai","p":"noun","g":["life","spirit, mind","hope, salvation"],"f":["râi","râin"]}
+{"w":"bas","p":"noun","g":["bus"],"f":["bâs","bâs-bâs"]}
+{"w":"goba","p":"noun","g":["guava"]}
+{"w":"ri","p":"noun","g":["people or animals moving as a group"]}
+{"w":"yaro","p":"noun","g":["boy, child","A follower of a chief or similar person.","servant, retainer"],"f":["yārṑ","yârā","yāròn"]}
+{"w":"bora","p":"noun","g":["less-favored wife, wife who is not her husband's favorite"]}
+{"w":"ware","p":"verb","g":["to separate things, to set things aside","to secede"],"f":["wārḕ"]}
+{"w":"ت","p":"character","g":["The eighteenth letter of the Hausa alphabet, written in the Arabic script."]}
+{"w":"gagai","p":"noun","g":["aphrodisiac"],"f":["gagài","gagàn"]}
+{"w":"ka","p":"adv","g":["in or on"],"f":["kā"]}
+{"w":"baka","p":"noun","g":["bow","hacksaw","catch of a lock"],"f":["bàkā","bàkan"]}
+{"w":"baka","p":"adv","g":["in the mouth"],"f":["bakà"]}
+{"w":"coi","p":"noun","g":["very sweet"],"f":["cwai"]}
+{"w":"mata","p":"noun","g":["woman","wife"],"f":["mātā"]}
+{"w":"mata","p":"noun","g":["plural of mata","plural of mace"],"f":["mātā"]}
+{"w":"koko","p":"noun","g":["a porridge made from soaked durra flour"],"f":["kōko","kōkon"]}
+{"w":"koko","p":"noun","g":["cocoa"],"f":["kṑkō","kṑkon"]}
+{"w":"boca","p":"noun","g":["financial voucher"],"f":["bōcōcī"]}
+{"w":"mugu","p":"adj","g":["bad, evil"],"f":["mūgùwā"]}
+{"w":"mugu","p":"noun","g":["an evil thing or person"],"f":["mūgùwā","mūgùn"]}
+{"w":"sili","p":"noun","g":["alternative form of silin"],"f":["sīlìn"]}
+{"w":"kamala","p":"noun","g":["decency, dignity"]}
+{"w":"Ali","p":"name","g":["Ali (son-in-law of Muhammad)","a male given name, equivalent to English Ali"],"f":["Àli"]}
+{"w":"Nil","p":"name","g":["Nile (a large river in Africa, usually considered to be the longest river in the world; its basin covers Burundi, Rwanda, Tanzania, Kenya, Uganda, the Democratic Republic of the Congo, Ethiopia, Eritrea, South Sudan, Sudan, and Egypt, flowing north through Khartoum and Cairo into the Mediterranean Sea)"],"f":["Nîl"]}
+{"w":"Sin","p":"name","g":["China (a country in Asia)"]}
+{"w":"fula","p":"noun","g":["alternative form of hū̀lā (“hat, fez”)"]}
+{"w":"cali","p":"noun","g":["mesh bag","a person full of excuses"],"f":["cālī","cālin"]}
+{"w":"cali","p":"noun","g":["someone who clowns around; the humorous character in a film; a funnyman"]}
+{"w":"tim","p":"noun","g":["sports team"],"f":["tîm"]}
+{"w":"tim","p":"noun","g":["alternative form of tîk (“something heavy falling”)"],"f":["tîm"]}
+{"w":"Mohammed","p":"name","g":["a male given name: alternative form of Muhammadu"],"f":["Mòhammèd"]}
+{"w":"Ibrahim","p":"name","g":["Abraham (biblical character)","a male given name, Abraham or Ibrahim"]}
+{"w":"shari'a","p":"noun","g":["law, justice","shari'a (Islamic law)"]}
+{"w":"Muharram","p":"name","g":["Muharram"]}
+{"w":"Rajab","p":"name","g":["Rajab"],"f":["Rajàb"]}
+{"w":"Safar","p":"name","g":["Safar"]}
+{"w":"Sha'aban","p":"name","g":["Sha'aban"]}
+{"w":"Shawwal","p":"name","g":["Shawwal"],"f":["Shàwwâl"]}
+{"w":"Hasan","p":"name","g":["a male given name, Hasan, traditionally given to a first-born twin"],"f":["Hasàn"]}
+{"w":"shahada","p":"noun","g":["shahada","martyrdom, death in a holy war","certificate"],"f":["shahādōdī"]}
+{"w":"sura","p":"noun","g":["sura"]}
+{"w":"sura","p":"noun","g":["image, picture, form, appearance"]}
+{"w":"sura","p":"verb","g":["swoop down to grab something"]}
+{"w":"koma","p":"noun","g":["fishing net"],"f":["kōmā","kōman"]}
+{"w":"hau","p":"noun","g":["misfortune, being bewitched"],"f":["hâu","hâun"]}
+{"w":"sada","p":"verb","g":["to cause to meet, to introduce"]}
+{"w":"Hausa","p":"name","g":["Hausa language"]}
+{"w":"kallo","p":"noun","g":["looking, watching","facing"],"f":["kallō","kallon"]}
+{"w":"bajo","p":"noun","g":["badge"],"f":["bājṑ","bājòn"]}
+{"w":"har","p":"prep","g":["until, up to","even, including"]}
+{"w":"har","p":"conj","g":["until","even though, despite"]}
+{"w":"sau","p":"noun","g":["foot","footprint, trace","time"],"f":["san"]}
+{"w":"sau","p":"noun","g":["times (multiplication)"],"f":["sàu","sàn"]}
+{"w":"sau","p":"verb","g":["clipping of sàkā (“release”) (used before an object)"]}
+{"w":"Kairo","p":"name","g":["Cairo (the capital city of Egypt)"]}
+{"w":"parmi","p":"noun","g":["driver's license, driving licence"]}
+{"w":"mota","p":"noun","g":["automobile, car"],"f":["mōtōcī"]}
+{"w":"fari","p":"adj","g":["white"],"f":["farī","farā"]}
+{"w":"fari","p":"noun","g":["a strip of white cloth","a (white) shroud","something good or positive"],"f":["farī","farin"]}
+{"w":"fari","p":"noun","g":["a vowel in Arabic script"],"f":["farī","farfarū","farin"]}
+{"w":"fari","p":"noun","g":["beginning, start"],"f":["fārì","fārìn"]}
+{"w":"amma","p":"conj","g":["but"],"f":["àmmā"]}
+{"w":"bara","p":"noun","g":["servant","A young person who out of respect volunteers to work for someone from time to time."],"f":["barōrī","baràn"]}
+{"w":"bara","p":"noun","g":["A beggar for alms"]}
+{"w":"bara","p":"noun","g":["one's focus (e.g., in aiming at or attempting to catch something)"]}
+{"w":"bara","p":"noun","g":["last year"]}
+{"w":"bara","p":"adv","g":["last year"]}
+{"w":"maye","p":"noun","g":["intoxication, drunkenness"]}
+{"w":"tuta","p":"noun","g":["flag, banner"],"f":["tūtōcī"]}
+{"w":"taska","p":"noun","g":["personal room of the head of the household","storeroom","safe, strongbox"],"f":["taskōkī"]}
+{"w":"hali","p":"noun","g":["condition, situation"],"f":["hālī","hālin"]}
+{"w":"kanti","p":"noun","g":["shop, store"],"f":["kàntī","kàntin"]}
+{"w":"kafa","p":"noun","g":["leg"],"f":["kafā","kafōfī","کَفَا"]}
+{"w":"kafa","p":"verb","g":["to erect, to put up","to stick something into","to form, to establish"],"f":["کَفَا"]}
+{"w":"tela","p":"noun","g":["tailor"],"f":["tēlà","tēlōlī","tēlàn"]}
+{"w":"citta","p":"noun","g":["ginger root (generic term)","Aframomum melegueta","chili, Capsicum annuum"],"f":["cìtta"]}
+{"w":"citta","p":"adv","g":["four days from today"],"f":["città"]}
+{"w":"sati","p":"noun","g":["week"],"f":["sātī","sātin"]}
+{"w":"sandal","p":"noun","g":["sandal(s) (footwear)","sandalwood","perfume derived from sandalwood"],"f":["sandàl"]}
+{"w":"kolo","p":"noun","g":["A fixed-pitch drum, similar to the jauje."],"f":["kōlō","kōlon"]}
+{"w":"kolo","p":"noun","g":["dog (abusive way to refer to a person)"],"f":["kōlō","kōlon"]}
+{"w":"Maroko","p":"name","g":["Morocco (a country in North Africa)"]}
+{"w":"maya","p":"noun","g":["weevil"]}
+{"w":"kare","p":"noun","g":["dog"],"f":["kàrē","kàryā","kàren"]}
+{"w":"kare","p":"noun","g":["quarter (of a city)"]}
+{"w":"awa","p":"noun","g":["hour"],"f":["awōyī"]}
+{"w":"isha","p":"noun","g":["alternative form of lī̀shā"]}
+{"w":"goma","p":"num","g":["ten"],"f":["gōmà"]}
+{"w":"tasa","p":"noun","g":["metal bowl or basin","plate"],"f":["tāsōshī"]}
+{"w":"tasa","p":"verb","g":["to rise up; to grow up"]}
+{"w":"kimsa","p":"verb","g":["to stuff or cram something untidily into a container","to stab or punch someone","to rush into"]}
+{"w":"kuni","p":"noun","g":["quinine"],"f":["kùnî","kùnîn"]}
+{"w":"kore","p":"adj","g":["green"]}
+{"w":"dama","p":"noun","g":["chance, opportunity, possibility","equal, something comparable","improvement"],"f":["dāmā"]}
+{"w":"tama","p":"noun","g":["iron ore"],"f":["tamā"]}
+{"w":"bahar","p":"noun","g":["sea"]}
+{"w":"rama","p":"noun","g":["hemp, jute"]}
+{"w":"rama","p":"noun","g":["emaciation"]}
+{"w":"jim","p":"noun","g":["jeem (letter of the Arabic alphabet)"]}
+{"w":"mago","p":"noun","g":["Cream-colored horse."],"f":["magon"]}
+{"w":"tara","p":"num","g":["nine"]}
+{"w":"tara","p":"verb","g":["collect, gather","add up"]}
+{"w":"tara","p":"verb","g":["go to meet or welcome someone","buy up something to resell later"],"f":["tàrā"]}
+{"w":"tara","p":"noun","g":["fine (of money)"]}
+{"w":"tara","p":"noun","g":["being mindful, caring about something"]}
+{"w":"halwa","p":"noun","g":["khalwa, a religious retreat in Sufism"]}
+{"w":"shi","p":"pron","g":["he (3rd person singular pronoun)"],"f":["ita","su"]}
+{"w":"riba","p":"noun","g":["bank interest, usury"]}
+{"w":"riba","p":"noun","g":["profit","benefit, gain, advantage"]}
+{"w":"ji","p":"verb","g":["to hear","to understand","to listen"]}
+{"w":"soso","p":"noun","g":["loofah, sponge"],"f":["sṑsō","sṑson"]}
+{"w":"kado","p":"noun","g":["gift for children"]}
+{"w":"cura","p":"verb","g":["to knead into balls"]}
+{"w":"tabo","p":"noun","g":["scar"],"f":["tabṑ","tâbbā","tabòn"]}
+{"w":"naira","p":"noun","g":["naira (currency of Nigeria)"]}
+{"w":"dubu","p":"num","g":["thousand"],"f":["dubū","dùbbai"]}
+{"w":"kos","p":"noun","g":["trump card"],"f":["kôs"]}
+{"w":"kunne","p":"noun","g":["ear","leaf (of a plant)"],"f":["kûnnē","kûnnen"]}
+{"w":"kunne","p":"adv","g":["in or on the ear"]}
+{"w":"Musa","p":"name","g":["Moses (biblical character)","a male given name, Musa, from Arabic, equivalent to English Moses"],"f":["Mūsā"]}
+{"w":"buta","p":"noun","g":["jug or ewer for holding water","kettle, teapot","gourd"],"f":["būtōcī"]}
+{"w":"fura","p":"noun","g":["Balls of cooked millet in cultured milk.","Gruel made by mixing the aforementioned balls with sour milk or, less often, with water and tamarind."],"f":["furā"]}
+{"w":"guba","p":"noun","g":["poison, toxin"]}
+{"w":"tandu","p":"noun","g":["A small, leather container for oil, honey, or antimony.","A gourd-shaped hide drum."],"f":["tandū","tandun"]}
+{"w":"huntu","p":"adj","g":["naked, at least partly unclothed"],"f":["huntū","huntuwā"]}
+{"w":"huntu","p":"noun","g":["naked person","destitute person"],"f":["huntū","huntuwā","huntun"]}
+{"w":"bura","p":"noun","g":["penis"],"f":["būrā"]}
+{"w":"taga","p":"noun","g":["window"],"f":["tāgōgī"]}
+{"w":"toka","p":"noun","g":["ashes"],"f":["tṑkā"]}
+{"w":"kanta","p":"noun","g":["callus"],"f":["kantā"]}
+{"w":"kanta","p":"noun","g":["counter, shelf"],"f":["kantōcī"]}
+{"w":"jaki","p":"noun","g":["donkey"]}
+{"w":"siga","p":"noun","g":["form, structure","clause, proviso"],"f":["sīgōgī"]}
+{"w":"mur","p":"noun","g":["myrrh"]}
+{"w":"fis","p":"noun","g":["fuse"],"f":["fîs"]}
+{"w":"kyat","p":"noun","g":["cake"],"f":["kyât"]}
+{"w":"kori","p":"noun","g":["curry"]}
+{"w":"gida","p":"noun","g":["home","compound"],"f":["gidā","gidan"]}
+{"w":"hura","p":"verb","g":["to blow on something, to inflate"]}
+{"w":"komi","p":"noun","g":["canoe, a small boat for one person","canoe-shaped watering trough"],"f":["kōmī","kōmin"]}
+{"w":"nas","p":"noun","g":["nurse"],"f":["nâs","nâs-nâs"]}
+{"w":"wata","p":"noun","g":["moon","month"],"f":["wàtànnī","watàn"]}
+{"w":"wata","p":"pron","g":["feminine of wani"]}
+{"w":"oga","p":"noun","g":["boss, someone in charge"],"f":["ògā","ògan"]}
+{"w":"fom","p":"noun","g":["form"],"f":["fôm"]}
+{"w":"lif","p":"noun","g":["elevator, lift"],"f":["lîf"]}
+{"w":"guna","p":"noun","g":["tsamma (a bitter melon, Citrullus lanatus)","An epithet for someone who is not as strong as expected.","A girl who is physically mature with developed breasts."],"f":["gunōnī"]}
+{"w":"sito","p":"noun","g":["storeroom"],"f":["sìtô","sìtô-sìtô","sìtôn"]}
+{"w":"salo","p":"noun","g":["style, fashion, pattern","affectation"],"f":["salō","salon"]}
+{"w":"walau","p":"noun","g":["showing open palms"],"f":["wàlàu"]}
+{"w":"hanya","p":"noun","g":["road, path","way, means, method, opportunity"]}
+{"w":"saja","p":"noun","g":["sergeant (military rank)"],"f":["sājàn"]}
+{"w":"rogo","p":"noun","g":["cassava, Manihot esculenta","various other tubers, including Ampelocissus and Dioscorea dumetorum"],"f":["rōgṑ","rōgòn"]}
+{"w":"dogo","p":"adj","g":["long, tall"],"f":["dōgō","dōguwā"]}
+{"w":"dogo","p":"noun","g":["someone or something which is long or tall"],"f":["dōgō","dōguwā","dōgon"]}
+{"w":"wasa","p":"noun","g":["sport, game"]}
+{"w":"kunci","p":"noun","g":["cheek"],"f":["kuncìn"]}
+{"w":"laba","p":"noun","g":["pound (unit of weight)"],"f":["lābōbī"]}
+{"w":"mula","p":"verb","g":["to disappear, be gone"],"f":["mùla"]}
+{"w":"duri","p":"noun","g":["vagina"],"f":["dūrìn"]}
+{"w":"kamin","p":"conj","g":["alternative form of kafin"]}
+{"w":"fili","p":"noun","g":["open field, plot of land, square","opportunity, chance, opening"],"f":["fīlī","fīlin"]}
+{"w":"canko","p":"noun","g":["A type of fish trap.","An apparatus for winding thread."],"f":["cànkō","cànkon"]}
+{"w":"mutu","p":"verb","g":["to die"],"f":["mutù"]}
+{"w":"raki","p":"noun","g":["fear, cowardice","argumentativeness"],"f":["rākìn"]}
+{"w":"wanka","p":"noun","g":["bathing"],"f":["wankā","wankan"]}
+{"w":"wanka","p":"verb","g":["to wash"]}
+{"w":"zi","p":"noun","g":["diamonds"],"f":["zî","zîn"]}
+{"w":"daina","p":"verb","g":["to quit doing, to cease"]}
+{"w":"suna","p":"noun","g":["name","naming ceremony","the first price offered in bargaining"],"f":["sūnā","sūnànnakī","sūnan"]}
+{"w":"sista","p":"noun","g":["nurse","nun"],"f":["sistōcī"]}
+{"w":"garu","p":"noun","g":["wall around a settlement or compound"]}
+{"w":"salama","p":"noun","g":["safety, ease"]}
+{"w":"talla","p":"noun","g":["Hawking goods for sale.","advertising"],"f":["tàllà","tàllàce-tàllàce","tàllàn"]}
+{"w":"hama","p":"noun","g":["hammer"],"f":["hamōmī"]}
+{"w":"huhu","p":"noun","g":["lung"]}
+{"w":"huhu","p":"noun","g":["wrapping used to store kola nuts"],"f":["hūhùn"]}
+{"w":"aya","p":"noun","g":["verse (usually of the Qur'an)","punctuation mark","pause"],"f":["āyōyī"]}
+{"w":"aya","p":"noun","g":["tiger nut (Cyperus esculentus) (a plant)","tiger nut (a fruit)"],"f":["ayā"]}
+{"w":"loga","p":"noun","g":["a careful investigation or inquiry"]}
+{"w":"bika","p":"noun","g":["baboon"],"f":["bìkā","bìkā","bìkan"]}
+{"w":"molo","p":"noun","g":["A three-stringed lute, sintir"],"f":["mōlō","mōlon"]}
+{"w":"sunna","p":"noun","g":["sunnah"],"f":["sunnōnī"]}
+{"w":"sunna","p":"verb","g":["To give something secretly to someone."]}
+{"w":"zago","p":"noun","g":["large termites"],"f":["zagō","zagon"]}
+{"w":"waga","p":"noun","g":["A pair of (hide) bags for carrying goods (e.g., on a pack animal or a motorcycle)","A grass bag for packing kola nuts."],"f":["wāgā","wāgan"]}
+{"w":"wala","p":"noun","g":["turtledove"],"f":["wālā"]}
+{"w":"wala","p":"verb","g":["to relax"]}
+{"w":"mele","p":"noun","g":["loss of pigmentation"],"f":["mēlē","mēlen"]}
+{"w":"shuri","p":"noun","g":["termite mound"],"f":["shūrìn"]}
+{"w":"lamba","p":"noun","g":["sign, distinguishing mark, trademark","registration number","vaccination"],"f":["lambōbī"]}
+{"w":"kati","p":"noun","g":["card","playing card","gambling with cards"],"f":["kātìn"]}
+{"w":"uda","p":"noun","g":["black and white sheep"],"f":["ūdà","ūdàn"]}
+{"w":"gunya","p":"noun","g":["dun-colored horse"],"f":["gunyā"]}
+{"w":"kife","p":"verb","g":["to turn something over","to overturn","to tip over, to capsize"],"f":["kifḕ"]}
+{"w":"boko","p":"noun","g":["fraud, deceit, trick","a mock or imitation version of something real","Western education"],"f":["bōkṑ","bōkòn"]}
+{"w":"eka","p":"noun","g":["acre"],"f":["ēkōkī"]}
+{"w":"dina","p":"noun","g":["dinner party"]}
+{"w":"tulu","p":"noun","g":["A water pot with a narrow neck that is shaped like a bottle gourd."]}
+{"w":"Ahmad","p":"name","g":["a male given name"],"f":["Āhmàd"]}
+{"w":"kaka","p":"noun","g":["grandfather, grandmother"]}
+{"w":"kaka","p":"noun","g":["harvest season"]}
+{"w":"daimon","p":"noun","g":["diamond"],"f":["daimòn"]}
+{"w":"sadin","p":"noun","g":["sardine"]}
+{"w":"uwa","p":"noun","g":["mother","largest or chief part"],"f":["uwā"]}
+{"w":"rami","p":"noun","g":["hole, pit","den","tomb"],"f":["rāmìn"]}
+{"w":"duna","p":"noun","g":["very black person or thing"],"f":["dūnàn"]}
+{"w":"batir","p":"noun","g":["battery (for a car or flashlight)"]}
+{"w":"alabo","p":"noun","g":["yam","cassava flour"],"f":["àlàbō","àlàbon"]}
+{"w":"alabe","p":"noun","g":["leather wallet (often carried hanging from the neck)"],"f":["àlabḕ","àlàbai","àlabèn"]}
+{"w":"anta","p":"noun","g":["alternative spelling of hanta"]}
+{"w":"balas","p":"noun","g":["balance","payment due for work done"],"f":["balàs"]}
+{"w":"cata","p":"noun","g":["charter"]}
+{"w":"sannu","p":"intj","g":["hello","sorry (expression of sympathy)"],"f":["sànnu"]}
+{"w":"sannu","p":"noun","g":["carefulness, slowness"],"f":["sannù","sannùn"]}
+{"w":"liman","p":"noun","g":["imam","The equivalent of an imam in other religions; in Christianity, a pastor or priest."],"f":["limam"]}
+{"w":"rema","p":"noun","g":["hyrax, coney"],"f":["rēmā","rēman"]}
+{"w":"talle","p":"noun","g":["A small soup pot.","A small gourd drum typically played by children during Ramadan."],"f":["tallē","tallen"]}
+{"w":"turba","p":"noun","g":["path, track, lane"]}
+{"w":"zafaran","p":"noun","g":["saffron"]}
+{"w":"shifta","p":"noun","g":["dictation"]}
+{"w":"nim","p":"noun","g":["neem tree"],"f":["nîm"]}
+{"w":"kunya","p":"noun","g":["shame, embarrassment","modesty"]}
+{"w":"kunya","p":"noun","g":["row (between ridges)"],"f":["kunyā","kunyōyī"]}
+{"w":"sarai","p":"adv","g":["very well","completely, totally"]}
+{"w":"goyo","p":"noun","g":["something or someone carried on the back","infant"],"f":["gōyō","gōyàyyakī","gōyon"]}
+{"w":"batta","p":"noun","g":["leather pouch (e.g., for tobacco)","small metal container (e.g., of tiger balm)"],"f":["battōcī"]}
+{"w":"cibi","p":"noun","g":["spoon"],"f":["cibī","cibin"]}
+{"w":"cibi","p":"noun","g":["swollen protruding navel; umbilical hernia"],"f":["cībìn"]}
+{"w":"santi","p":"noun","g":["gauche or socially inappropriate behavior, especially at a meal"],"f":["sànti","sàntin"]}
+{"w":"pasaje","p":"noun","g":["passenger"],"f":["pàsàjê","pàsàjên"]}
+{"w":"sha","p":"verb","g":["to drink"]}
+{"w":"rula","p":"noun","g":["ruler (measuring device)"]}
+{"w":"sanka","p":"noun","g":["bunch of tobacco leaves"],"f":["sankā"]}
+{"w":"haram","p":"noun","g":["any haram act; a sin or forbidden deed in Islam"]}
+{"w":"yadda","p":"conj","g":["how; in that way"],"f":["yaddà"]}
+{"w":"Amina","p":"name","g":["a female given name"],"f":["Amīnà"]}
+{"w":"koka","p":"verb","g":["to cry"]}
+{"w":"nisa","p":"noun","g":["distance"],"f":["nīsā","nīsan"]}
+{"w":"hutu","p":"noun","g":["rest, holiday","passing wind"],"f":["hūtū","hūtun"]}
+{"w":"kili","p":"noun","g":["A light gray horse."],"f":["kìlî","kìlîn"]}
+{"w":"suya","p":"noun","g":["suya (kebab)"]}
+{"w":"tasku","p":"noun","g":["cruelty, oppression"],"f":["taskù","taskùn"]}
+{"w":"alli","p":"noun","g":["calcium","chalk"],"f":["âllī","âllin"]}
+{"w":"cuna","p":"noun","g":["A side seam joining the lower ends of a gown."],"f":["cūnōnī"]}
+{"w":"cuna","p":"verb","g":["to set a person or animal to catch or attack someone"]}
+{"w":"haɓa","p":"noun","g":["chin"],"f":["haɓoɓi"]}
+{"w":"safi","p":"noun","g":["thimble"],"f":["sāfī","sāfin"]}
+{"w":"fam","p":"noun","g":["pound (currency used in the UK, obsolete in Nigeria)","2 naira."],"f":["fâm","fàmfàmai"]}
+{"w":"kuskus","p":"noun","g":["couscous"],"f":["kuskùs"]}
+{"w":"barka","p":"intj","g":["A general greeting."]}
+{"w":"hani","p":"noun","g":["prohibition"],"f":["hanìn"]}
+{"w":"babba","p":"adj","g":["big, large","great, important","adult"],"f":["bàbba","bàbba","mânyā"]}
+{"w":"banga","p":"noun","g":["A small, bowl-shaped drum, played with fingers."],"f":["bàngā"]}
+{"w":"hatta","p":"prep","g":["even, including"],"f":["hàttā"]}
+{"w":"kafe","p":"verb","g":["to fasten something onto","to become stuck","to persist, to be obstinate"],"f":["kafḕ"]}
+{"w":"noti","p":"noun","g":["nut (used with bolt)"],"f":["nōtōcī","nōtìn"]}
+{"w":"tanti","p":"noun","g":["tent, small tarpaulin"],"f":["tantìn"]}
+{"w":"laita","p":"noun","g":["lighter (for cigarettes)"],"f":["laitōcī"]}
+{"w":"curi","p":"noun","g":["ball of food","verbal noun of cura"],"f":["cūrìn"]}
+{"w":"salati","p":"noun","g":["an invocation to God, like the shahada"],"f":["sàlātìn"]}
+{"w":"bado","p":"noun","g":["water lily"],"f":["badṑ","badṑ","badòn"]}
+{"w":"mim","p":"noun","g":["mim (letter of the Arabic alphabet)"]}
+{"w":"tasi","p":"noun","g":["taxi"]}
+{"w":"soci","p":"noun","g":["T-shirt, undershirt"],"f":["sōcì","sōcìn"]}
+{"w":"rafani","p":"noun","g":["maternal uncle"]}
+{"w":"lardi","p":"noun","g":["province, district"]}
+{"w":"gado","p":"noun","g":["bed"],"f":["gadō","gadon"]}
+{"w":"marini","p":"noun","g":["dyer"],"f":["marìnī","marìnin"]}
+{"w":"sani","p":"verb","g":["know (have knowledge)","know (be acquainted with)","have sex with"]}
+{"w":"lori","p":"noun","g":["truck, lorry"]}
+{"w":"tuwo","p":"noun","g":["swallow or porridge, a category solid meals made from rice, corn or millet flour taken with a range of soups, akin to ugali or nshima"],"f":["tuwō","tuwon"]}
+{"w":"maita","p":"noun","g":["witchcraft"],"f":["mâitā"]}
+{"w":"maina","p":"noun","g":["prince"],"f":["mainà","mainàn"]}
+{"w":"kalma","p":"noun","g":["word"],"f":["kalmōmī"]}
+{"w":"jihadi","p":"noun","g":["jihad (holy war)"],"f":["jìhādìn"]}
+{"w":"sarka","p":"noun","g":["alternative form of sàlkā"]}
+{"w":"taru","p":"noun","g":["large fishing net"],"f":["tārū","tārun"]}
+{"w":"sanata","p":"noun","g":["senator"],"f":["sanatōcī","sanatàn"]}
+{"w":"lasin","p":"noun","g":["license, licence (especially a driver's license / driving licence)"],"f":["lāsìn","lasisi"]}
+{"w":"gona","p":"noun","g":["farm"],"f":["gōnā","gṑnàkī"]}
+{"w":"Yuni","p":"name","g":["June"],"f":["Yūnì"]}
+{"w":"Yuli","p":"name","g":["July"],"f":["Yūlì"]}
+{"w":"mena","p":"noun","g":["dama gazelle"]}
+{"w":"laima","p":"noun","g":["tent","umbrella","parachute"],"f":["laimōmī"]}
+{"w":"laima","p":"noun","g":["dampness"]}
+{"w":"kwal","p":"noun","g":["coal"],"f":["kwâl"]}
+{"w":"kwal","p":"noun","g":["collar"],"f":["kwâl"]}
+{"w":"metso","p":"noun","g":["caracal"],"f":["mḕtsō","mḕtson"]}
+{"w":"salga","p":"noun","g":["pit latrine"],"f":["salgā"]}
+{"w":"tilo","p":"noun","g":["single one","singular"]}
+{"w":"mussa","p":"noun","g":["cat"]}
+{"w":"lale","p":"verb","g":["to shuffle cards"],"f":["lālḕ"]}
+{"w":"tana","p":"noun","g":["earthworm","membrane covering a body part","thin, sometimes crispy skin (e.g., on roasted chicken)"],"f":["tānā"]}
+{"w":"daga","p":"noun","g":["bangle-charm (worn on the upper arm or wrist)"],"f":["dagā"]}
+{"w":"daga","p":"noun","g":["struggle, battle"],"f":["dāgā"]}
+{"w":"boka","p":"noun","g":["herbalist, traditional healer","wizard"],"f":["bōkā","bōkan"]}
+{"w":"hutsu","p":"adj","g":["cranky, cantankerous"],"f":["hūtsū","hūtsuwā"]}
+{"w":"hutsu","p":"noun","g":["a cranky person"],"f":["hūtsū","hūtsuwā","hūtsun"]}
+{"w":"fita","p":"noun","g":["graduation"],"f":["fìtā"]}
+{"w":"zau","p":"noun","g":["very hot","very sweet"]}
+{"w":"sakan","p":"noun","g":["second (unit of time)","second hand of a watch or clock"],"f":["sakàn"]}
+{"w":"Gana","p":"name","g":["Ghana (a country in West Africa)"],"f":["Gānà"]}
+{"w":"datti","p":"noun","g":["dirt, filth, waste"],"f":["dàtti","dàttin"]}
+{"w":"kada","p":"noun","g":["crocodile"],"f":["kadā","kàdànnī","kadan"]}
+{"w":"sako","p":"noun","g":["A small pod of pumpkins or gourds."],"f":["sàkō","sàkànnī","sàkon"]}
+{"w":"komo","p":"noun","g":["misshapen calabash","A large lute, generally played for hunters."],"f":["kōmō","kōmon"]}
+{"w":"romo","p":"noun","g":["broth, soup"],"f":["rōmō","rōmon","رُومُو"]}
+{"w":"jaka","p":"noun","g":["bag","100 pounds (in the old currency).","1000 francs."],"f":["jàkā"]}
+{"w":"gasa","p":"noun","g":["competition, contest"]}
+{"w":"kasat","p":"noun","g":["cassette"],"f":["kāsàt"]}
+{"w":"tuntu","p":"noun","g":["A tassel or knob on top of a cap or gown."],"f":["tuntū","tuntun","تُنْتُو"]}
+{"w":"lacca","p":"noun","g":["lecture"],"f":["laccōcī"]}
+{"w":"aske","p":"verb","g":["to shave (usually the head)"],"f":["askḕ"]}
+{"w":"lula","p":"verb","g":["to flee, to go far away"]}
+{"w":"sef","p":"noun","g":["safe (for money or valuables)"],"f":["sêf"]}
+{"w":"adu","p":"noun","g":["smallpox"],"f":["adun"]}
+{"w":"zaiti","p":"noun","g":["eucalyptus oil"],"f":["zaitìn"]}
+{"w":"iblis","p":"noun","g":["Satan"],"f":["ìblîs","ìblīshìn","ìbìlîs"]}
+{"w":"saye","p":"noun","g":["A purchase; buying","verbal noun of saya"],"f":["sàyē","sàyē-sàyē","sàyen"]}
+{"w":"saye","p":"noun","g":["Speaking in a way such as to hide the meaning from a listener."]}
+{"w":"kanne","p":"verb","g":["to close one eye, to wink"],"f":["kannḕ"]}
+{"w":"kaza","p":"noun","g":["chicken, hen"]}
+{"w":"dinya","p":"noun","g":["Knob-billed duck"],"f":["dinyā"]}
+{"w":"Alli","p":"name","g":["a male given name"],"f":["Àllī"]}
+{"w":"feda","p":"noun","g":["pedal (of a bicycle)"],"f":["fēdōjī"]}
+{"w":"tifa","p":"noun","g":["dump truck","sand truck"],"f":["tīfōfī"]}
+{"w":"mesin","p":"noun","g":["mason"],"f":["mēsìn","mēsinōnī"]}
+{"w":"shiru","p":"noun","g":["silence"],"f":["shirū","shirun"]}
+{"w":"annabi","p":"noun","g":["prophet"],"f":["annabāwā","ànnabìn"]}
+{"w":"laka","p":"noun","g":["spinal cord"],"f":["lakā"]}
+{"w":"laka","p":"noun","g":["Pond mud or clay (used for building houses)"],"f":["lākā"]}
+{"w":"sara","p":"noun","g":["habit, practice, way, custom","argot, jargon"]}
+{"w":"soja","p":"noun","g":["soldier","army"],"f":["sōjà","sōjojī","sōjàn"]}
+{"w":"baya","p":"noun","g":["back","outside surface"],"f":["bāyā","bāyan"]}
+{"w":"baya","p":"adv","g":["behind, backwards"],"f":["bāya"]}
+{"w":"ladan","p":"noun","g":["muezzin"],"f":["ladani"]}
+{"w":"hanta","p":"noun","g":["liver"],"f":["hantōcī"]}
+{"w":"marke","p":"noun","g":["chew-stick tree (Anogeissus leiocarpa)"],"f":["markē","marken"]}
+{"w":"azahar","p":"noun","g":["dhuhr, the noon prayer"],"f":["azahariyya"]}
+{"w":"ilmi","p":"noun","g":["alternative form of ilìmī"],"f":["ilmî","îlmī","ilmîn","îlmin"]}
+{"w":"fes","p":"noun","g":["very clean"]}
+{"w":"tauna","p":"verb","g":["to chew"]}
+{"w":"ainun","p":"adv","g":["very much, extremely"],"f":["ainùn"]}
+{"w":"kanki","p":"noun","g":["western hartebeest"],"f":["kankìn"]}
+{"w":"fat","p":"noun","g":["bright white"]}
+{"w":"wuski","p":"noun","g":["destitute person","thief"],"f":["wuskī","wuskin"]}
+{"w":"wuski","p":"noun","g":["whiskey"],"f":["wuskìn"]}
+{"w":"sharif","p":"noun","g":["alternative form of sharifi"]}
+{"w":"hadda","p":"noun","g":["memorization"]}
+{"w":"Mustapha","p":"name","g":["a male given name"],"f":["Mustàphā"]}
+{"w":"holo","p":"noun","g":["polo (game)"],"f":["hōlṑ","hōlòn"]}
+{"w":"rimi","p":"noun","g":["silk-cotton tree, kapok tree"],"f":["rīmī","rīmin"]}
+{"w":"wani","p":"pron","g":["someone","some, a certain, another","a, some"],"f":["wata","wasu"]}
+{"w":"randa","p":"noun","g":["A large pot for water storage."],"f":["ràndā"]}
+{"w":"turare","p":"noun","g":["perfume, incense, scent","eucalyptus"]}
+{"w":"yari","p":"noun","g":["earring"],"f":["yàrī","yàrī","yàrin"]}
+{"w":"gari","p":"noun","g":["town, village"],"f":["gàrī","gàrin"]}
+{"w":"gari","p":"noun","g":["flour","powder, powdered substance"]}
+{"w":"adire","p":"noun","g":["adire (a type of tie-dyed cloth)"]}
+{"w":"sarki","p":"noun","g":["emir, king, chief","boss, leader","ace"],"f":["sarkī","saraunìyā","sàràkai","sarkin"]}
+{"w":"sanda","p":"noun","g":["stick, baton, staff, pole","unit used to measure cloth (about 1 meter)"],"f":["sànda","sàndan"]}
+{"w":"amin","p":"intj","g":["amen; so be it","A polite response to salamu alaikum."]}
+{"w":"takila","p":"noun","g":["third class (eg. on a train)"],"f":["tākìlà","tākìlàn"]}
+{"w":"kasko","p":"noun","g":["small, earthenware bowl"],"f":["kaskō","kaskon"]}
+{"w":"dinari","p":"noun","g":["dinar, gold coin"]}
+{"w":"masaya","p":"noun","g":["A place for buying things."],"f":["masayā"]}
+{"w":"masaya","p":"noun","g":["A place for hiding things."],"f":["masāyā"]}
+{"w":"aure","p":"noun","g":["marriage"],"f":["aurē","auràrrakī","àure-àure","auren"]}
+{"w":"aibu","p":"noun","g":["fault, blame"],"f":["aibù","aibōbī","aibùn","aibì"]}
+{"w":"addini","p":"noun","g":["religion"],"f":["àddīnìn"]}
+{"w":"edita","p":"noun","g":["editor (person who edits)"],"f":["edità","editōcī","editàn"]}
+{"w":"kaca","p":"noun","g":["bicycle chain"]}
+{"w":"kofi","p":"noun","g":["cup"],"f":["kōfìn"]}
+{"w":"kofi","p":"noun","g":["coffee"],"f":["kṑfī","kṑfin","kafe"]}
+{"w":"gitta","p":"noun","g":["small axe/ax"],"f":["gittōcī"]}
+{"w":"gitta","p":"verb","g":["to cross (e.g. a street)","to slash someone across the neck"]}
+{"w":"gabar","p":"noun","g":["alternative form of gabàs (“east”)"]}
+{"w":"gabas","p":"noun","g":["east"],"f":["gabàs","gabàshin"]}
+{"w":"reza","p":"noun","g":["razorblade"]}
+{"w":"asara","p":"noun","g":["alternative form of hàsār̃ā̀"]}
+{"w":"dala","p":"noun","g":["Any of various currencies known as dollars or thalers.","25 kobo.","5 francs."],"f":["dalōlī"]}
+{"w":"dala","p":"noun","g":["cardinal (bird)"]}
+{"w":"rige","p":"noun","g":["competition, race"],"f":["rigen"]}
+{"w":"tusa","p":"noun","g":["fart"]}
+{"w":"kango","p":"noun","g":["A deserted or dilapidated building.","An empty container."],"f":["kangō","kangon"]}
+{"w":"zina","p":"noun","g":["adultery, fornication, zina"],"f":["zìnā"]}
+{"w":"shadda","p":"noun","g":["cotton brocade"]}
+{"w":"shadda","p":"noun","g":["shadda (gemination diacritic in Arabic script)"]}
+{"w":"shadda","p":"noun","g":["pit latrine"],"f":["shâddā","shaddōdī"]}
+{"w":"wau","p":"noun","g":["waw (letter of the Arabic alphabet)"],"f":["wan"]}
+{"w":"kanar","p":"noun","g":["colonel"]}
+{"w":"wahala","p":"noun","g":["trouble, problem, difficulty"],"f":["wahalōcī","wàhàlce-wàhàlce","wàhàlhàlū"]}
+{"w":"tif","p":"noun","g":["inner tube"],"f":["tîf"]}
+{"w":"hasa","p":"verb","g":["to light or stoke a fire","to incite"]}
+{"w":"hoto","p":"noun","g":["photograph"],"f":["hṑtō","hṑton"]}
+{"w":"waha","p":"noun","g":["playing in water"]}
+{"w":"mishi","p":"noun","g":["a small stick used for applying mascara"],"f":["mishī","mishin"]}
+{"w":"yawa","p":"noun","g":["quantity"],"f":["yawàn"]}
+{"w":"agogo","p":"noun","g":["clock, watch"],"f":["àgōgo","àgṑgai","àgōgon"]}
+{"w":"fatsi","p":"adj","g":["light red"],"f":["fatsī","fatsā"]}
+{"w":"zuma","p":"noun","g":["honey","honeybee"],"f":["zumàn"]}
+{"w":"dage","p":"noun","g":["honey badger"],"f":["dagē","dagen"]}
+{"w":"filas","p":"noun","g":["thermos, flask"],"f":["fìlâs"]}
+{"w":"ridda","p":"noun","g":["apostasy"]}
+{"w":"zomo","p":"noun","g":["hare"],"f":["zōmō","zōmon"]}
+{"w":"duros","p":"noun","g":["underpants"]}
+{"w":"miski","p":"noun","g":["musk perfume"],"f":["miskìn"]}
+{"w":"lafi","p":"noun","g":["hem"],"f":["lāfìn"]}
+{"w":"inna","p":"noun","g":["mother","maternal aunt","A polite term of address for any older woman."],"f":["innà"]}
+{"w":"teku","p":"noun","g":["ocean, sea"],"f":["tḕku","tḕkun"]}
+{"w":"wili","p":"noun","g":["wheel"],"f":["wīlōlī","wīlìn"]}
+{"w":"miji","p":"noun","g":["husband"],"f":["mazā","mijìn"]}
+{"w":"mako","p":"noun","g":["week"],"f":["mākṑ","mākṑ-mākṑ","mākòn"]}
+{"w":"Asiya","p":"name","g":["Asia (the largest continent, located between Europe and the Pacific Ocean)"],"f":["Āsiyà"]}
+{"w":"mazo","p":"noun","g":["bushbuck"]}
+{"w":"daraja","p":"noun","g":["worth, value","rank, class"]}
+{"w":"jarida","p":"noun","g":["newspaper"]}
+{"w":"kaiwa","p":"noun","g":["A gift requiring a return gift at a later date."],"f":["kaiwā"]}
+{"w":"idda","p":"noun","g":["iddah (waiting period until a woman can remarry)"]}
+{"w":"gawa","p":"noun","g":["corpse, carcass"],"f":["gāwā"]}
+{"w":"alhaji","p":"noun","g":["hajji (one who has been a pilgrim to Mecca, usually used as a title)"],"f":["àlhajī","hajìyā","àlhàzai","àlhajin"]}
+{"w":"masara","p":"noun","g":["maize"]}
+{"w":"Kura","p":"name","g":["Kura (a town in Nigeria)"],"f":["Kūra"]}
+{"w":"Maka","p":"name","g":["Mecca (a city in Saudi Arabia)"],"f":["Makà","Makkà"]}
+{"w":"ofis","p":"noun","g":["office"],"f":["ōfìs","ōfisōshī","ōfìshin"]}
+{"w":"malami","p":"noun","g":["teacher","scholar","official, supervisor"],"f":["mālàmī","mālàmā","mālàmin"]}
+{"w":"zama","p":"noun","g":["sitting, dwelling, existence","verbal noun of zama"],"f":["zamā","zaman"]}
+{"w":"dokta","p":"noun","g":["doctor (used as a title for someone with a doctorate)"],"f":["doktàn"]}
+{"w":"dawa","p":"noun","g":["sorghum"],"f":["dāwōyī"]}
+{"w":"dawa","p":"noun","g":["the bush, the forest"],"f":["dawà","dawàn"]}
+{"w":"ajali","p":"noun","g":["deadline, span of time","fate, destiny"],"f":["ajàlī","ajàlin"]}
+{"w":"asali","p":"noun","g":["origin, beginning","foundation","heritage, pedigree"],"f":["asalī","àsàlai","asalin"]}
+{"w":"jinsi","p":"noun","g":["sex","gender","kind, race, species"],"f":["jinsìn"]}
+{"w":"fitina","p":"noun","g":["trouble, quarrelling"],"f":["fìtìnū"]}
+{"w":"baibai","p":"adv","g":["inside-out"],"f":["bàibâi"]}
+{"w":"waziri","p":"noun","g":["a traditional title for a ruling official","a minister or vizier in government"]}
+{"w":"sauti","p":"noun","g":["voice","sound"],"f":["sautìn"]}
+{"w":"kabila","p":"noun","g":["alternative form of ƙàbīlā̀"]}
+{"w":"hasara","p":"noun","g":["loss (especially a serious one)"]}
+{"w":"sukari","p":"noun","g":["sugar"]}
+{"w":"diwani","p":"noun","g":["register, account book","anthology"],"f":["dīwānìn"]}
+{"w":"alama","p":"noun","g":["mark (indication for reference or measurement)","sign, symbol","indication, evidence"],"f":["alāmōmī"]}
+{"w":"wakili","p":"noun","g":["representative, agent","member of the legislature"],"f":["wàkīlìn"]}
+{"w":"taswira","p":"noun","g":["map"]}
+{"w":"falsafa","p":"noun","g":["philosophy"]}
+{"w":"kambi","p":"noun","g":["crown"],"f":["kambī","kambin"]}
+{"w":"kafiri","p":"noun","g":["unbeliever, infidel, kafir"]}
+{"w":"tajiri","p":"noun","g":["alternative form of àttājìr̃ī (“wealthy person”)"]}
+{"w":"talaka","p":"noun","g":["poor person, pauper","commoners, peasants, working class, proletariat"],"f":["talàkà","talakāwā","talàkàn"]}
+{"w":"jini","p":"noun","g":["blood","menstruation","lineage"],"f":["jinī","jinin"]}
+{"w":"safa","p":"noun","g":["large, intercity bus"],"f":["sàfâ","sàfân"]}
+{"w":"safa","p":"noun","g":["socks, stockings"]}
+{"w":"uzuri","p":"noun","g":["excuse"]}
+{"w":"ciki","p":"noun","g":["stomach, belly","pregnancy"],"f":["cikìn"]}
+{"w":"ciki","p":"adv","g":["inside"]}
+{"w":"mizani","p":"noun","g":["scales, balance"],"f":["mīzānìn"]}
+{"w":"tuni","p":"adv","g":["long ago"],"f":["tùni"]}
+{"w":"tuni","p":"noun","g":["reminder"],"f":["tunìn"]}
+{"w":"alif","p":"num","g":["thousand (principally used in dates)"],"f":["alìf"]}
+{"w":"somi","p":"noun","g":["beginning, start"],"f":["sōmìn"]}
+{"w":"sahani","p":"noun","g":["teakettle"],"f":["sàhānìn"]}
+{"w":"shuka","p":"noun","g":["plants, crops"]}
+{"w":"shuka","p":"verb","g":["to sow, to plant"]}
+{"w":"hausa","p":"noun","g":["language","meaning"]}
+{"w":"gwal","p":"noun","g":["gold"],"f":["gwâl"]}
+{"w":"Ɓ","p":"character","g":["The third letter of the Hausa alphabet, written in the Latin script. Preceded by B and followed by C, and representing /ɓ/."],"f":["ɓ"]}
+{"w":"Ɗ","p":"character","g":["The sixth letter of the Hausa alphabet, written in the Latin script. Preceded by D and followed by E, and representing /ɗ/."],"f":["ɗ"]}
+{"w":"ɗ","p":"character","g":["The sixth letter of the Hausa alphabet, written in the Latin script. Preceded by D and followed by E, and representing /ɗ/."],"f":["Ɗ"]}
+{"w":"Maris","p":"name","g":["March"]}
+{"w":"Yunan","p":"name","g":["Greece (a country in Southeastern Europe)"]}
+{"w":"haji","p":"noun","g":["alternative form of hajji"],"f":["hajì","hajìn"]}
+{"w":"jika","p":"adv","g":["on the body"],"f":["jikà"]}
+{"w":"notis","p":"noun","g":["notice (especially of dismissal)"],"f":["nōtìs","nōtisōshī"]}
+{"w":"lemo","p":"noun","g":["orange (fruit)","soft drink"],"f":["lḕmō","lḕmon"]}
+{"w":"iko","p":"noun","g":["power, control","authority, jurisdiction"],"f":["īkṑ","īkòn"]}
+{"w":"Wagadugu","p":"name","g":["Ouagadougou (the capital city of Burkina Faso)"],"f":["Wàgàdugù"]}
+{"w":"kifa","p":"verb","g":["to turn upside down"]}
+{"w":"imani","p":"noun","g":["faith, belief (especially in Islam)"],"f":["īmānìn"]}
+{"w":"darma","p":"noun","g":["lead, tin"]}
+{"w":"kuɗi","p":"noun","g":["money, currency","price, cost"],"f":["kuɗī","kuɗaɗe","kuɗin"]}
+{"w":"keke","p":"noun","g":["bicycle","machine"]}
+{"w":"kusa","p":"adv","g":["near, nearby"]}
+{"w":"bayan","p":"prep","g":["behind, after"],"f":["bāyan"]}
+{"w":"baho","p":"noun","g":["bathtub, large basin"],"f":["bāhṑ","bāhòn"]}
+{"w":"zaitun","p":"noun","g":["olive","olive tree","A type of hardwood prayer bead."],"f":["zàitûn","zàitûn"]}
+{"w":"Ƙ","p":"character","g":["The uppercase form of ⟨ƙ⟩"],"f":["ƙ"]}
+{"w":"ƙ","p":"character","g":["A velar ejective (IPA [kʼ])."],"f":["Ƙ"]}
+{"w":"Ƴ","p":"character","g":["A letter of the Hausa alphabet, written in the Latin script.."],"f":["ƴ","ʼY"]}
+{"w":"nesa","p":"adv","g":["faraway"],"f":["nēsà"]}
+{"w":"labari","p":"noun","g":["news, information","story"]}
+{"w":"siket","p":"noun","g":["skirt"],"f":["sìkêt","sìkêt-sìkêt"]}
+{"w":"Yamal","p":"name","g":["Yemen (a country in West Asia in the Middle East)"],"f":["Yamàl"]}
+{"w":"dabo","p":"noun","g":["magic trick, sleight of hand","A child's first attempts at standing up."],"f":["dabṑ","dabòn"]}
+{"w":"danda","p":"noun","g":["piebald horse"],"f":["dànda","dàndan"]}
+{"w":"homan","p":"noun","g":["foreman"],"f":["hōmàn"]}
+{"w":"taure","p":"noun","g":["castrated goat"],"f":["taurḕ","tâurā","taurèn"]}
+{"w":"coci","p":"noun","g":["church"],"f":["cōcì","cōcì-cōcì","cōcìn"]}
+{"w":"fure","p":"noun","g":["flower, blossom"],"f":["fùrē","fùrànnī","fùren"]}
+{"w":"sitam","p":"noun","g":["alternative form of sìtampī̀"],"f":["sìtâm"]}
+{"w":"limam","p":"noun","g":["alternative form of liman"]}
+{"w":"omo","p":"noun","g":["detergent, soap powder"],"f":["ōmṑ","ōmòn"]}
+{"w":"giris","p":"noun","g":["grease"]}
+{"w":"mutum","p":"noun","g":["person","man, male","native or resident of a place"],"f":["mùtûm","mùtūnìyā"]}
+{"w":"soye","p":"noun","g":["pieces of fried meat"],"f":["sṑyē","sṑyen"]}
+{"w":"wada","p":"noun","g":["wealth"],"f":["wàdā"]}
+{"w":"wada","p":"noun","g":["dwarf","pygmy"]}
+{"w":"uku","p":"num","g":["three"],"f":["ukù"]}
+{"w":"fusata","p":"verb","g":["to anger, vex"]}
+{"w":"fusata","p":"verb","g":["to become angry","to be angry with"],"f":["fùsātà"]}
+{"w":"baffa","p":"noun","g":["paternal uncle"],"f":["baffà","bàffànnī","baffàn","bappa"]}
+{"w":"fau","p":"noun","g":["extreme"]}
+{"w":"Baba","p":"name","g":["a unisex given name"]}
+{"w":"jace","p":"noun","g":["second-hand garment"]}
+{"w":"bisa","p":"noun","g":["pack animal"],"f":["bisā"]}
+{"w":"agade","p":"noun","g":["plantain"],"f":["àgàdè","àgàdè","àgàdèn"]}
+{"w":"magani","p":"noun","g":["medicine, cure","means against, protection against"],"f":["māgànī","māgànin"]}
+{"w":"mowa","p":"noun","g":["favorite wife"]}
+{"w":"jugum","p":"noun","g":["sad, dejected"],"f":["jùgum"]}
+{"w":"kasu","p":"verb","g":["to subdivide into"],"f":["kàsu"]}
+{"w":"miki","p":"noun","g":["vulture"],"f":["mīkì","mīkìn"]}
+{"w":"Oktoba","p":"name","g":["October"]}
+{"w":"jiki","p":"noun","g":["body"],"f":["jìkī","jìkin"]}
+{"w":"wali","p":"noun","g":["vizier (a traditional title)"],"f":["wālī","wālin"]}
+{"w":"wali","p":"noun","g":["alternative form of wàliyyī̀"],"f":["wàlî","wàlîn"]}
+{"w":"jeri","p":"noun","g":["line, row","series"],"f":["jērìn"]}
+{"w":"yis","p":"noun","g":["yeast"],"f":["yîs"]}
+{"w":"sabo","p":"adj","g":["new"],"f":["sābō","sābuwā","sàbbī"]}
+{"w":"bauta","p":"noun","g":["slavery","worship"],"f":["bàutā"]}
+{"w":"gemu","p":"noun","g":["beard"],"f":["gēmùn"]}
+{"w":"bukka","p":"noun","g":["grass hut"],"f":["bukkōkī"]}
+{"w":"Isa","p":"name","g":["Jesus (a prophet in Islam, regarded as the son of God in Christianity)","a male given name, equivalent to English Jesus"],"f":["Īsā"]}
+{"w":"kurma","p":"noun","g":["deaf person"],"f":["kurmā","kurman"]}
+{"w":"kudaku","p":"noun","g":["potato, sweet potato"],"f":["kūdaku","kūdàkū"]}
+{"w":"ishe","p":"verb","g":["to overtake"],"f":["ishḕ"]}
+{"w":"kotu","p":"noun","g":["court"],"f":["kōtù","kōtùn"]}
+{"w":"Kano","p":"name","g":["Kano (a state of Nigeria in the North West geopolitical zone)","Kano (a city, the state capital of Kano State, Nigeria)"],"f":["Kanṑ"]}
+{"w":"sittin","p":"num","g":["sixty"],"f":["sìttin"]}
+{"w":"saiwa","p":"noun","g":["root"],"f":["sâiwā","sāiwōwī"]}
+{"w":"aljan","p":"noun","g":["jinn, spirit (good or bad)"],"f":["àljan","àljanā","àljanū","àljanī"]}
+{"w":"haila","p":"noun","g":["menstruation"]}
+{"w":"gazet","p":"noun","g":["gazette"],"f":["gàzêt"]}
+{"w":"albaras","p":"noun","g":["leprosy"]}
+{"w":"karama","p":"noun","g":["generosity","something amazing or wonderful"]}
+{"w":"malama","p":"noun","g":["feminine of mālàm: Ms./Mrs."],"f":["mālàmā"]}
+{"w":"hazo","p":"noun","g":["haze, mist","poor vision"],"f":["hazō","hazon"]}
+{"w":"latsa","p":"verb","g":["to squeeze, to squash","to pressure someone regarding a difficult matter"]}
+{"w":"latsa","p":"verb","g":["to squeeze"]}
+{"w":"kankana","p":"noun","g":["melon, watermelon"],"f":["kankanā"]}
+{"w":"dauro","p":"noun","g":["a long-season, photoperiod sensitive variety of pearl millet"],"f":["dàurō","dàuron"]}
+{"w":"ayu","p":"noun","g":["manatee, (in particular) the African manatee"],"f":["àyū","àyun"]}
+{"w":"ra'i","p":"noun","g":["willingness, interest"]}
+{"w":"rairai","p":"noun","g":["alternative form of ràirayī"],"f":["ràirai","ràiran"]}
+{"w":"zik","p":"noun","g":["zipper, zip fastener"],"f":["zîk"]}
+{"w":"giya","p":"noun","g":["native beer","any alcoholic beverage"]}
+{"w":"giya","p":"noun","g":["gear"]}
+{"w":"ƙamus","p":"noun","g":["dictionary"],"f":["ƙāmùs","ƙāmusōshī","ƙāmùsun"]}
+{"w":"giwa","p":"noun","g":["elephant"],"f":["gīwā"]}
+{"w":"cir","p":"intj","g":["Used to shoo birds or children."]}
+{"w":"bif","p":"noun","g":["alternative form of tîk (“something heavy falling”)"],"f":["bîf"]}
+{"w":"cif","p":"noun","g":["chief (as a title)"],"f":["cîf"]}
+{"w":"cif","p":"noun","g":["complete, fully counted"],"f":["cif-cif"]}
+{"w":"jif","p":"noun","g":["jeep"],"f":["jîf"]}
+{"w":"sa'a","p":"noun","g":["hour","lucky moment, good luck"]}
+{"w":"sa'a","p":"noun","g":["agemate"]}
+{"w":"tef","p":"noun","g":["measuring tape","recording tape","movie, film"],"f":["têf"]}
+{"w":"lalo","p":"noun","g":["jute"],"f":["lālṑ","lālòn"]}
+{"w":"Kaduna","p":"name","g":["Kaduna (a state of Nigeria in the North West geopolitical zone)","Kaduna (a city, the state capital of Kaduna State, Nigeria)"]}
+{"w":"gaula","p":"noun","g":["fool"],"f":["gaulā","gaulan"]}
+{"w":"gadu","p":"noun","g":["warthog"],"f":["gàdū","gàdun"]}
+{"w":"gada","p":"noun","g":["bridge"],"f":["gadōdī"]}
+{"w":"gada","p":"noun","g":["crested duiker","One who is interested in or ostentatiously showing off something."],"f":["gàdā","gàdā"]}
+{"w":"murza","p":"noun","g":["massage"],"f":["mùrzā"]}
+{"w":"murza","p":"verb","g":["to roll strands of cotton between the palms to make thread","to rub with palms, to massage"]}
+{"w":"gulbi","p":"noun","g":["river, stream"],"f":["gulbī","gulbin"]}
+{"w":"sirdi","p":"noun","g":["saddle","seat of a bicycle or motorcycle"]}
+{"w":"zahiri","p":"noun","g":["clearness, obviousness"]}
+{"w":"cuku","p":"noun","g":["cheese"],"f":["cukū","cukun","cukwī"]}
+{"w":"bawa","p":"noun","g":["slave"],"f":["bâiwā","bāyī","bāwàn"]}
+{"w":"minista","p":"noun","g":["governmental minister"],"f":["ministà","ministōcī","ministàn"]}
+{"w":"zara","p":"noun","g":["vacillation (moving from side to side)"],"f":["zàrā"]}
+{"w":"zara","p":"noun","g":["red-bellied tree starling"]}
+{"w":"zara","p":"verb","g":["to snatch, to grab"],"f":["zàrā"]}
+{"w":"biza","p":"noun","g":["visa"]}
+{"w":"maza","p":"adv","g":["quickly, as quickly as possible"]}
+{"w":"maza","p":"noun","g":["plural of mijī̀ and namijī̀"],"f":["mazā"]}
+{"w":"ba-","p":"prefix","g":["A prefix indicating ethnic or geographical origin or, less often, someone's trade."],"f":["bà-"]}
+{"w":"ma-","p":"prefix","g":["Used to form agentive nouns.","Used to form nouns of place (locative nouns).","Used to form instrumental nouns."]}
+{"w":"haddi","p":"noun","g":["limit","A fixed punishment for violating Islamic law."],"f":["haddōdī","haddìn"]}
+{"w":"satar","p":"noun","g":["possessed form of sātā̀"]}
+{"w":"fashe","p":"noun","g":["A children's game involving hitting eggs together to try to break the other person's egg"],"f":["fashen"]}
+{"w":"Abeokuta","p":"name","g":["Abeokuta (the largest city and state capital of Ogun State, Nigeria)"]}
+{"w":"janar","p":"noun","g":["general (military rank)"]}
+{"w":"manjo","p":"noun","g":["major (military rank)"],"f":["manjò","manjōjī","manjòn","manjà"]}
+{"w":"Maiduguri","p":"name","g":["Maiduguri (a city, the state capital of Borno State, Nigeria)"]}
+{"w":"gatari","p":"noun","g":["ax(e)"]}
+{"w":"makara","p":"noun","g":["bier (usually made of raphia)"],"f":["màkàrā"]}
+{"w":"gurnet","p":"noun","g":["hand grenade"]}
+{"w":"caka","p":"noun","g":["clubs"],"f":["cakan"]}
+{"w":"caka","p":"verb","g":["stab, pierce"],"f":["càkā"]}
+{"w":"izni","p":"noun","g":["alternative form of izìnī"],"f":["iznìn"]}
+{"w":"alatu","p":"noun","g":["luxury item"],"f":["ālātù","ālātùn"]}
+{"w":"amsa","p":"noun","g":["answer, response"],"f":["amsōshī"]}
+{"w":"domin","p":"conj","g":["because of, for the sake of, on behalf of","because, in order that"],"f":["dṑmin"]}
+{"w":"amale","p":"noun","g":["an adult male camel or donkey which is the leader of the herd","the longest string on a lute"],"f":["amālè","amālèn"]}
+{"w":"gusa","p":"verb","g":["to move aside"]}
+{"w":"Bini","p":"name","g":["Benin City (a city in Nigeria)","Benin (a country in Africa)"]}
+{"w":"hadisi","p":"noun","g":["hadith (saying of the prophet Muhammad)"],"f":["hàdīsìn"]}
+{"w":"kuge","p":"noun","g":["A pair of metal bells joined together and beaten with a small horn."],"f":["kùgē","kùgen"]}
+{"w":"goro","p":"noun","g":["kola nuts","A small gift or reward."]}
+{"w":"abarba","p":"noun","g":["pineapple"],"f":["àbàrbā"]}
+{"w":"rimaye","p":"noun","g":["plural of rimi"]}
+{"w":"miya","p":"noun","g":["a kind of sauce or stew made with various meats and vegetables, eaten alongside tuwo"]}
+{"w":"Adamu","p":"name","g":["Adam (biblical character)","a male given name, Adam"]}
+{"w":"tafsiri","p":"noun","g":["interpretation or commentary on the Qur'an"]}
+{"w":"shida","p":"num","g":["six"],"f":["shidà"]}
+{"w":"tambur","p":"noun","g":["postage stamp"]}
+{"w":"tano","p":"noun","g":["drum or barrel for liquids"],"f":["tànô","tànôn"]}
+{"w":"gwaza","p":"noun","g":["taro, old cocoyam (Colocasia esculenta)"],"f":["gwāzā"]}
+{"w":"gunda","p":"noun","g":["young fruit, especially pumpkin"],"f":["gundōdī"]}
+{"w":"oza","p":"noun","g":["ounce"],"f":["ōzàn"]}
+{"w":"sahihi","p":"adj","g":["real, authentic"],"f":["sàhīhìyā"]}
+{"w":"sahihi","p":"noun","g":["something or someone which is real"],"f":["sàhīhìyā","sàhīhìn"]}
+{"w":"gafara","p":"noun","g":["forgiveness, pardon"]}
+{"w":"gafara","p":"intj","g":["excuse me","hello (greeting used by women)"]}
+{"w":"sagara","p":"noun","g":["pullet (young hen)"]}
+{"w":"yautai","p":"noun","g":["nightjar","A person who sleeps too much or too often."],"f":["yautan"]}
+{"w":"shaho","p":"noun","g":["hawk, falcon"],"f":["shāhṑ","shāhòn"]}
+{"w":"mujiya","p":"noun","g":["owl"],"f":["mūjìyā","mūjiyōyī"]}
+{"w":"awaza","p":"noun","g":["rib"],"f":["àwàzū"]}
+{"w":"husufi","p":"noun","g":["eclipse (solar or lunar)"],"f":["hùsūfìn"]}
+{"w":"murzani","p":"noun","g":["red coral"],"f":["murjani"]}
+{"w":"Sham","p":"name","g":["Syria (a country in West Asia in the Middle East)","the Levant: Syria, Palestine, Israel, Lebanon"],"f":["Shâm"]}
+{"w":"usur","p":"noun","g":["whistle"]}
+{"w":"gimbiya","p":"noun","g":["princess, daughter of an emir"],"f":["gimbìyā","gimbiyōyī"]}
+{"w":"mujalla","p":"noun","g":["magazine, journal"],"f":["mujallōlī"]}
+{"w":"nafila","p":"noun","g":["nafl prayer (extra, non-compulsory prayer)"],"f":["nāfilōlī","nāfìlfilī"]}
+{"w":"sufana","p":"noun","g":["wrench, spanner"],"f":["sufānōnī"]}
+{"w":"Cadi","p":"name","g":["Chad (a country in Central Africa)","Lake Chad (a freshwater lake at the junction of Nigeria, Niger, Chad and Cameroon in Central Africa)"],"f":["Cādì"]}
+{"w":"muhibba","p":"noun","g":["respect"]}
+{"w":"ɗawisu","p":"noun","g":["peacock"],"f":["ɗāwīsù","ɗāwīsùn"]}
+{"w":"nahawu","p":"noun","g":["grammar"],"f":["nahawùn"]}
+{"w":"nahiya","p":"noun","g":["region, district","continent"],"f":["nāhiyōyī"]}
+{"w":"warƙa","p":"noun","g":["paper sheet","paper money","leaf"]}
+{"w":"Jamus","p":"name","g":["Germany (a country in Central Europe)"],"f":["Jāmùs"]}
+{"w":"wuya","p":"noun","g":["neck","neck (narrow part of a bottle)"],"f":["wuyōyī","wuyàn"]}
+{"w":"wuya","p":"noun","g":["trouble, difficulty"],"f":["wùyā"]}
+{"w":"Turai","p":"name","g":["Europe (a continent located west of Asia and north of Africa)"]}
+{"w":"tsere","p":"noun","g":["race, contest"],"f":["tsēre","tsēren"]}
+{"w":"tambaya","p":"noun","g":["question"],"f":["tambayōyī"]}
+{"w":"tambaya","p":"verb","g":["to ask, to inquire"]}
+{"w":"kucaki","p":"noun","g":["slovenly person"],"f":["kùcākī","kùcākā","kùcākin"]}
+{"w":"kucaki","p":"adj","g":["slovenly"],"f":["kùcākī","kùcākā"]}
+{"w":"nasara","p":"noun","g":["victory, success"]}
+{"w":"nasara","p":"noun","g":["Christians"],"f":["nasaru"]}
+{"w":"hamayya","p":"noun","g":["rivalry","political opposition"]}
+{"w":"Farisa","p":"name","g":["Persia"]}
+{"w":"hamila","p":"noun","g":["sword sling"]}
+{"w":"halaka","p":"verb","g":["destroy"],"f":["halàkā"]}
+{"w":"halaka","p":"verb","g":["perish, be destroyed"],"f":["hàlakà"]}
+{"w":"halaka","p":"noun","g":["destruction, perishing"]}
+{"w":"ƙuli-ƙuli","p":"noun","g":["deep-fried peanut balls or sticks (a traditional West African snack)"],"f":["ƙulī-ƙulī","ƙulī-ƙulin"]}
+{"w":"fatsa","p":"noun","g":["fishhook"]}
+{"w":"Ailan","p":"name","g":["Ireland (a country in Europe)"],"f":["Ailàn"]}
+{"w":"fasfo","p":"noun","g":["passport"],"f":["fàsfô","fàsfôn"]}
+{"w":"aduwa","p":"noun","g":["desert date palm (Balanites aegyptiaca)","a date, the fruit of this tree"],"f":["aduwōyī"]}
+{"w":"hangum","p":"noun","g":["mumps"],"f":["hàngum"]}
+{"w":"hasafi","p":"noun","g":["small gift"],"f":["hasàfī","hàsàfai","hasàfin"]}
+{"w":"ƙugiya","p":"noun","g":["hook","anchor"],"f":["ƙūgìyā","ƙūgiyōyī"]}
+{"w":"zunubi","p":"noun","g":["sin"],"f":["zùnùbai","zùnubìn"]}
+{"w":"dumɓu","p":"noun","g":["worn-out tool","dimwit"],"f":["dumɓū","dumɓun"]}
+{"w":"jimina","p":"noun","g":["ostrich"],"f":["jìminā","jìmìnū"]}
+{"w":"muhuri","p":"noun","g":["A two-handled carving tool."],"f":["muhūrī","muhūrin"]}
+{"w":"muzuru","p":"noun","g":["tomcat (male cat)"],"f":["mùzūrū","mùzūrun"]}
+{"w":"Legas","p":"name","g":["Lagos (a city in Nigeria)"],"f":["Lēgàs"]}
+{"w":"lambu","p":"noun","g":["garden","irrigated farm"],"f":["làmbū","làmbun"]}
+{"w":"umra","p":"noun","g":["umrah (a minor hajj, a lesser pilgrimage to Mecca, other than at the time of the hajj)"]}
+{"w":"sarƙa","p":"noun","g":["chain","chain necklace"],"f":["sarƙōƙī"]}
+{"w":"sarƙa","p":"verb","g":["lace around, intertwine","become enemies"]}
+{"w":"yayyafi","p":"noun","g":["drizzle, light rain"],"f":["yayyafī","yayyafin"]}
+{"w":"wuƙa","p":"noun","g":["knife"],"f":["wuƙā"]}
+{"w":"kufai","p":"noun","g":["ruin; (site of an) abandoned town"],"f":["kufaifai","kufan"]}
+{"w":"maiso","p":"noun","g":["unworked farm"],"f":["maisō","maison"]}
+{"w":"Daura","p":"name","g":["Daura (a city in Katsina State, Nigeria)"],"f":["Dàurā"]}
+{"w":"wul","p":"noun","g":["pass by quickly, flash past"],"f":["wùl"]}
+{"w":"wul","p":"noun","g":["alternative form of wulik (“black, dark blue”)"]}
+{"w":"dankali","p":"noun","g":["a potato, especially a sweet potato"],"f":["dànkalìn"]}
+{"w":"lawur","p":"noun","g":["sweet potato"],"f":["lāwúr"]}
+{"w":"bajau","p":"noun","g":["A cloth which card players play on."],"f":["bajan"]}
+{"w":"bajau","p":"adv","g":["reddened"]}
+{"w":"tanaka","p":"noun","g":["metal perfume container"]}
+{"w":"gaiwa","p":"noun","g":["lungfish"],"f":["gâiwā","gaiwōyī"]}
+{"w":"fitila","p":"noun","g":["lamp, light (electronic device)"],"f":["fìtìlū"]}
+{"w":"Jos","p":"name","g":["Jos (a city, the state capital of Plateau State, Nigeria)"],"f":["Jòs"]}
+{"w":"hijabi","p":"noun","g":["hijab (custom of wearing a veil)","hijab (veil)"],"f":["hìjābìn"]}
+{"w":"huɗu","p":"num","g":["four"],"f":["fuɗu"]}
+{"w":"wuta","p":"noun","g":["fire","electricity"],"f":["wutā"]}
+{"w":"hoda","p":"noun","g":["powder, face powder"]}
+{"w":"hamsin","p":"num","g":["fifty"],"f":["hàmsin"]}
+{"w":"cindo","p":"noun","g":["a person with six fingers on each hand"],"f":["cindṑ","cindòn"]}
+{"w":"kaso","p":"noun","g":["prison"],"f":["kasò","kasòn"]}
+{"w":"baiti","p":"noun","g":["stanza"],"f":["baitōcī","baitìn"]}
+{"w":"mashi","p":"noun","g":["spear"],"f":["māsū","māshìn"]}
+{"w":"akara","p":"noun","g":["a deep-fried bean cake"],"f":["àkàrà","àkàràn"]}
+{"w":"dorina","p":"noun","g":["hippopotamus","sjambok (a whip made of hippopotamus hide)"],"f":["dṑrinā","dṑrìnai"]}
+{"w":"ƙauye","p":"noun","g":["village"],"f":["ƙauyḕ","ƙauyuka","ƙauyèn"]}
+{"w":"asham","p":"noun","g":["tarawih (extra prayers at night during Ramadan)"]}
+{"w":"kurmi","p":"noun","g":["forest, jungle"],"f":["kurmìn"]}
+{"w":"likita","p":"noun","g":["physician, (medical) doctor"],"f":["likità","likitōcī","likitàn"]}
+{"w":"sarara","p":"noun","g":["walking aimlessly"],"f":["sàràrà"]}
+{"w":"yanki","p":"noun","g":["part, section","district","region, state, province"],"f":["yankìn"]}
+{"w":"aboki","p":"noun","g":["friend","counterpart, companion (a person with whom one does something, or is in any kind of relationship, positive or negative)"],"f":["àbōkī","àbōkìyā","àbṑkai","àbṑkànai","àbōkin","Aboki"]}
+{"w":"salla","p":"noun","g":["prayer, salat (principally in Islam)","religious holiday"]}
+{"w":"tausa","p":"noun","g":["massage"],"f":["tàusā"]}
+{"w":"tilas","p":"noun","g":["necessity"],"f":["tīlàs"]}
+{"w":"tilas","p":"adv","g":["necessarily"],"f":["tīlàs"]}
+{"w":"ɓulla","p":"verb","g":["to appear suddenly"],"f":["ɓùlla"]}
+{"w":"tautau","p":"noun","g":["a kind of long-legged spider","A skin rash thought to be caused by drinking water in which a spider has died."],"f":["tautàu","tautàn"]}
+{"w":"ɗigo","p":"noun","g":["drop, drip","dot, point","dot, period"],"f":["ɗigṑ","ɗìge-ɗìge","ɗigòn"]}
+{"w":"ƙorama","p":"noun","g":["large stream"],"f":["ƙoramu"]}
+{"w":"ɓurma","p":"noun","g":["box trap (for rats)"],"f":["ɓurmā"]}
+{"w":"ajuza","p":"noun","g":["a shameless woman, a (female) liar"]}
+{"w":"alawa","p":"noun","g":["halva or similar candy"]}
+{"w":"kandu","p":"noun","g":["A certain white stone used in necklaces."],"f":["kandū","kandun"]}
+{"w":"biya","p":"noun","g":["beer"],"f":["biyà"]}
+{"w":"biya","p":"verb","g":["to pay","to fulfill","to be fulfilled"],"f":["biyā"]}
+{"w":"ruwa","p":"noun","g":["water","liquid, juice","interest (money)"],"f":["ruwā","ruwan"]}
+{"w":"ruwa","p":"adv","g":["in the water"]}
+{"w":"ruwa","p":"noun","g":["blade (of knife or axe)"],"f":["ruwā","ruwan"]}
+{"w":"bango","p":"noun","g":["wall (of a room)","book cover"],"f":["bangō","bangon"]}
+{"w":"kifi","p":"noun","g":["fish"],"f":["kīfī","kīfin"]}
+{"w":"akwasa","p":"noun","g":["A polished wooden bar used for weaving."],"f":["akwasā","akwasōshī"]}
+{"w":"ƙube","p":"noun","g":["A traditional hand-embroidered cap."],"f":["ƙūbè","ƙūbèn"]}
+{"w":"ƙosai","p":"noun","g":["a deep-fried bean cake"],"f":["ƙōsai","ƙōsan"]}
+{"w":"ɓakutu","p":"noun","g":["A neckless clay pot.","A nickname for a child with big buttocks."],"f":["ɓākutu","ɓākutun"]}
+{"w":"kogi","p":"noun","g":["river"],"f":["kṑgī","kṑgin"]}
+{"w":"zamba","p":"noun","g":["fraud, deceit"],"f":["zàmba","zàmbàce-zàmbàce"]}
+{"w":"tofa","p":"noun","g":["elephant grass, Napier grass"],"f":["tōfā"]}
+{"w":"هَوُسَ","p":"name","g":["Arabic-script spelling of Hausa"],"f":["Hausa"]}
+{"w":"dabba","p":"noun","g":["animal"],"f":["dabbōbī"]}
+{"w":"Yusufu","p":"name","g":["Joseph (biblical character)","a male given name, equivalent to English Joseph"],"f":["Yūsufù"]}
+{"w":"kamili","p":"noun","g":["a perfect, kind person"],"f":["kāmìlī","kāmìlā","kāmìlin"]}
+{"w":"zamani","p":"noun","g":["age, epoch, period, times"],"f":["zāmànī","zāmànin"]}
+{"w":"mamaye","p":"noun","g":["military occupation"]}
+{"w":"hamada","p":"noun","g":["desert"]}
+{"w":"silin","p":"noun","g":["ceiling"],"f":["sīlìn"]}
+{"w":"amini","p":"noun","g":["faithful friend"],"f":["àmīnìyā","àmīnìn"]}
+{"w":"anini","p":"noun","g":["button","stars or ribbons worn by a military officer","tenth of a penny"],"f":["ànīnī","ànīnin"]}
+{"w":"ƙwai","p":"noun","g":["egg","electric lightbulb"],"f":["ƙwan"]}
+{"w":"nasaba","p":"noun","g":["familial relationship"]}
+{"w":"ibada","p":"noun","g":["worship, service to God"]}
+{"w":"harshe","p":"noun","g":["tongue","tip or tongue of something","language"],"f":["harshḕ","harshèn"]}
+{"w":"goge","p":"noun","g":["goje (traditional one-stringed fiddle)"],"f":["gṑgē","gṑgen"]}
+{"w":"zare","p":"noun","g":["thread, string"],"f":["zàrē","zàren"]}
+{"w":"zare","p":"noun","g":["Goods rejected because of poor quality.","outcast (person)"]}
+{"w":"zare","p":"verb","g":["to snatch from"],"f":["zarḕ"]}
+{"w":"zare","p":"verb","g":["to pull out, to unsheathe, to disengage","to withdraw from, to be unconcerned with"],"f":["zārḕ"]}
+{"w":"danga","p":"noun","g":["cornstalk fence"],"f":["dangā","dangōgī"]}
+{"w":"mandiri","p":"noun","g":["a type of tambourine played by the Qadiriyya sect of Sufis"]}
+{"w":"iska","p":"noun","g":["air","wind, breeze","spirit (especially in the context of Hausa animism)"],"f":["iskōkī","iskàn"]}
+{"w":"babur","p":"noun","g":["motorcycle"]}
+{"w":"Haruna","p":"name","g":["Aaron (biblical character)","a male given name, Harun, equivalent to English Aaron"]}
+{"w":"Mayu","p":"name","g":["May"]}
+{"w":"dahir","p":"noun","g":["reality, truth"]}
+{"w":"ladani","p":"noun","g":["alternative form of ladan"]}
+{"w":"Gara","p":"name","g":["Igala people","Igala language"]}
+{"w":"Makka","p":"name","g":["alternative form of Maka"],"f":["Makkà"]}
+{"w":"diyya","p":"noun","g":["diyya, blood money"]}
+{"w":"ڟ","p":"character","g":["The nineteenth letter of the Hausa alphabet, written in the Arabic script; preceded by ت and followed by و."],"f":["ts","ts"]}
+{"w":"ݓ","p":"character","g":["The third letter of the Hausa alphabet, written in the Arabic script; preceded by ٻ and followed by د."],"f":["equivalent"]}
+{"w":"Azumi","p":"name","g":["a female given name given to a girl born during Ramadan"],"f":["Azùmi"]}
+{"w":"bayani","p":"noun","g":["explanation"],"f":["bàyānìn"]}
+{"w":"makama","p":"noun","g":["handle","reason, excuse"],"f":["makāmā"]}
+{"w":"makama","p":"noun","g":["a traditional title for an advisor to the emir"]}
+{"w":"Indiya","p":"name","g":["India (a country in South Asia)"],"f":["Indiyà"]}
+{"w":"tunku","p":"noun","g":["mongoose"],"f":["tùnkū","tùnkun"]}
+{"w":"aidin","p":"noun","g":["iodine"],"f":["àidîn"]}
+{"w":"bedi","p":"noun","g":["flowerbed"],"f":["bēdìn"]}
+{"w":"tsoka","p":"noun","g":["muscle","piece of (lean) meat (other than entrails)","flesh, edible part of fruit around the seed"],"f":["tsōkōkī"]}
+{"w":"sadaka","p":"noun","g":["alms, charity"],"f":["sadakōkī"]}
+{"w":"sahibi","p":"noun","g":["close friend, companion"],"f":["sāhìbī","sāhìbā","sāhìbin"]}
+{"w":"juwa","p":"noun","g":["dizziness, vertigo, giddiness"],"f":["jùwā"]}
+{"w":"daftari","p":"noun","g":["notebook, ledger"]}
+{"w":"ishara","p":"noun","g":["sign, signal"]}
+{"w":"hakki","p":"noun","g":["right, one's due"],"f":["hakkōkī","hakkìn"]}
+{"w":"sashi","p":"noun","g":["district","section","department (in a university)"],"f":["sâssā","sāshìn"]}
+{"w":"safara","p":"noun","g":["itinerant trading"]}
+{"w":"sahur","p":"noun","g":["suhur (a pre-dawn breakfast during the Ramadan fasting)"]}
+{"w":"Sabo","p":"name","g":["a male given name"],"f":["Sābo"]}
+{"w":"Bello","p":"name","g":["a surname"],"f":["Bellò"]}
+{"w":"lisha","p":"noun","g":["isha, the evening prayer"]}
+{"w":"emti","p":"noun","g":["an empty container"],"f":["emtìn"]}
+{"w":"Nuhu","p":"name","g":["Noah (biblical character)","a male given name, Noah"],"f":["Nuhù"]}
+{"w":"Abdullahi","p":"name","g":["a male given name, equivalent to English Abdullah","a surname"],"f":["Àbdùllāhì"]}
+{"w":"kilishi","p":"noun","g":["kilishi"],"f":["kilìshī","kilìshin"]}
+{"w":"ʼy","p":"character","g":["A letter of the Hausa alphabet, written in the Latin script.."],"f":["ʼY","ƴ"]}
+{"w":"lalle","p":"noun","g":["henna"],"f":["lallḕ","lallèn"]}
+{"w":"lalle","p":"adv","g":["certainly, definitely"],"f":["lallē"]}
+{"w":"littafi","p":"noun","g":["book"],"f":["lìttàttàfai","lìttàfai","littāfìn"]}
+{"w":"Pasha","p":"name","g":["Persia"],"f":["Pāshà"]}
+{"w":"kadari","p":"noun","g":["value, price"]}
+{"w":"Maina","p":"name","g":["a male given name"],"f":["Mainà"]}
+{"w":"kawu","p":"noun","g":["maternal uncle"]}
+{"w":"sansan","p":"noun","g":["census"],"f":["sansàn"]}
+{"w":"Yuganda","p":"name","g":["Uganda (a country in East Africa)"],"f":["Yùgandà"]}
+{"w":"doki","p":"noun","g":["horse"],"f":["gōɗìyā","dawākī","dōkìn"]}
+{"w":"Bawa","p":"name","g":["a male given name"],"f":["Bāwà"]}
+{"w":"Barno","p":"name","g":["Borno (a state of Nigeria)"]}
+{"w":"salamu alaikum","p":"intj","g":["salaam alaikum (Muslim greeting)","hello, farewell (a common greeting)"]}
+{"w":"Nijeriya","p":"name","g":["Nigeria (a country in West Africa, south of the country of Niger)"],"f":["Najeriya","Naijeriya"]}
+{"w":"Afirka","p":"name","g":["Africa (the continent south of Europe and between the Atlantic and Indian Oceans)"]}
+{"w":"Amirka","p":"name","g":["United States of America (a country in North America)"],"f":["Amurka"]}
+{"w":"Anaca","p":"name","g":["Onitsha (a city in Nigeria)"],"f":["Ànàcà"]}
+{"w":"Tambutu","p":"name","g":["Timbuktu (a city in Mali)"],"f":["Tàmbūtù","Tambūtù"]}
+{"w":"Kwara","p":"name","g":["Niger (a major river in West Africa that flows into the Gulf of Guinea in Nigeria)"],"f":["Kwārà"]}
+{"w":"kwabo","p":"noun","g":["kobo (subdivision of the naira)","penny, pence","two francs"],"f":["kwabṑ","kwàbbai","kwabòn"]}
+{"w":"Turanci","p":"name","g":["English language","French language"]}
+{"w":"Ingila","p":"name","g":["England (a constituent country of the United Kingdom)"],"f":["Īngìlà"]}
+{"w":"Fatakwal","p":"name","g":["Port Harcourt (a city in Nigeria)"],"f":["Fatākwàl"]}
+{"w":"Ikko","p":"name","g":["Lagos (a city in Nigeria)"],"f":["Ìkko"]}
+{"w":"Yamai","p":"name","g":["Niamey (a city in Niger)"],"f":["Yàmài"]}
+{"w":"Zariya","p":"name","g":["Zaria (a city in Nigeria)"],"f":["Zāriyà"]}
+{"w":"Zazzau","p":"name","g":["Zaria (a city in Nigeria) (traditional name, especially in reference to the emirate)"],"f":["Zazzàu"]}
+{"w":"Sakkwato","p":"name","g":["Sokoto (a city in Nigeria)","Sokoto State (a state of Nigeria)"]}
+{"w":"Katsina","p":"name","g":["Katsina (a city in Nigeria)","Katsina State (a state of Nigeria)"],"f":["Kàtsinà"]}
+{"w":"Zandar","p":"name","g":["Zinder (a city in Niger)"]}
+{"w":"Santambul","p":"name","g":["Istanbul (a city in Turkey)"],"f":["Sàntàmbûl"]}
+{"w":"Alƙahira","p":"name","g":["Cairo"]}
+{"w":"Madina","p":"name","g":["Medina (a city in Saudi Arabia)"],"f":["Màdīnà"]}
+{"w":"Tarabulus","p":"name","g":["Tripoli (a city in Libya)"]}
+{"w":"Bagadaza","p":"name","g":["Baghdad (the capital city of Iraq)"],"f":["Bàgàdāzà"]}
+{"w":"Lubayya","p":"name","g":["El-Obeid (a city in Sudan)"],"f":["Lùbayyà"]}
+{"w":"Faransa","p":"name","g":["France (a country located primarily in Western Europe)"]}
+{"w":"Ƙasar Maka","p":"name","g":["Saudi Arabia (a country in West Asia in the Middle East)"]}
+{"w":"Saudiyya","p":"name","g":["Saudi Arabia (a country in West Asia in the Middle East)"]}
+{"w":"Habasha","p":"name","g":["Ethiopia (a country in East Africa)"],"f":["Habashà"]}
+{"w":"Saliyo","p":"name","g":["Sierra Leone (a country in West Africa)"]}
+{"w":"Rasha","p":"name","g":["Russia (a transcontinental country in Eastern Europe and North Asia)"],"f":["Rāshà"]}
+{"w":"sardauna","p":"noun","g":["a title for a traditional leader in Sokoto, most famously borne by Ahmadu Bello"]}
+{"w":"rana-rana","p":"adv","g":["occasionally"],"f":["rānā-rānā"]}
+{"w":"Jumma'a","p":"name","g":["Friday"]}
+{"w":"Asabar","p":"name","g":["Saturday"]}
+{"w":"Lahadi","p":"name","g":["Sunday"],"f":["Lahàdì","Ladi"]}
+{"w":"Litinin","p":"name","g":["Monday"]}
+{"w":"Talata","p":"name","g":["Tuesday"],"f":["Tàlātà"]}
+{"w":"Laraba","p":"name","g":["Wednesday"]}
+{"w":"Alhamis","p":"name","g":["Thursday"],"f":["Àlhàmîs"]}
+{"w":"Janairu","p":"name","g":["January"]}
+{"w":"Fabrairu","p":"name","g":["February"]}
+{"w":"Afrilu","p":"name","g":["April"]}
+{"w":"Agusta","p":"name","g":["August"]}
+{"w":"Satumba","p":"name","g":["September"]}
+{"w":"Nuwamba","p":"name","g":["November"]}
+{"w":"Disamba","p":"name","g":["December"]}
+{"w":"Rabi'u Lawwal","p":"name","g":["Rabi I"]}
+{"w":"Rabi'u Lahir","p":"name","g":["Rabi II"]}
+{"w":"Jimada Lawwal","p":"name","g":["Jumada I"]}
+{"w":"Jimada Lahir","p":"name","g":["Jumada II"]}
+{"w":"Ramalan","p":"name","g":["Ramadan"],"f":["Ràmàlân"]}
+{"w":"Zulƙida","p":"name","g":["Dhu al-Qida"]}
+{"w":"Zulhajji","p":"name","g":["Dhu al-Hijjah"],"f":["Zulhajjì"]}
+{"w":"Masar","p":"name","g":["Egypt (a country in North Africa and West Asia)"],"f":["Misira"]}
+{"w":"Alƙur'ani","p":"name","g":["Qur'an"]}
+{"w":"karkanda","p":"noun","g":["rhinoceros"]}
+{"w":"'ya","p":"noun","g":["daughter"],"f":["ƴa"]}
+{"w":"ƴa","p":"noun","g":["Niger standard spelling of 'ya"],"f":["ƴā","ƴāƴā"]}
+{"w":"ƴaƴa","p":"noun","g":["Niger standard spelling of 'ya'ya"],"f":["ƴāƴā"]}
+{"w":"'ya'ya","p":"noun","g":["plural of 'ya and ɗa"],"f":["ƴaƴa"]}
+{"w":"ɗa","p":"noun","g":["son","free person","fruit"],"f":["ɗā","ɗan"]}
+{"w":"ɗan","p":"noun","g":["Used to indicate a person's origin, profession, or activity.","Used to form diminutives."]}
+{"w":"ɗan","p":"adv","g":["a little bit"]}
+{"w":"ɗan","p":"noun","g":["genitive of ɗa"]}
+{"w":"'yar","p":"noun","g":["feminine of ɗan"],"f":["ƴar"]}
+{"w":"'yan","p":"noun","g":["plural of ɗan and 'ya"],"f":["ƴan"]}
+{"w":"ƴan","p":"noun","g":["Niger standard spelling of 'yan"]}
+{"w":"ƴar","p":"noun","g":["Niger standard spelling of 'yar"],"f":["ƴan"]}
+{"w":"ajami","p":"noun","g":["Ajami (script)"],"f":["àjàmi","àjàmin"]}
+{"w":"raƙumi","p":"noun","g":["camel"]}
+{"w":"rahama","p":"noun","g":["mercy"]}
+{"w":"raka'a","p":"noun","g":["A unit of Muslim prayer involving prostration."]}
+{"w":"gwamna","p":"noun","g":["governor"],"f":["gwamnōnī","gwamnàn"]}
+{"w":"gwamnati","p":"noun","g":["government"],"f":["gwamnatì","gwamnatōcī","gwamnatìn"]}
+{"w":"budurwa","p":"noun","g":["marriageable girl","girlfriend (unmarried female partner)"],"f":["bùdurwā","budurwōyī"]}
+{"w":"Ladi","p":"name","g":["a female given name given to a girl born on a Sunday","alternative form of Lahàdì"],"f":["Lādì"]}
+{"w":"ma'ana","p":"noun","g":["meaning","sense"]}
+{"w":"garwashi","p":"noun","g":["embers"],"f":["garwāshī","garwāshin"]}
+{"w":"kafaɗa","p":"noun","g":["shoulder"]}
+{"w":"albarka","p":"noun","g":["blessing","abundance, prosperity"]}
+{"w":"albarka","p":"intj","g":["Used to reject an offer when bargaining."]}
+{"w":"Balarabe","p":"noun","g":["Arab"]}
+{"w":"Balarabe","p":"name","g":["a male given name given to a boy born on a Wednesday"]}
+{"w":"Basakkwace","p":"noun","g":["someone from Sokoto"],"f":["Bàsakkwacḕ","Bàsakkwacìyā","Sakkwatāwā","Bàsakkwacèn"]}
+{"w":"Bature","p":"noun","g":["European"]}
+{"w":"Bahaushe","p":"noun","g":["Hausa person"],"f":["Bàhaushḕ","Bàhaushìyā","Hausāwā","Bàhaushèn"]}
+{"w":"takalmi","p":"noun","g":["sandal, shoe"],"f":["tākalmà"]}
+{"w":"obin","p":"noun","g":["oven"],"f":["ōbìn"]}
+{"w":"kwala","p":"noun","g":["collar"],"f":["kwalōlī"]}
+{"w":"hikima","p":"noun","g":["wisdom"],"f":["hikimōmī"]}
+{"w":"ƙadangare","p":"noun","g":["lizard"],"f":["ƙàdangarḕ","ƙàdangarùwā","ƙàdàngàrū","ƙàdangarèn"]}
+{"w":"agola","p":"noun","g":["stepchild"],"f":["agṑlà","agōlìyā","àgṑlai","agṑlàn"]}
+{"w":"azurfa","p":"noun","g":["silver"]}
+{"w":"Gwalkwas","p":"name","g":["Gold Coast (colonial name of modern Ghana)"],"f":["Gwalkwàs"]}
+{"w":"alade","p":"noun","g":["pig"],"f":["àladḕ","àlàdai","àlàdū","àladèn"]}
+{"w":"amalanke","p":"noun","g":["two-wheeled pushcart"],"f":["amālanke","amālanken"]}
+{"w":"ashana","p":"noun","g":["match (device to make fire)"],"f":["àshānā","àshānā"]}
+{"w":"kwano","p":"noun","g":["metal or enamel bowl or pan","corrugated iron"],"f":["kwānṑ","kwānōnī","kwānòn"]}
+{"w":"dattijo","p":"noun","g":["an older, respected person; gentleman"],"f":["dattījò","dattījìyā","dattījòn"]}
+{"w":"gwaggo","p":"noun","g":["paternal aunt","old woman"],"f":["gwaggò","gwaggòn"]}
+{"w":"taguwa","p":"noun","g":["a kind of gown worn by men"],"f":["taguwōyī"]}
+{"w":"taguwa","p":"noun","g":["female camel"]}
+{"w":"wofi","p":"noun","g":["useless person","emptiness"],"f":["wṑfī","wṑfin"]}
+{"w":"gandu","p":"noun","g":["large farm, usually worked by a single family"],"f":["gandū","gandun"]}
+{"w":"bargo","p":"noun","g":["blanket"]}
+{"w":"ɓaure","p":"noun","g":["fig","fig tree"],"f":["ɓaurē","ɓauren"]}
+{"w":"barkono","p":"noun","g":["chili pepper"]}
+{"w":"ayaba","p":"noun","g":["banana"],"f":["àyàbà","àyàbà"]}
+{"w":"gwangwani","p":"noun","g":["small tin"],"f":["gwangwanī","gwangwanin"]}
+{"w":"kwalekwale","p":"noun","g":["canoe"],"f":["kwàlekwàle","kwàlekwàlen"]}
+{"w":"alfijir","p":"noun","g":["dawn"]}
+{"w":"allura","p":"noun","g":["needle","injection"]}
+{"w":"alƙali","p":"noun","g":["judge","qadi"],"f":["àlƙālī","àlƙālin","alkali"]}
+{"w":"alƙalami","p":"noun","g":["pen","number, figure (in maths)"],"f":["àlƙalàmī","àlƙalàmin"]}
+{"w":"lokaci","p":"noun","g":["time","period of time"],"f":["lōkàcī","lōkàcin"]}
+{"w":"lokaci-lokaci","p":"adv","g":["sometimes"],"f":["lōkàcī-lōkàcī"]}
+{"w":"lafiya","p":"noun","g":["health"]}
+{"w":"lafiya","p":"adv","g":["safely"]}
+{"w":"ingarma","p":"noun","g":["stallion","large, burly person"]}
+{"w":"ungulu","p":"noun","g":["vulture"],"f":["ùngùlu","ùngùlun"]}
+{"w":"kumallo","p":"noun","g":["fasting, going hungry; vomiting from hunger"],"f":["kùmallō","kùmallon"]}
+{"w":"filafili","p":"noun","g":["paddle for a canoe"],"f":["filàfilī","filàfilin"]}
+{"w":"fiƙihu","p":"noun","g":["fiqh, Islamic jurisprudence"],"f":["fiƙihù","fiƙihùn"]}
+{"w":"birni","p":"noun","g":["town, city"]}
+{"w":"zinari","p":"noun","g":["gold"],"f":["zinariya"]}
+{"w":"zinariya","p":"noun","g":["alternative form of zinari"]}
+{"w":"zarto","p":"noun","g":["saw (tool)","energetic person"]}
+{"w":"kasuwa","p":"noun","g":["market"],"f":["kāsuwōyī"]}
+{"w":"karuwa","p":"noun","g":["prostitute, whore"]}
+{"w":"ciroma","p":"noun","g":["a traditional title held by the son of an emir"]}
+{"w":"bindiga","p":"noun","g":["gun, firearm"],"f":["bindigōgī"]}
+{"w":"zaki","p":"noun","g":["lion"],"f":["zākōkī","zākìn"]}
+{"w":"damisa","p":"noun","g":["leopard"],"f":["dāmisōshī"]}
+{"w":"tauraro","p":"noun","g":["star","star (a person)","winner"],"f":["tàurārṑ","tàurārùwā","tàurāròn"]}
+{"w":"kunama","p":"noun","g":["scorpion"]}
+{"w":"kwaɗo","p":"noun","g":["frog, toad","padlock","embroidery design in the shape of a half moon"]}
+{"w":"kwaɗo","p":"noun","g":["a kind of sauce, usually made with peanuts"],"f":["kwaɗò","kwaɗòn"]}
+{"w":"kaltibeta","p":"noun","g":["tractor for ploughing"],"f":["kaltibētōcī"]}
+{"w":"tsuntsu","p":"noun","g":["bird"],"f":["tsuntsū","tsuntsuwā","tsuntsun"]}
+{"w":"Gumal","p":"name","g":["Gumel (a city in Nigeria)"],"f":["Gumàl"]}
+{"w":"Linjila","p":"name","g":["New Testament"],"f":["Lìnjīlā"]}
+{"w":"girka","p":"noun","g":["initiation of a new practitioner into Hausa animistic religion"],"f":["girkā"]}
+{"w":"girka","p":"verb","g":["to set something upon something else","to cook, prepare (food)","to prepare"]}
+{"w":"daddawa","p":"noun","g":["sumbala, a condiment made from the seeds of Parkia biglobosa (African locust bean)"],"f":["dàddawā"]}
+{"w":"funkaso","p":"noun","g":["a dish composed of wheat flour that is soaked and then fried"]}
+{"w":"algaita","p":"noun","g":["a double reed wind instrument, the algaita"],"f":["àlgàitū"]}
+{"w":"kakaki","p":"noun","g":["a long metal trumpet, the kakaki","funnel","spokesperson"]}
+{"w":"kukuma","p":"noun","g":["A type of one-stringed fiddle."]}
+{"w":"Attaura","p":"name","g":["Torah, Pentateuch","Hebrew Bible"]}
+{"w":"bisimilla","p":"intj","g":["Used to invite someone to eat or do something."]}
+{"w":"bisimillahi","p":"intj","g":["Said when one is about to start eating or doing something."]}
+{"w":"galau","p":"noun","g":["open-mouthed; with a vacant expression"],"f":["gàlau"]}
+{"w":"lumana","p":"noun","g":["friendship, goodwill, harmony"]}
+{"w":"duniya","p":"noun","g":["world, Earth"]}
+{"w":"hanci","p":"noun","g":["nose","bribe"],"f":["hancìn"]}
+{"w":"hanci","p":"adv","g":["in the nose"]}
+{"w":"saniya","p":"noun","g":["cow"],"f":["sānìyā","shānū"]}
+{"w":"kafur","p":"noun","g":["camphor"]}
+{"w":"kaciya","p":"noun","g":["circumcision"]}
+{"w":"jamhuriya","p":"noun","g":["republic"]}
+{"w":"kuɓewa","p":"noun","g":["okra"],"f":["kuɓḕwā"]}
+{"w":"darni","p":"noun","g":["cornstalk fence"]}
+{"w":"dimokuraɗiyya","p":"noun","g":["democracy"]}
+{"w":"dukiya","p":"noun","g":["wealth, assets"],"f":["dūkìyā","dūkiyōyī"]}
+{"w":"ɗefi","p":"noun","g":["edge, tip"],"f":["ɗḕfī","ɗḕfin"]}
+{"w":"kubbi","p":"noun","g":["hearts"],"f":["kubbì","kubbìn"]}
+{"w":"sarauniya","p":"noun","g":["queen, wife of an emir"],"f":["saraunìyā"]}
+{"w":"tarnatsa","p":"noun","g":["thunder"]}
+{"w":"tarnatsa","p":"intj","g":["by thunder, I say"]}
+{"w":"ƙumba","p":"noun","g":["mussel shell","fingernail"],"f":["ƙùmbā"]}
+{"w":"ƙurungu","p":"noun","g":["a species of catfish (Synodontis membranaceus)"],"f":["ƙùrungù","ƙùrungùn"]}
+{"w":"lazza","p":"noun","g":["good flavor, pleasant taste"]}
+{"w":"lugga","p":"noun","g":["an arcane or obscure word or expression"]}
+{"w":"shanu","p":"noun","g":["plural of sa","plural of saniya"],"f":["shānū"]}
+{"w":"shekara","p":"noun","g":["year","age (how old something or someone is)"],"f":["shḕkàrū"]}
+{"w":"makaɗi","p":"noun","g":["drummer","musician"],"f":["makàɗī","makàɗin"]}
+{"w":"makaɗi","p":"noun","g":["drumstick","spindle"],"f":["makaɗī","makaɗin"]}
+{"w":"mayani","p":"noun","g":["kerchief"],"f":["mayānī","mayānin"]}
+{"w":"nasaru","p":"noun","g":["alternative form of nasara (\"Christians\")"]}
+{"w":"murjani","p":"noun","g":["alternative form of murzani"]}
+{"w":"makero","p":"noun","g":["ringworm"],"f":["màkērṑ","màkēròn"]}
+{"w":"muzi","p":"noun","g":["simpleton"],"f":["mūzī","mūzin"]}
+{"w":"murfi","p":"noun","g":["cover, lid","stopper"],"f":["murfī","mùrfai","murfin"]}
+{"w":"shinge","p":"noun","g":["fence"],"f":["shingē","shingen"]}
+{"w":"taɓo","p":"noun","g":["mud"],"f":["tàɓō","tàɓon"]}
+{"w":"tsabga","p":"noun","g":["cane used to beat donkeys"],"f":["tsabgōgī"]}
+{"w":"tsauni","p":"noun","g":["hill"],"f":["tsaunìn"]}
+{"w":"tsibiri","p":"noun","g":["island"],"f":["tsìbirī","tsìbìrai","tsìbirin"]}
+{"w":"tsigi","p":"noun","g":["various birds called warblers or larks"],"f":["tsīgī","tsīgin"]}
+{"w":"tsila","p":"noun","g":["tapeworm"],"f":["tsīla"]}
+{"w":"toshiya","p":"noun","g":["bribe","a gift given by a male to a close female relative of a sweetheart"],"f":["tōshiyā"]}
+{"w":"tozo","p":"noun","g":["hump (of an animal)"],"f":["tōzō","tōzon"]}
+{"w":"uƙuba","p":"noun","g":["misery, anguish"]}
+{"w":"wasali","p":"noun","g":["vowel"],"f":["wasàlī","wasàlin"]}
+{"w":"ganye","p":"noun","g":["leaf","cannabis","counterfeit money"],"f":["ganyē","ganyen"]}
+{"w":"tubali","p":"noun","g":["brick"],"f":["tūbàlī","tūbàlin"]}
+{"w":"sifiri","p":"num","g":["zero"]}
+{"w":"sifiri","p":"noun","g":["renting a beast of burden"]}
+{"w":"ɗaya","p":"num","g":["one"]}
+{"w":"ɗaya","p":"adj","g":["one, the same","the other"],"f":["ɗaya","ɗaya"]}
+{"w":"biyu","p":"num","g":["two"]}
+{"w":"biyu","p":"adj","g":["double"],"f":["biyu","biyu"]}
+{"w":"biyu biyu","p":"noun","g":["double loss"]}
+{"w":"biyar","p":"num","g":["five"]}
+{"w":"bakwai","p":"num","g":["seven"],"f":["bakwài"]}
+{"w":"takwas","p":"num","g":["eight"],"f":["takwàs"]}
+{"w":"gomiya","p":"num","g":["Used to form multiples of ten."],"f":["gṑmiyā"]}
+{"w":"ashirin","p":"num","g":["twenty"]}
+{"w":"talatin","p":"num","g":["thirty"]}
+{"w":"arba'in","p":"num","g":["forty"]}
+{"w":"arba'in","p":"noun","g":["the forty-day period after a woman gives birth"]}
+{"w":"saba'in","p":"num","g":["seventy"]}
+{"w":"tamanin","p":"num","g":["eighty"]}
+{"w":"casa'in","p":"num","g":["ninety"]}
+{"w":"tis'in","p":"num","g":["alternative form of càsà'in"]}
+{"w":"ɗari","p":"num","g":["hundred"],"f":["ɗàrī"]}
+{"w":"ɗari","p":"noun","g":["half-penny"],"f":["ɗàrī","ɗàrin"]}
+{"w":"ɗari","p":"noun","g":["coldness due to wind or illness"],"f":["ɗārī","ɗārin"]}
+{"w":"ɗarurruwa","p":"num","g":["plural of ɗari (\"hundreds\")"]}
+{"w":"ɗarurruka","p":"noun","g":["plural of ɗari (\"half-pennies\")"]}
+{"w":"dubbai","p":"num","g":["plural of dubu"],"f":["dùbbai"]}
+{"w":"kibiya","p":"noun","g":["arrow"],"f":["kibiyōyī","kìbau"]}
+{"w":"Landan","p":"name","g":["London (the capital city of the United Kingdom; the capital city of England)"],"f":["Landàn"]}
+{"w":"Binuwai","p":"name","g":["Benue River","Benue (a state of Nigeria)"],"f":["Binuwài"]}
+{"w":"Kamaru","p":"name","g":["Cameroon (a country in Central Africa)"]}
+{"w":"Isƙandariya","p":"name","g":["Alexandria (a city in Egypt)"]}
+{"w":"Italiya","p":"name","g":["Italy (a country in Southern Europe)"],"f":["Ìtāliyà"]}
+{"w":"Isra'ila","p":"name","g":["Israel (a country in Western Asia in the Middle East, at the eastern shore of the Mediterranean)"]}
+{"w":"Palasɗinu","p":"name","g":["Palestine (a country in Asia)"],"f":["Pàlàsɗīnù"]}
+{"w":"Haɗeja","p":"name","g":["Hadejia River"],"f":["Haɗējà"]}
+{"w":"Calawa","p":"name","g":["Challawa River"],"f":["Cālāwā"]}
+{"w":"ƙoda","p":"noun","g":["kidney"],"f":["ƙōdōjī"]}
+{"w":"gwiwa","p":"noun","g":["knee"],"f":["gwīwōyī"]}
+{"w":"hakiya","p":"noun","g":["leucoma"]}
+{"w":"agwado","p":"noun","g":["maize"]}
+{"w":"albasa","p":"noun","g":["onion"]}
+{"w":"alkama","p":"noun","g":["wheat"]}
+{"w":"almakashi","p":"noun","g":["scissors"],"f":["àlmakàshī","àlmàkàsai","àlmakàshin"]}
+{"w":"inabi","p":"noun","g":["grape"],"f":["inàbī","inàbī","inàbin","anabi"]}
+{"w":"anabi","p":"noun","g":["alternative form of inabi"],"f":["anàbī","anàbī","anàbin"]}
+{"w":"shayi","p":"noun","g":["tea"],"f":["shāyì","shāyìn"]}
+{"w":"shayi","p":"noun","g":["only used in ɗan shayi"]}
+{"w":"ɗan shayi","p":"noun","g":["circumcised boy"]}
+{"w":"asubahi","p":"noun","g":["fajr, the dawn prayer"],"f":["àsùbāhì","àsùbāhìn","asuba"]}
+{"w":"asuba","p":"noun","g":["alternative form of asubahi"],"f":["àsùbâ","àsùbân"]}
+{"w":"azahariyya","p":"noun","g":["alternative form of azahar"]}
+{"w":"la'asar","p":"noun","g":["asr, the afternoon prayer"]}
+{"w":"la'asariyya","p":"noun","g":["alternative form of la'asar"]}
+{"w":"magariba","p":"noun","g":["maghrib, the sunset prayer"]}
+{"w":"Filato","p":"name","g":["Plateau State (a state of Nigeria)"]}
+{"w":"ƙarni","p":"noun","g":["century"]}
+{"w":"Dogon Dutsi","p":"name","g":["Dogondoutchi (a city in Niger)"]}
+{"w":"Misira","p":"name","g":["alternative form of Masar: Egypt (a country in North Africa and West Asia)"]}
+{"w":"Najeriya","p":"name","g":["alternative form of Nijeriya: Nigeria (a country in West Africa, south of the country of Niger)"]}
+{"w":"Naijeriya","p":"name","g":["alternative form of Nijeriya"]}
+{"w":"Badun","p":"name","g":["Ibadan (a city in Nigeria)"]}
+{"w":"Amurka","p":"name","g":["alternative form of Amirka"]}
+{"w":"Kyanada","p":"name","g":["Canada (a country in North America)"],"f":["Kyanadà"]}
+{"w":"Lakwaja","p":"name","g":["Lokoja (a city in Nigeria)"],"f":["Lakwajà"]}
+{"w":"Neja","p":"name","g":["Niger (a state of Nigeria)"],"f":["Nējà"]}
+{"w":"Gusau","p":"name","g":["Gusau (a city, the state capital of Zamfara State, Nigeria)"],"f":["Gùsau"]}
+{"w":"gwanda","p":"noun","g":["papaya"],"f":["gwandōjī"]}
+{"w":"Muhammadu","p":"name","g":["Muhammad (prophet)","a male given name, Muhammad"],"f":["Mùhammadù"]}
+{"w":"Hadizatu","p":"name","g":["Khadija (Muhammad's wife)","a female given name, equivalent to English Khadija"],"f":["Hàdīzatù"]}
+{"w":"Zainabu","p":"name","g":["Zaynab (the daughter and granddaughter of Muhammad)","a female given name, equivalent to English Zaynab"],"f":["Zàinabù"]}
+{"w":"Saratu","p":"name","g":["Sarah (biblical character)","a female given name, equivalent to English Sarah"]}
+{"w":"A'ishatu","p":"name","g":["Aisha (wife of Muhammad)","a female given name, Aisha"]}
+{"w":"Hauwa","p":"name","g":["Eve (biblical character)","a female given name, equivalent to English Eve"],"f":["Hàuwa"]}
+{"w":"Dauda","p":"name","g":["David (biblical character)","a male given name, equivalent to English David"]}
+{"w":"Isiyaku","p":"name","g":["Isaac (biblical character)","a male given name, equivalent to English Isaac"],"f":["Isiyākù"]}
+{"w":"Isma'ilu","p":"name","g":["Ishmael, Ismail (biblical character)","a male given name, Ismail, equivalent to English Ishmael"]}
+{"w":"Jibirilu","p":"name","g":["Gabriel (angel)","a male given name, Jibril, equivalent to English Gabriel"]}
+{"w":"Sulemanu","p":"name","g":["Solomon (biblical character)","a male given name, Suleyman, equivalent to English Solomon"],"f":["Sulḕmānù"]}
+{"w":"Husaini","p":"name","g":["a male given name, Husayn or Hussein, traditionally given to a second-born twin"],"f":["Hùsainì"]}
+{"w":"Yaƙubu","p":"name","g":["Jacob (biblical character)","a male given name, Yakub, equivalent to English Jacob"],"f":["Yakubu"]}
+{"w":"Yakubu","p":"name","g":["alternative form of Yaƙubu"]}
+{"w":"Maryamu","p":"name","g":["Miriam (biblical character)","Mary (mother of Jesus)","a female given name, Maryam, equivalent to English Mary"]}
+{"w":"Faɗimatu","p":"name","g":["Fatima (daughter of Muhammad)","a female given name, equivalent to English Fatima"],"f":["Fāɗìmatù"]}
+{"w":"Rahila","p":"name","g":["Rachel (biblical character)","a female given name, equivalent to English Rachel"],"f":["Ràhīlā"]}
+{"w":"sunduƙi","p":"noun","g":["alternative form of sàndūƙī̀"],"f":["sùndūƙìn"]}
+{"w":"sunan yanka","p":"noun","g":["A Muslim name that a child receives in a ceremony when they are a week old."]}
+{"w":"man shanu","p":"noun","g":["butter"]}
+{"w":"mashin","p":"noun","g":["machine","motorcycle"],"f":["màshîn"]}
+{"w":"kamfas","p":"noun","g":["compass"],"f":["kamfàs"]}
+{"w":"mariri","p":"noun","g":["scimitar-horned oryx"]}
+{"w":"barewa","p":"noun","g":["dorcas gazelle"],"f":["bàrēwā","bàrḕyī"]}
+{"w":"basukur","p":"noun","g":["bicycle"]}
+{"w":"fasa'ofis","p":"noun","g":["post office"]}
+{"w":"masinja","p":"noun","g":["messenger"],"f":["māsinjà","māsinjōjī","māsinjàn"]}
+{"w":"malamai","p":"noun","g":["plural of malami and malam"]}
+{"w":"Kirsimati","p":"name","g":["Christmas"]}
+{"w":"yatsa","p":"noun","g":["finger"],"f":["yātsū"]}
+{"w":"limamai","p":"noun","g":["plural of liman"]}
+{"w":"maɗaci","p":"noun","g":["African mahogany, Khaya senegalensis."]}
+{"w":"firamare","p":"noun","g":["primary school"]}
+{"w":"hantuna","p":"noun","g":["plural of hanci","plural of hanta"]}
+{"w":"tsada","p":"noun","g":["red-billed firefinch, Lagonosticta senegala"],"f":["tsāda"]}
+{"w":"kauci","p":"noun","g":["mistletoe (generic term for various parasitic plants of similar habits)"],"f":["kaucìn"]}
+{"w":"-iyya","p":"suffix","g":["Used as a nisba suffix to form abstract nouns, often for systems or periods of time."]}
+{"w":"arabiyya","p":"noun","g":["Arabic language"]}
+{"w":"jami'a","p":"noun","g":["university"]}
+{"w":"jami'a","p":"noun","g":["female equivalent of jami'i"]}
+{"w":"jami'i","p":"noun","g":["leader, head of a project or program"]}
+{"w":"jam'iyya","p":"noun","g":["club, society","political party"]}
+{"w":"diflomasiyya","p":"noun","g":["diplomacy"]}
+{"w":"kaɗanya","p":"noun","g":["shea tree (Vitellaria paradoxa)","shea (fruit)"],"f":["kàɗànyū"]}
+{"w":"kafin","p":"conj","g":["before"]}
+{"w":"en'e","p":"noun","g":["A Native Authority; a local government system run by native peoples but ultimately answerable to the British colonial government."]}
+{"w":"boyi","p":"noun","g":["houseboy, male domestic servant"],"f":["bṑyi","bṑyi-bṑyi","bṑyin"]}
+{"w":"garkuwa","p":"noun","g":["shield"],"f":["gàrkuwā","garkuwōyī","gàrkī"]}
+{"w":"fahami","p":"noun","g":["intelligence","a charm believed to give the wearer intelligence"],"f":["fahàmī","fahàmin"]}
+{"w":"-anci","p":"suffix","g":["Used to form the names of languages or attributes."],"f":["-ancī"]}
+{"w":"Barbarci","p":"noun","g":["Kanuri language"],"f":["Barbarcī","Barbarcin"]}
+{"w":"Jamusanci","p":"noun","g":["German language"],"f":["Jāmusancī","Jāmusancin"]}
+{"w":"Ingilishi","p":"noun","g":["English language"],"f":["Ingìlīshìn"]}
+{"w":"Faransanci","p":"noun","g":["French language"]}
+{"w":"buroka","p":"noun","g":["Nigerian Pidgin"]}
+{"w":"Afirka ta Kudu","p":"name","g":["South Africa (a country in Southern Africa)"]}
+{"w":"Yunananci","p":"noun","g":["Greek language"],"f":["Yūnānancī","Yūnānancin"]}
+{"w":"bishiya","p":"noun","g":["tree"],"f":["bishiyōyī"]}
+{"w":"bahili","p":"noun","g":["a miser; stingy person"],"f":["bàhīlìyā","bàhīlìn"]}
+{"w":"Kwango","p":"name","g":["Congo (a major river in Central Africa which flows for about 4,380 km (2,720 miles) to the Atlantic Ocean in the Democratic Republic of the Congo, at times forming the border with the Republic of the Congo and Angola)","Democratic Republic of the Congo (a country in Central Africa, larger and to the east of the Republic of the Congo)","Republic of the Congo (a country in Central Africa, smaller and to the west of the Democratic Republic of the Congo)"],"f":["Kwangò","Congo"]}
+{"w":"yamma","p":"noun","g":["west"],"f":["yâmma"]}
+{"w":"yamma","p":"noun","g":["afternoon"],"f":["yâmmā"]}
+{"w":"cokali","p":"noun","g":["spoon"],"f":["cōkàlī","cōkàlin"]}
+{"w":"addu'a","p":"noun","g":["a prayer","a prayer that is not one of the five daily prayers"]}
+{"w":"wallahi","p":"intj","g":["by God!"],"f":["wàllāhì"]}
+{"w":"Abubakar","p":"name","g":["a male given name"]}
+{"w":"Maru","p":"name","g":["Maru (a town in Nigeria)"],"f":["Mārù"]}
+{"w":"wanzam","p":"noun","g":["alternative form of wànzāmī̀ (“barber”)"],"f":["wànzâm"]}
+{"w":"launi","p":"noun","g":["color"],"f":["launōnī","launìn"]}
+{"w":"lauya","p":"noun","g":["lawyer"],"f":["lauyōyī","lauyàn"]}
+{"w":"hikaya","p":"noun","g":["story, tale (especially one with a moral)"]}
+{"w":"jandarma","p":"noun","g":["policeman"]}
+{"w":"tsatsa","p":"noun","g":["rust"]}
+{"w":"Tunau","p":"name","g":["a male given name"],"f":["Tùnau"]}
+{"w":"almajiri","p":"noun","g":["student (especially an itinerant student at an Islamic school)","beggar"]}
+{"w":"wasai","p":"noun","g":["very bright"]}
+{"w":"hakkan","p":"adv","g":["truly, surely"],"f":["hakkàn"]}
+{"w":"salka","p":"noun","g":["a goatskin water bottle"],"f":["sàlkā","salḕkanī"]}
+{"w":"dalili","p":"noun","g":["cause, reason"],"f":["dàlìlai","dàlīlìn"]}
+{"w":"tsit","p":"noun","g":["hushed, in silence"]}
+{"w":"jiha","p":"noun","g":["region, state","direction"],"f":["jihōhī"]}
+{"w":"Bosniya","p":"name","g":["Bosnia (a geographic region of Bosnia and Herzegovina, consisting of the northern three fourths of the country)","Bosnia (a country in southeastern Europe; in full, Bosnia and Herzegovina)"],"f":["Bosniyà"]}
+{"w":"rairayi","p":"noun","g":["fine sand or silt"],"f":["ràiràyī","ràiràyin","ràirai"]}
+{"w":"jarrabawa","p":"noun","g":["test, exam"]}
+{"w":"fahari","p":"noun","g":["alternative form of àlfahàr̃ī"]}
+{"w":"shaiɗan","p":"noun","g":["devil; Satan","angry or ill-tempered person"],"f":["shàiɗân","shàiɗānìyā","shàiɗānū"]}
+{"w":"hakimi","p":"noun","g":["any leader of a district or holder of a traditional title"],"f":["hākìmī","hākìmin"]}
+{"w":"igwa","p":"noun","g":["canon, artillery"],"f":["ìgwā","igōgī"]}
+{"w":"tsaka","p":"noun","g":["a kind of gecko","someone who is unpopular"],"f":["tsakā"]}
+{"w":"tsaka","p":"adv","g":["in the middle, in the midst"],"f":["tsakà"]}
+{"w":"yarima","p":"noun","g":["prince (son or younger brother of an emir)"]}
+{"w":"ungozoma","p":"noun","g":["midwife"],"f":["ùngōzṑmà"]}
+{"w":"shafa","p":"verb","g":["to rub, wipe, smear on"]}
+{"w":"shafa","p":"verb","g":["to stroke, wipe","to affect, concern"]}
+{"w":"ƙififiya","p":"noun","g":["turtle"],"f":["ƙififiyu","ƙififiyan"]}
+{"w":"gefin","p":"prep","g":["just prior to"],"f":["gḕfìn"]}
+{"w":"shiga","p":"noun","g":["entry","outfit, appearance"],"f":["shìgā"]}
+{"w":"Borno","p":"name","g":["Borno (a state of Nigeria in the North East geopolitical zone)"]}
+{"w":"aljani","p":"noun","g":["alternative form of àljan"],"f":["àljanī","àljanū","àljanin"]}
+{"w":"asiri","p":"noun","g":["secret","charm, magic spell"]}
+{"w":"lafazi","p":"noun","g":["speech, pronunciation"],"f":["lafàzī","lafàzin"]}
+{"w":"mala'ika","p":"noun","g":["angel"]}
+{"w":"masallaci","p":"noun","g":["mosque (place of worship for Muslims)"],"f":["masallācī","masallācin"]}
+{"w":"musulmi","p":"noun","g":["Muslim"],"f":["mùsùlmī","mùsùlmā","mùsùlmai","mùsùlmin"]}
+{"w":"akwati","p":"noun","g":["box, crate"],"f":["akwātōcī"]}
+{"w":"alwala","p":"noun","g":["ablution; wudu"],"f":["àlwàlā"]}
+{"w":"alkawari","p":"noun","g":["promise","reliability"]}
+{"w":"wokaci","p":"noun","g":["synonym of lōkàcī"],"f":["wōkàcī","wōkàcin"]}
+{"w":"sanduƙi","p":"noun","g":["large box, especially one made of metal"],"f":["sàndūƙìn"]}
+{"w":"asibiti","p":"noun","g":["hospital","clinic"],"f":["asìbitì","asibitōcī","asìbitìn"]}
+{"w":"Filani","p":"noun","g":["plural of Bàfillācḕ and Bàfilātànī"]}
+{"w":"Bafillace","p":"noun","g":["Fula (person)"],"f":["Bàfillācḕ","Bàfillācèn"]}
+{"w":"Bafilatani","p":"noun","g":["Fula (person)"],"f":["Bàfilātànī","Bàfilātànin"]}
+{"w":"Bararo","p":"noun","g":["pastoral Fula (person)"]}
+{"w":"Bahar Maliya","p":"name","g":["Red Sea"]}
+{"w":"agwagwa","p":"noun","g":["duck"]}
+{"w":"tantabara","p":"noun","g":["pigeon, turtle dove"]}
+{"w":"tattabara","p":"noun","g":["alternative form of tàntabàr̃ā"]}
+{"w":"kullum","p":"adv","g":["always","every (followed by a unit of time)"]}
+{"w":"fensir","p":"noun","g":["pencil"]}
+{"w":"Watari","p":"name","g":["a river in Nigeria"],"f":["Wàtàri"]}
+{"w":"ruhu","p":"noun","g":["spirit, soul"]}
+{"w":"ƙashi","p":"noun","g":["bone","plot (of a story)"],"f":["ƙàshī","ƙàshin"]}
+{"w":"kabewa","p":"noun","g":["pumpkin"],"f":["kàbḕyī"]}
+{"w":"galadima","p":"noun","g":["a councillor or principal minister to an emir, who traditionally sits to his right"]}
+{"w":"Ƙasar Makka","p":"name","g":["alternative form of Ƙasar Maka"]}
+{"w":"Abdulhamid","p":"name","g":["a male given name"],"f":["Àbdùlhàmîd"]}
+{"w":"Abdulƙadir","p":"name","g":["a male given name","a surname"]}
+{"w":"Abdurrahim","p":"name","g":["a male given name from Arabic"]}
+{"w":"Abdussalamu","p":"name","g":["a male given name"],"f":["Àbdùssàlāmù"]}
+{"w":"Faruƙu","p":"name","g":["a male given name"]}
+{"w":"Faruku","p":"name","g":["alternative form of Faruƙu"]}
+{"w":"Hafizu","p":"name","g":["a male given name"],"f":["Hāfizù"]}
+{"w":"Halilu","p":"name","g":["a male given name, Khalil, from Arabic"],"f":["Hàlīlù"]}
+{"w":"Tanimu","p":"name","g":["a male given name"],"f":["Tànīmù"]}
+{"w":"Zubairu","p":"name","g":["a male given name"]}
+{"w":"Hafsatu","p":"name","g":["a female given name"],"f":["Hàfsatù"]}
+{"w":"Halima","p":"name","g":["a female given name from Arabic"],"f":["Hàlīmà"]}
+{"w":"Binta","p":"name","g":["a female given name"],"f":["Bintà"]}
+{"w":"Ruƙayyatu","p":"name","g":["a female given name"],"f":["Ruƙàyyatù"]}
+{"w":"Mahmudu","p":"name","g":["a male given name"]}
+{"w":"Muhtari","p":"name","g":["a male given name"]}
+{"w":"Abdu","p":"name","g":["A short form of any of various male given names starting with Abdu-, like Àbdùllāhì or Àbdùlƙādìr̃."],"f":["Abdù"]}
+{"w":"Audu","p":"name","g":["A short form of any of various male given names starting with Abdu-, like Àbdùllāhì or Àbdùlƙādìr̃."],"f":["Audù"]}
+{"w":"Usumanu","p":"name","g":["a male given name"],"f":["Ùsùmānù"]}
+{"w":"Hamidu","p":"name","g":["a male given name"],"f":["Hamīdù"]}
+{"w":"Ango","p":"name","g":["a male given name"],"f":["Angò"]}
+{"w":"Baƙo","p":"name","g":["a male given name"]}
+{"w":"Dogo","p":"name","g":["a male given name"],"f":["Dōgo"]}
+{"w":"Gajere","p":"name","g":["a male given name"],"f":["Gàjēre"]}
+{"w":"Kaka","p":"name","g":["a female or male given name given to a girl (or occasionally a boy) born during harvesttime"]}
+{"w":"Magaji","p":"name","g":["a male given name"]}
+{"w":"Masoro","p":"name","g":["a female given name"],"f":["Màsōro"]}
+{"w":"Yalwa","p":"name","g":["a female or male given name"],"f":["Yàlwa"]}
+{"w":"Gagarau","p":"name","g":["a male given name"]}
+{"w":"Haƙurau","p":"name","g":["a male given name"],"f":["Hàƙùrau"]}
+{"w":"Ƙosau","p":"name","g":["a male given name"],"f":["Ƙṑsau"]}
+{"w":"Mantau","p":"name","g":["a male given name"],"f":["Màntau"]}
+{"w":"Sadau","p":"name","g":["a male or female given name"]}
+{"w":"Sallau","p":"name","g":["a male given name"],"f":["Sàllau"]}
+{"w":"Shekarau","p":"name","g":["a male given name"],"f":["Shḕkàrau"]}
+{"w":"Tasalla","p":"name","g":["a female given name"],"f":["Tasallà"]}
+{"w":"Na-Allah","p":"name","g":["a male given name"],"f":["Na-Allàh"]}
+{"w":"Ta-Allah","p":"name","g":["a female given name"],"f":["Ta-Allàh"]}
+{"w":"Maigari","p":"name","g":["a male given name"],"f":["Màigàri"]}
+{"w":"Mairiga","p":"name","g":["a male given name"]}
+{"w":"Maiwada","p":"name","g":["a male given name"],"f":["Màiwàdā"]}
+{"w":"Maikuɗi","p":"name","g":["a male given name"],"f":["Màikuɗi"]}
+{"w":"Maitama","p":"name","g":["a male given name"],"f":["Màitama"]}
+{"w":"Maigado","p":"name","g":["a female given name"],"f":["Màigado"]}
+{"w":"Maiɗaki","p":"name","g":["a female given name"],"f":["Màiɗākì"]}
+{"w":"Jummai","p":"name","g":["a female given name given to a girl born on a Friday"]}
+{"w":"Asabe","p":"name","g":["a female given name given to a girl born on a Saturday"],"f":["Àsàbe"]}
+{"w":"Altine","p":"name","g":["a female given name given to a girl born on a Monday"],"f":["Àltìne"]}
+{"w":"Talatu","p":"name","g":["a female given name given to a girl born on a Tuesday"],"f":["Tàlātù"]}
+{"w":"Balaraba","p":"name","g":["a female given name given to a girl born on a Wednesday"]}
+{"w":"Lami","p":"name","g":["a female given name given to a girl born on a Thursday"]}
+{"w":"Ɗanjuma","p":"name","g":["a male given name given to a boy born on a Friday"],"f":["Ɗanjūmà"]}
+{"w":"Ɗan Asabe","p":"name","g":["a male given name given to a boy born on a Saturday"]}
+{"w":"Ɗanladi","p":"name","g":["a male given name given to a boy born on a Sunday"],"f":["Ɗanlādì"]}
+{"w":"Ɗan Altine","p":"name","g":["a male given name given to a boy born on a Monday"]}
+{"w":"Ɗantala","p":"name","g":["a male given name given to a boy born on a Tuesday"],"f":["Ɗantàlā"]}
+{"w":"Ɗanlami","p":"name","g":["a male given name given to a boy born on a Thursday"]}
+{"w":"Ɗan Azumi","p":"name","g":["a male given name given to a boy born during Ramadan"]}
+{"w":"Ganau","p":"name","g":["a male given name given to a boy born at the new moon"],"f":["Gànau"]}
+{"w":"Ɗan Kaka","p":"name","g":["a male given name given to a boy born during harvesttime"]}
+{"w":"Shanono","p":"name","g":["a male or female given name given to a child born when a calf is being delivered"]}
+{"w":"Barau","p":"name","g":["a male given name given to a boy born after many older siblings who died in infancy"],"f":["Bàrau"]}
+{"w":"Jatau","p":"name","g":["a male given name given to a boy with light skin"]}
+{"w":"Samɓali","p":"name","g":["a male given name"]}
+{"w":"Samɓala","p":"name","g":["a female given name"],"f":["Samɓalā"]}
+{"w":"Hasana","p":"name","g":["a female given name (traditionally given to a first-born twin)"],"f":["Hasànā"]}
+{"w":"Husaina","p":"name","g":["a female given name (traditionally given to a second-born twin)"],"f":["Husàinā","Usàinā"]}
+{"w":"Baiwa","p":"name","g":["a female given name"],"f":["Bâiwa"]}
+{"w":"Magajiya","p":"name","g":["a female given name"],"f":["Magājìyā"]}
+{"w":"magaji","p":"noun","g":["heir"],"f":["magājìyā"]}
+{"w":"magajiya","p":"noun","g":["female equivalent of magā̀jī: heiress","madam (woman who runs a brothel)"],"f":["magājìyā"]}
+{"w":"baiwa","p":"noun","g":["female equivalent of bāwā̀: female slave"],"f":["bâiwā","bāyī"]}
+{"w":"Usaina","p":"name","g":["alternative form of Husàinā"],"f":["Usàinā"]}
+{"w":"Sarki","p":"name","g":["a male given name"]}
+{"w":"Kawu","p":"name","g":["a male given name"],"f":["Kāwù"]}
+{"w":"Gwaggo","p":"name","g":["a female given name"],"f":["Gwaggò"]}
+{"w":"Uwa","p":"name","g":["a female given name"]}
+{"w":"sannu-sannu","p":"adv","g":["slowly"],"f":["sànnu-sànnu"]}
+{"w":"ƙasa","p":"noun","g":["soil, earth","ground","land, country, nation"],"f":["ƙasā"]}
+{"w":"ƙasa","p":"adv","g":["on the ground"],"f":["ƙasà","ƙas"]}
+{"w":"ƙas","p":"adv","g":["alternative form of ƙasà (“on the ground”)"]}
+{"w":"labarin ƙasa","p":"noun","g":["geography"]}
+{"w":"yarinya","p":"noun","g":["female equivalent of yārṑ: girl, young woman"]}
+{"w":"al'aura","p":"noun","g":["sexual organ; pudendum","awrah (parts of the body women are required to cover)"]}
+{"w":"abjadi","p":"noun","g":["alphabet, abjad (particularly of Arabic script)"],"f":["abjàdī","abjàdin"]}
+{"w":"abacada","p":"noun","g":["alphabet, ABC's (of Latin script)"]}
+{"w":"Birtaniya","p":"name","g":["United Kingdom (a kingdom and country in Northern Europe)"]}
+{"w":"Birnin Ƙudus","p":"name","g":["Jerusalem (a city in Israel)"]}
+{"w":"Ƙudus","p":"name","g":["only used in Bir̃nin Ƙudùs (“Jerusalem”)"],"f":["Ƙudùs"]}
+{"w":"wanzami","p":"noun","g":["barber"],"f":["wànzāmìn","wànzâm"]}
+{"w":"wanzanci","p":"noun","g":["barbering (the occupation of a barber)"],"f":["wanzancìn"]}
+{"w":"tsuntsun Maka","p":"noun","g":["peacock"]}
+{"w":"Pijo","p":"noun","g":["Peugeot car"],"f":["Pìjô","Pìjôn","Fìjô"]}
+{"w":"Fijo","p":"noun","g":["alternative form of Pìjô"],"f":["Fìjô","Fìjôn"]}
+{"w":"basasa","p":"noun","g":["a civil war; (more generally) any destructive war"]}
+{"w":"abiyo","p":"noun","g":["airplane"],"f":["àbìyô","àbìyôn"]}
+{"w":"jirgin sama","p":"noun","g":["airplane"]}
+{"w":"jirgi","p":"noun","g":["Used in compounds for vehicles other than automobiles.","short for jirgin samà (“airplane”)"],"f":["jirgī","jirgin"]}
+{"w":"jirgin ƙasa","p":"noun","g":["train"]}
+{"w":"jirgin ruwa","p":"noun","g":["ship"]}
+{"w":"aboka","p":"noun","g":["lawyer"],"f":["àbṑkâ","àbṑkân"]}
+{"w":"adabo","p":"intj","g":["goodbye"]}
+{"w":"akasidan","p":"noun","g":["automobile accident"],"f":["akasìdân"]}
+{"w":"ɗan sanda","p":"noun","g":["policeman"]}
+{"w":"aradu","p":"noun","g":["thunder","thunderclap or lightning bolt"]}
+{"w":"akushi","p":"noun","g":["a type of blackened wooden bowl"],"f":["akùshī","akùshin"]}
+{"w":"matalauci","p":"noun","g":["pauper"],"f":["matàlàucī","matàlàucin"]}
+{"w":"kwana","p":"noun","g":["sleep, lying down","day (24 hour period)"],"f":["kwānā","kwānan"]}
+{"w":"kwana","p":"noun","g":["corner, bend in the road","diversion, deviation"]}
+{"w":"kwana","p":"verb","g":["to spend the night","to spend the day"],"f":["kwāna"]}
+{"w":"jawo","p":"verb","g":["to pull (this way)","to bring about, cause"],"f":["jāwō"]}
+{"w":"ganima","p":"noun","g":["booty, loot"]}
+{"w":"fartanya","p":"noun","g":["a kind of hoe, mainly used for weeding"]}
+{"w":"amarya","p":"noun","g":["bride"],"f":["amaryā"]}
+{"w":"maroƙi","p":"noun","g":["a beggar who sings praise songs"],"f":["marṑƙī","marṑƙin"]}
+{"w":"ɓarawo","p":"noun","g":["thief"],"f":["ɓàrāwṑ","ɓàraunìyā","ɓàrāwòn"]}
+{"w":"makiyayi","p":"noun","g":["herder, shepherd"],"f":["makiyāyìyā"]}
+{"w":"magini","p":"noun","g":["builder","mason"],"f":["magīnìyā"]}
+{"w":"tsintsiya","p":"noun","g":["broom"],"f":["tsintsinyā","tsintsiyōyī"]}
+{"w":"tafki","p":"noun","g":["lake, pond"],"f":["tafkōkī","tafkìn"]}
+{"w":"raɓa","p":"noun","g":["dew","any illness thought to be caused by moisture"],"f":["rāɓā"]}
+{"w":"tururi","p":"noun","g":["steam","water vapor"],"f":["tùrùrī","tùrùrin"]}
+{"w":"mabiyi","p":"noun","g":["follower, adherent","younger brother"],"f":["mabìyī","mabìyin"]}
+{"w":"alfadari","p":"noun","g":["mule"]}
+{"w":"aƙida","p":"noun","g":["ideology"]}
+{"w":"aƙalla","p":"adv","g":["at least"],"f":["àƙallà"]}
+{"w":"makaranta","p":"noun","g":["school"]}
+{"w":"alhaki","p":"noun","g":["guilt, offence","responsibility"],"f":["àlhakī","àlhakin"]}
+{"w":"ƙirji","p":"noun","g":["chest (torso)"],"f":["ƙìrjī","ƙìrjin"]}
+{"w":"ƙundu","p":"noun","g":["gizzard","heart of a settled area"],"f":["ƙùndū","ƙùndun"]}
+{"w":"walƙiya","p":"noun","g":["lightning","glossiness"],"f":["wàlƙiyā"]}
+{"w":"dandali","p":"noun","g":["town square; open area in a town where people gather, usually in front of the chief's house"],"f":["dandàlī","dandàlin"]}
+{"w":"akala","p":"noun","g":["rope used to lead a camel","lead or control over a situation"]}
+{"w":"rawani","p":"noun","g":["turban"],"f":["rawànī","rawànin"]}
+{"w":"ham-ham","p":"noun","g":["eating greedily"],"f":["hàm-hàm"]}
+{"w":"ƙiri-ƙiri","p":"noun","g":["open(ly), shameless, flagrant, red-handed"]}
+{"w":"Alh.","p":"noun","g":["abbreviation of alhaji"]}
+{"w":"manjo-janar","p":"noun","g":["major general (military rank)"]}
+{"w":"birgediya","p":"noun","g":["brigadier (military rank)"]}
+{"w":"kofur","p":"noun","g":["corporal (military rank)"]}
+{"w":"laskofur","p":"noun","g":["lance corporal (military rank)"]}
+{"w":"kyaftin","p":"noun","g":["captain (military rank)"],"f":["kyaftìn"]}
+{"w":"Kwiyat","p":"name","g":["Kuwait (a country in West Asia in the Middle East)"],"f":["Kwìyât"]}
+{"w":"samanja","p":"noun","g":["sergeant major (military rank)"]}
+{"w":"shehu","p":"noun","g":["A great scholar, especially in religious matters.","A traditional title of the emir of Borno.","professor"],"f":["shēhùwā","shḕhùnai","shēhùn"]}
+{"w":"shaihi","p":"noun","g":["A great scholar or erudite person, especially in a Sufi order."],"f":["shàihùnai","shaihìn"]}
+{"w":"shehi","p":"noun","g":["alternative form of shaihī̀"],"f":["shēhìn"]}
+{"w":"sharifi","p":"noun","g":["Someone of noble descent, who can theoretically trace their ancestry back to Muhammad."]}
+{"w":"sharu","p":"noun","g":["alternative form of sharifi (used as a title)"]}
+{"w":"gahawa","p":"noun","g":["coffee (especially Turkish coffee)"]}
+{"w":"Tsanyawa","p":"name","g":["Tsanyawa (a town in Nigeria)"],"f":["Tsanyāwā"]}
+{"w":"Jahun","p":"name","g":["Jahun (a town in Nigeria)"],"f":["Jāhùn"]}
+{"w":"Katagum","p":"name","g":["Katagum (a town in Nigeria)"],"f":["Katāgùm"]}
+{"w":"Gobir","p":"name","g":["Gobir (a kingdom in Nigeria)"]}
+{"w":"Bici","p":"name","g":["Bichi (a town in Nigeria)"],"f":["Bicì"]}
+{"w":"Ɓaɓura","p":"name","g":["Babura (a town in Nigeria)"],"f":["Ɓāɓùrà"]}
+{"w":"Damagaram","p":"name","g":["synonym of Zàndâr̃: Zinder (a city in Niger)"]}
+{"w":"Funtuwa","p":"name","g":["Funtua (a town in Nigeria)"],"f":["Fùntuwà"]}
+{"w":"Gwandu","p":"name","g":["Gwandu (a town in Nigeria)"]}
+{"w":"Jega","p":"name","g":["Jega (a town in Nigeria)"],"f":["Jḕga"]}
+{"w":"Jibiya","p":"name","g":["Jibia (a town in Nigeria)"],"f":["Jibiyà"]}
+{"w":"Kazaure","p":"name","g":["Kazaure (a city in Nigeria)"],"f":["Kàzaure"]}
+{"w":"Kaita","p":"name","g":["Kaita (a town in Nigeria)"]}
+{"w":"Maraɗi","p":"name","g":["Maradi (a city in Niger)"],"f":["Marāɗi"]}
+{"w":"Mirya","p":"name","g":["Mirriah (a town in Niger)"],"f":["Miryà"]}
+{"w":"Rano","p":"name","g":["Rano (a town in Nigeria)"]}
+{"w":"Ringim","p":"name","g":["Ringim (a town in Nigeria)"],"f":["Ringìm"]}
+{"w":"Soba","p":"name","g":["Soba (a local government area of Nigeria)"],"f":["Sṑba"]}
+{"w":"Takum","p":"name","g":["Takum (a town in Nigeria)"],"f":["Tākùm"]}
+{"w":"Wudil","p":"name","g":["Wudil (a town in Nigeria)","a river in Nigeria"],"f":["Wùdil"]}
+{"w":"Bahar Rum","p":"name","g":["Mediterranean Sea"]}
+{"w":"Siriya","p":"name","g":["Syria (a country in West Asia in the Middle East)"]}
+{"w":"Birnin Kudu","p":"name","g":["Birnin Kudu (a town in Nigeria)"]}
+{"w":"Dala","p":"name","g":["Dalla Hill (a hill in Nigeria)"]}
+{"w":"Kafin Hausa","p":"name","g":["Kafin Hausa (a town in Nigeria)"]}
+{"w":"Tudun Wada","p":"name","g":["Tudun Wada (a town in Nigeria)"]}
+{"w":"Sabon Gida","p":"name","g":["Sabon-Guida (a village in Niger)"]}
+{"w":"Musawa","p":"name","g":["Musawa (a town in Nigeria)"],"f":["Mūsāwā"]}
+{"w":"Rimi","p":"name","g":["Rimi (a town in Nigeria)"],"f":["Rīmi"]}
+{"w":"Rogo","p":"name","g":["Rogo (a town in Nigeria)"],"f":["Rōgò"]}
+{"w":"Dutse","p":"name","g":["Dutse (the largest city and state capital of Jigawa State, Nigeria)"],"f":["Dūtsè"]}
+{"w":"Kibiya","p":"name","g":["Kibiya (a town in Nigeria)"],"f":["Kibiyà"]}
+{"w":"Garki","p":"name","g":["Garki (a town in Nigeria)"],"f":["Gàrki"]}
+{"w":"Giginyu","p":"name","g":["a quarter in Kano, Nigeria"],"f":["Gìgìnyu"]}
+{"w":"Dogarai","p":"name","g":["a quarter in Kano, Nigeria"],"f":["Dṑgàrai"]}
+{"w":"dogari","p":"noun","g":["bodyguard of an emir"],"f":["dṑgàrai","dōgarāwā","dṑgarìn"]}
+{"w":"dogarai","p":"noun","g":["plural of dṑgarī̀"],"f":["dṑgàrai"]}
+{"w":"dogarawa","p":"noun","g":["plural of dṑgarī̀"],"f":["dōgarāwā"]}
+{"w":"fatanya","p":"noun","g":["alternative form of far̃tanyā̀"],"f":["fàtànyū"]}
+{"w":"fanke","p":"noun","g":["a type of fried wheat cake"],"f":["fànkē","fànken"]}
+{"w":"yalo","p":"adj","g":["yellow"],"f":["yalṑ"]}
+{"w":"yalo","p":"noun","g":["thorn apple, Solanum incanum"],"f":["yālō","yālon"]}
+{"w":"shinkafa","p":"noun","g":["rice"],"f":["shìnkāfā"]}
+{"w":"dambe","p":"noun","g":["a traditional form of boxing"],"f":["damben"]}
+{"w":"dambu","p":"noun","g":["a food made from flour (from various grains) or granulated meat, usually prepared with onion"],"f":["dambū","dambun"]}
+{"w":"gurasa","p":"noun","g":["A kind of bread, similar to pita."]}
+{"w":"murhu","p":"noun","g":["the cooking stones in a traditional hearth","a modern stove, which may be in the form of a container or tripod"],"f":["murhùn"]}
+{"w":"hawan-ƙaho","p":"noun","g":["A kind of bullfighting in which butchers jump onto bulls' heads to overpower them.","risky behavior"],"f":["hawan-ƙàhō"]}
+{"w":"ƙaho","p":"noun","g":["horn"],"f":["ƙàhō","ƙàhṑnī","ƙàhon"]}
+{"w":"biyer","p":"noun","g":["beer"]}
+{"w":"Dimashi","p":"noun","g":["Sunday"],"f":["Dìmāshì","Dìmāshìn"]}
+{"w":"dubban","p":"noun","g":["wine"],"f":["dùbbân"]}
+{"w":"ruwan inabi","p":"noun","g":["wine"]}
+{"w":"Iraƙ","p":"name","g":["alternative form of Ìr̃âƙì"]}
+{"w":"Iraƙi","p":"name","g":["Iraq (a country in West Asia in the Middle East)"]}
+{"w":"kamyo","p":"noun","g":["truck, lorry"],"f":["kàmyô","kàmyôn"]}
+{"w":"babbar mota","p":"noun","g":["truck, lorry"]}
+{"w":"muddin","p":"conj","g":["as long as, provided that"],"f":["muddìn"]}
+{"w":"kurkuku","p":"noun","g":["prison"]}
+{"w":"lakile","p":"noun","g":["key"]}
+{"w":"luleti","p":"noun","g":["eyeglasses"],"f":["lùlētì","lùlētìn"]}
+{"w":"tabarau","p":"noun","g":["eyeglasses"]}
+{"w":"madubi","p":"noun","g":["mirror","eyeglasses"],"f":["madūbī","madūbin"]}
+{"w":"luwul","p":"noun","g":["motor oil"],"f":["luwùl"]}
+{"w":"katifa","p":"noun","g":["mattress"]}
+{"w":"mushe","p":"noun","g":["mister, Mr."],"f":["mùshê","mùshên"]}
+{"w":"mushe","p":"noun","g":["carrion; animal not slaughtered according to Islamic law"],"f":["mūshḕ","mūshèn"]}
+{"w":"lasisi","p":"noun","g":["alternative form of lāsìn"],"f":["lāsīsìn"]}
+{"w":"fasinja","p":"noun","g":["passenger"],"f":["fāsinjà","fāsinjōjī","fāsinjàn"]}
+{"w":"shapo","p":"noun","g":["hat"],"f":["shàpô","shàpôn"]}
+{"w":"sitampi","p":"noun","g":["postage stamp","official stamp or seal"],"f":["sìtampìn","sìtâm"]}
+{"w":"labudda","p":"adv","g":["definitely, certainly"]}
+{"w":"bappa","p":"noun","g":["alternative spelling of baffa (“paternal uncle”)"],"f":["bappà","bàppànnī","bappàn"]}
+{"w":"haɓe","p":"noun","g":["Hausa people, as opposed to the Fulani"],"f":["hāɓè","hāɓèn"]}
+{"w":"kaɗo","p":"noun","g":["pagan, non-Muslim","a Hausa person without Fulani ancestry"],"f":["kāɗò","kāɗòn"]}
+{"w":"haɓɓoje","p":"noun","g":["hay fever"],"f":["haɓɓōjè","haɓɓōjèn"]}
+{"w":"hubbare","p":"noun","g":["tomb of a religious leader (usually in reference to that of Usman Dan Fodio)"]}
+{"w":"kindirmo","p":"noun","g":["a kind of sour yogurt"]}
+{"w":"sharo","p":"noun","g":["A ritual test of endurance in Fulani culture, in which young men are flogged and must not show pain."]}
+{"w":"yallaɓai","p":"intj","g":["Respectful way of addressing one's superior."]}
+{"w":"alaramma","p":"noun","g":["hafiz (someone who has memorized the entire Quran)"]}
+{"w":"kaigama","p":"noun","g":["A traditional position, the chief slave of a sultan."],"f":["kaigamà","kaigamàn"]}
+{"w":"akawu","p":"noun","g":["clerk"]}
+{"w":"agushi","p":"noun","g":["egusi (melon seeds used to make soup)"],"f":["àgushī","àgushin"]}
+{"w":"zuriya","p":"noun","g":["progeny, descendant"]}
+{"w":"kowa","p":"pron","g":["everybody, everyone","whoever, anyone (who)"],"f":["kōwā"]}
+{"w":"adabi","p":"noun","g":["literature"],"f":["adàbī","adàbin"]}
+{"w":"ƙoƙari","p":"noun","g":["effort"],"f":["ƙṑƙari","ƙṑƙarin"]}
+{"w":"tsoho","p":"adj","g":["old (of a person or a thing)"],"f":["tsōhō","tsōhuwā","tsṑfàffī","tsòffī"]}
+{"w":"tsoho","p":"noun","g":["old person, someone or something which is old","one's parent, old man, old lady"],"f":["tsōhō","tsōhuwā","tsṑfàffī","tsòffī","tsōhon"]}
+{"w":"gajere","p":"adj","g":["short"],"f":["gàjērē","gàjērā","gàjērìyā","gàjērùwā","gàjḕrū"]}
+{"w":"gajere","p":"noun","g":["someone or something which is short"],"f":["gàjērē","gàjērā","gàjērìyā","gàjērùwā","gàjḕrū","gàjēren"]}
+{"w":"ƙanƙane","p":"adj","g":["small"],"f":["ƙànƙanḕ","ƙànƙanùwā"]}
+{"w":"ƙanƙane","p":"noun","g":["someone or something which is small"],"f":["ƙànƙanḕ","ƙànƙanùwā","ƙànƙanèn"]}
+{"w":"ƙarami","p":"adj","g":["small","young(er)"],"f":["ƙàramī","ƙàramā"]}
+{"w":"ƙarami","p":"noun","g":["someone or something which is small","someone who is young; the younger one"],"f":["ƙàramī","ƙàramā","ƙàramin"]}
+{"w":"ƙanana","p":"adj","g":["plural of ƙànƙanḕ and ƙàramī"]}
+{"w":"ƙanana","p":"noun","g":["plural of ƙànƙanḕ and ƙàramī"]}
+{"w":"algashi","p":"adj","g":["a light shade of green"],"f":["algàshī","algàsā","àlgàsai"]}
+{"w":"kahuhu","p":"noun","g":["hoopoe"],"f":["kahuhun"]}
+{"w":"alhudahuda","p":"noun","g":["hoopoe"],"f":["àlhudàhudà","àlhudàhudàn"]}
+{"w":"baƙi","p":"adj","g":["black, dark"],"f":["baƙī","baƙā"]}
+{"w":"baƙi","p":"noun","g":["something bad or evil","letter of an alphabet"],"f":["baƙī","baƙin"]}
+{"w":"baƙi","p":"noun","g":["a full letter (consonant) in Arabic script"],"f":["baƙī","babbaƙū","baƙin"]}
+{"w":"ɗanye","p":"adj","g":["raw, unripe","inexperienced"],"f":["ɗanyē","ɗanyā","ɗànyū"]}
+{"w":"ƙato","p":"adj","g":["huge, enormous"],"f":["ƙātṑ","ƙātùwā","ƙâttā"]}
+{"w":"ƙazami","p":"adj","g":["dirty, filthy"],"f":["ƙàzāmī","ƙàzāmā"]}
+{"w":"ƙazanta","p":"noun","g":["filth, dirtiness"],"f":["ƙàzântā"]}
+{"w":"ƙulumi","p":"adj","g":["stingy"],"f":["ƙūlumī","ƙūlumā"]}
+{"w":"ƙulumi","p":"noun","g":["stingy person"],"f":["ƙūlumī","ƙūlumā","ƙūlumin"]}
+{"w":"kumama","p":"adj","g":["feeble, weak"],"f":["kùmāmā","kùmāmā"]}
+{"w":"kumama","p":"noun","g":["feeble person"],"f":["kùmāmā","kùmāmā","kùmāman"]}
+{"w":"mugun dawa","p":"noun","g":["warthog"]}
+{"w":"alhanzir","p":"noun","g":["warthog"]}
+{"w":"rawaya","p":"noun","g":["Cochlospermum tinctorium, a medicinal plant from which a yellow dye is extracted","yellow"]}
+{"w":"rawaya","p":"adj","g":["yellow"]}
+{"w":"sakarai","p":"noun","g":["a useless person"]}
+{"w":"sakarai","p":"adj","g":["useless, stupid"]}
+{"w":"shuɗi","p":"adj","g":["blue"],"f":["shūɗìyā","shûɗɗā"]}
+{"w":"shuɗi","p":"noun","g":["blue"],"f":["shūɗìn"]}
+{"w":"ruwan-hoda","p":"adj","g":["pink"]}
+{"w":"ruwan-ƙasa","p":"adj","g":["brown"],"f":["ruwan-ƙasā"]}
+{"w":"ruwan-toka","p":"adj","g":["gray/grey"],"f":["ruwan-tṑkā"]}
+{"w":"ruwan-azurfa","p":"adj","g":["silvery, metallic"]}
+{"w":"adadi","p":"noun","g":["number, numeral","sum"],"f":["adàdī","àdàdai","adàdin"]}
+{"w":"adawa","p":"noun","g":["hatred","opposition"]}
+{"w":"aibi","p":"noun","g":["alternative form of aibù"],"f":["aibì","aibōbī","aibìn"]}
+{"w":"akuya","p":"noun","g":["goat"],"f":["awākī"]}
+{"w":"al'ada","p":"noun","g":["custom, practice, habit","menstruation"]}
+{"w":"al'ajabi","p":"noun","g":["wonder, miracle"]}
+{"w":"al'amari","p":"noun","g":["matter, affair"]}
+{"w":"albarushi","p":"noun","g":["gunpowder"]}
+{"w":"albishir","p":"noun","g":["good news, good tidings"]}
+{"w":"alfahari","p":"noun","g":["pride"]}
+{"w":"alhali","p":"conj","g":["of course, certainly, whereas"],"f":["àlhālī"]}
+{"w":"alhamdulillahi","p":"intj","g":["alhamdulillah (praise be to God)"],"f":["àlhamdùlìllāhì"]}
+{"w":"alheri","p":"noun","g":["kindness, good deed","wealth"]}
+{"w":"aljabara","p":"noun","g":["algebra"]}
+{"w":"aljanna","p":"noun","g":["Paradise, Jannah"]}
+{"w":"alkadari","p":"noun","g":["value, worth"]}
+{"w":"alkarya","p":"noun","g":["unwalled town"]}
+{"w":"alkyabba","p":"noun","g":["a kind of burnoose which signifies authority"],"f":["àlkyàbbū"]}
+{"w":"Almasihu","p":"name","g":["Jesus, the Messiah"],"f":["Àlmàsīhù"]}
+{"w":"al'umma","p":"noun","g":["nation, (especially) the people of a nation","community, public"]}
+{"w":"annuri","p":"noun","g":["light, brightness","cheerfulness"]}
+{"w":"arziki","p":"noun","g":["wealth, riches"]}
+{"w":"asawaki","p":"noun","g":["miswak (stick used as a toothbrush)"]}
+{"w":"atone-janar","p":"noun","g":["attorney general"]}
+{"w":"attajiri","p":"noun","g":["wealthy person"]}
+{"w":"azaba","p":"noun","g":["torture, terrible pain"]}
+{"w":"azumi","p":"noun","g":["a fast (especially that of Ramadan)"],"f":["azùmī","azùmin"]}
+{"w":"azzakari","p":"noun","g":["penis"]}
+{"w":"ba'askare","p":"noun","g":["soldier"]}
+{"w":"Bagwari","p":"noun","g":["a Gbagyi person","someone who speaks Hausa poorly"],"f":["Bàgwārī","Bàgwārìyā","Bàgwārin"]}
+{"w":"baitulmali","p":"noun","g":["treasury"],"f":["bàitùlmālì","bàitùlmālìn"]}
+{"w":"bala'i","p":"noun","g":["calamity, misfortune"]}
+{"w":"bidi'a","p":"noun","g":["bid'a (heretical innovation)"]}
+{"w":"bila haddin","p":"adv","g":["many, numerous, limitless"]}
+{"w":"buɗa-baki","p":"noun","g":["breaking the Ramadan fast"]}
+{"w":"ciwo","p":"noun","g":["pain, ache, disease"],"f":["cīwṑ","cīwòn"]}
+{"w":"da'awa","p":"noun","g":["allegation, claim (in a court of law)","false claim, boast"]}
+{"w":"da'ira","p":"noun","g":["circle"]}
+{"w":"daƙiƙa","p":"noun","g":["second (unit of time)"],"f":["dāƙīƙōƙī"]}
+{"w":"daƙiƙi","p":"adj","g":["stupid"],"f":["dàƙīƙìyā"]}
+{"w":"daƙiƙi","p":"noun","g":["a stupid person"],"f":["dàƙīƙìyā","dàƙīƙìn"]}
+{"w":"darasi","p":"noun","g":["lesson"]}
+{"w":"daula","p":"noun","g":["wealth, abundance","kingdom, realm"],"f":["daulōlī"]}
+{"w":"di'o","p":"noun","g":["district officer (colonial administrator)"]}
+{"w":"dokin Allah","p":"noun","g":["praying mantis"]}
+{"w":"du'a'i","p":"noun","g":["du'a' (supplicatory prayer)"]}
+{"w":"dutse","p":"noun","g":["stone, rock","mountain, hill"],"f":["dūtsḕ","dūtsèn"]}
+{"w":"ɗa'a","p":"noun","g":["etiquette, good manners"]}
+{"w":"ɗabi'a","p":"noun","g":["behavior, habit, custom"]}
+{"w":"ɗalibi","p":"noun","g":["student (at the level of secondary school or higher)"],"f":["ɗālìbī","ɗālìbā","ɗālìbin"]}
+{"w":"ɗan Adam","p":"noun","g":["human being"]}
+{"w":"ɗawafi","p":"noun","g":["tawaf (circumambulating the Kaaba)"],"f":["ɗàwāfìn"]}
+{"w":"el'e","p":"noun","g":["local authority"]}
+{"w":"fa'ida","p":"noun","g":["benefit, gain"]}
+{"w":"faƙiri","p":"noun","g":["pauper"]}
+{"w":"faƙiri","p":"adj","g":["poor"]}
+{"w":"fanni","p":"noun","g":["genre, type","branch of knowledge"],"f":["fannōnī","fannìn"]}
+{"w":"fara'a","p":"noun","g":["cheerfulness"]}
+{"w":"farilla","p":"noun","g":["fard (religious duty)"]}
+{"w":"farali","p":"noun","g":["alternative form of fàr̃illā̀"]}
+{"w":"fasali","p":"noun","g":["arrangement, symmetry","chapter, section","season"],"f":["fasàlī","fasàlin"]}
+{"w":"fasiƙi","p":"noun","g":["sinner, immoral person"],"f":["fāsìƙī","fāsìƙā","fāsìƙin"]}
+{"w":"fasiƙi","p":"adj","g":["sinful, immoral"],"f":["fāsìƙī","fāsìƙā"]}
+{"w":"fida'u","p":"noun","g":["the prayers said for the dead"]}
+{"w":"fi'ili","p":"noun","g":["verb","performance, unnatural speech or behavior"]}
+{"w":"fil azal","p":"adv","g":["since time immemorial"]}
+{"w":"gadara","p":"noun","g":["haughtiness brought on by wealth"]}
+{"w":"gaibi","p":"noun","g":["that which is hidden or unknown"],"f":["gaibì","gaibìn"]}
+{"w":"gaira","p":"noun","g":["minus, lack(ing)"]}
+{"w":"galibi","p":"noun","g":["majority"],"f":["gālìbī","gālìbin"]}
+{"w":"galibi","p":"adv","g":["usually"],"f":["gālìbī"]}
+{"w":"gwaiba","p":"noun","g":["alternative form of gōbā̀"]}
+{"w":"haɗari","p":"noun","g":["danger","accident, disaster"]}
+{"w":"hairan","p":"noun","g":["good deed"]}
+{"w":"halama","p":"noun","g":["alternative form of àlāmā̀"]}
+{"w":"hamdala","p":"noun","g":["gratitude to God"]}
+{"w":"hani'an","p":"noun","g":["satisfaction, contentment"]}
+{"w":"harafi","p":"noun","g":["letter (of the alphabet)"]}
+{"w":"haraji","p":"noun","g":["tax"]}
+{"w":"harsashi","p":"noun","g":["bullet","foundation (of a building)"]}
+{"w":"hatimi","p":"noun","g":["stamp, seal","badge"],"f":["hātìmī","hātìmin"]}
+{"w":"hawa'i","p":"noun","g":["irresponsible person; someone with their head in the clouds"]}
+{"w":"haziƙi","p":"adj","g":["intelligent"],"f":["hāzìƙī","hāzìƙā"]}
+{"w":"haziƙi","p":"noun","g":["intelligent person"],"f":["hāzìƙī","hāzìƙā","hāzìƙin"]}
+{"w":"hidima","p":"noun","g":["service"],"f":["hidimā","hidimōmī"]}
+{"w":"hijira","p":"noun","g":["hijra (event from which the Islamic calendar counts)"]}
+{"w":"hisabi","p":"noun","g":["the reckoning of good and bad deeds on Judgement Day"],"f":["hìsābìn"]}
+{"w":"huɗuba","p":"noun","g":["sermon"]}
+{"w":"hukuma","p":"noun","g":["authority, governing board"],"f":["hukūmōmī"]}
+{"w":"humusi","p":"noun","g":["fifth of something"]}
+{"w":"humushi","p":"noun","g":["alternative form of humū̀sī"]}
+{"w":"ibilis","p":"noun","g":["alternative form of ìblîs"],"f":["ìbìlîs","ìbìlīshìn"]}
+{"w":"ijara","p":"noun","g":["wages, fee, commission","agreement regarding pay"]}
+{"w":"ilimi","p":"noun","g":["knowledge","science"],"f":["ilìmī","ilìmin","îlmī"]}
+{"w":"in sha Allahu","p":"intj","g":["inshallah (God willing)"]}
+{"w":"istihara","p":"noun","g":["istikhara (prayer seeking guidance from God)"]}
+{"w":"iyali","p":"noun","g":["family"],"f":["ìyālìn"]}
+{"w":"izifi","p":"noun","g":["hizb (one of the sixty sections into which the Qur'an is divided)"],"f":["izìfī","izìfin"]}
+{"w":"izini","p":"noun","g":["permission"],"f":["izìnī","izìnin"]}
+{"w":"jadawali","p":"noun","g":["multiplication table"],"f":["jadawàlī","jadawàlin"]}
+{"w":"jafa'i","p":"noun","g":["slander, verbal abuse"]}
+{"w":"jahadi","p":"noun","g":["alternative form of jìhādī̀"],"f":["jàhādìn"]}
+{"w":"jahili","p":"noun","g":["ignoramus, illiterate"],"f":["jāhìlī","jāhìlā","jāhìlin"]}
+{"w":"jama'a","p":"noun","g":["public, community"]}
+{"w":"jam'i","p":"noun","g":["congregation (for prayer)","plural"]}
+{"w":"janaba","p":"noun","g":["ritual impurity"]}
+{"w":"jana'iza","p":"noun","g":["funeral"]}
+{"w":"jawabi","p":"noun","g":["answer, reply","message"],"f":["jàwābìn"]}
+{"w":"jaza'i","p":"noun","g":["retribution"]}
+{"w":"jidali","p":"noun","g":["struggle, trouble, dispute"],"f":["jìdālìn"]}
+{"w":"jima'i","p":"noun","g":["sex, sexual intercourse"]}
+{"w":"jimilla","p":"noun","g":["sum, total"]}
+{"w":"jimla","p":"noun","g":["sum, total","amount"]}
+{"w":"juzu'i","p":"noun","g":["portion, part","juz' (one of the 30 portions into which the Qur'an is divided)"]}
+{"w":"kabari","p":"noun","g":["grave, tomb"]}
+{"w":"ƙabila","p":"noun","g":["tribe, ethnolinguistic group"]}
+{"w":"kaidi","p":"noun","g":["limit, restriction"],"f":["kaidìn"]}
+{"w":"kalami","p":"noun","g":["speech (that which is said)"],"f":["kàlāmìn"]}
+{"w":"kanumfari","p":"noun","g":["cloves"]}
+{"w":"karahiya","p":"noun","g":["an act which is disfavored but not forbidden in Islam"]}
+{"w":"karimi","p":"adj","g":["generous"]}
+{"w":"karimi","p":"noun","g":["generous person"]}
+{"w":"katibi","p":"noun","g":["scribe"],"f":["kātìbī","kātìbā","kātìbin"]}
+{"w":"kazaf","p":"noun","g":["false accusation"],"f":["kazàf","ƙazàf"]}
+{"w":"kiyama","p":"noun","g":["resurrection (event that will occur on judgement day)"]}
+{"w":"kyau","p":"noun","g":["goodness, beauty"],"f":["kyâu","kyân"]}
+{"w":"ƙa'ida","p":"noun","g":["principle, standard"]}
+{"w":"ƙa'imi","p":"noun","g":["head of a house, householder"]}
+{"w":"ƙala","p":"noun","g":["speech (that which is said)"]}
+{"w":"ƙasida","p":"noun","g":["qasida (type of poem)"]}
+{"w":"ƙazaf","p":"noun","g":["alternative form of kazàf"],"f":["ƙazàf"]}
+{"w":"ƙissa","p":"noun","g":["story"],"f":["ƙissōshī"]}
+{"w":"ƙiyasi","p":"noun","g":["analogy"],"f":["ƙìyāsìn"]}
+{"w":"ƙoƙiƙoƙi","p":"noun","g":["praying mantis"],"f":["ƙōƙìƙōƙì","ƙōƙìƙōƙìn"]}
+{"w":"ƙuri'a","p":"noun","g":["vote, ballot","drawing of lots"]}
+{"w":"la'ada","p":"noun","g":["commission (fee charged for carrying out a transaction)"]}
+{"w":"la'alla","p":"adv","g":["perhaps"]}
+{"w":"ladabi","p":"noun","g":["politeness, good manners"],"f":["ladàbìn"]}
+{"w":"Lahira","p":"noun","g":["afterlife, akhirah"]}
+{"w":"lamiri","p":"noun","g":["opinion","pronoun"]}
+{"w":"la'ifi","p":"noun","g":["impotent man"]}
+{"w":"larura","p":"noun","g":["necessity"]}
+{"w":"lissafi","p":"noun","g":["mathematics, arithmetic","counting"],"f":["lìssāfìn"]}
+{"w":"luwaɗi","p":"noun","g":["sodomy"],"f":["lùwāɗìn"]}
+{"w":"ma'amala","p":"noun","g":["business dealing, transaction"]}
+{"w":"maɗaba'a","p":"noun","g":["printing press","printing company"]}
+{"w":"mahalli","p":"noun","g":["context, place (where something belongs)"],"f":["màhâllī","màhâllin"]}
+{"w":"mahawara","p":"noun","g":["debate, discussion"]}
+{"w":"majalisa","p":"noun","g":["legislature, congress","council"],"f":["màjàlìsū"]}
+{"w":"majami'a","p":"noun","g":["church"]}
+{"w":"laifi","p":"noun","g":["crime, fault","blemish"],"f":["lâifi","laifukā","lâifin"]}
+{"w":"majanuni","p":"noun","g":["insane person, crazy person"],"f":["màjànūnìyā","màjànūnìn"]}
+{"w":"mangariba","p":"noun","g":["alternative form of màgàr̃ibā̀"]}
+{"w":"manhaja","p":"noun","g":["syllabus"]}
+{"w":"maraba","p":"intj","g":["welcome!"]}
+{"w":"maraba","p":"noun","g":["difference (between two or more things)"],"f":["marabā"]}
+{"w":"marhabin","p":"intj","g":["alternative form of mar̃ā̀ba (“welcome!”)"]}
+{"w":"marili","p":"noun","g":["a chronically ill person"]}
+{"w":"ma sha Allahu","p":"intj","g":["mashallah (God has willed it)"]}
+{"w":"mashahuri","p":"adj","g":["famous"]}
+{"w":"mashahuri","p":"noun","g":["famous person, celebrity"]}
+{"w":"misali","p":"noun","g":["example, instance"],"f":["mìsālìn"]}
+{"w":"misali","p":"adv","g":["approximately, around"]}
+{"w":"miskini","p":"noun","g":["pauper, poor person"],"f":["mìskīnìyā","mìskīnìn"]}
+{"w":"mu'amala","p":"noun","g":["alternative form of mà'āmalā̀ (“transaction”)"]}
+{"w":"Muhammadiyya","p":"noun","g":["Islamic studies, the teachings of Muhammad"]}
+{"w":"muhimmi","p":"adj","g":["important"],"f":["mùhimmìyā","mùhìmmai"]}
+{"w":"muhimmi","p":"noun","g":["someone or something which is important"],"f":["mùhimmìyā","mùhìmmai","mùhimmìn"]}
+{"w":"mujaddadi","p":"noun","g":["religious reformer"],"f":["mùjaddàdī","mùjaddàdin"]}
+{"w":"mulki","p":"noun","g":["dominion, rule","government"],"f":["mulkìn"]}
+{"w":"mulukiya","p":"noun","g":["monarchy"]}
+{"w":"mumbari","p":"noun","g":["minbar, pulpit"]}
+{"w":"mumini","p":"noun","g":["believer in Islam"],"f":["mūmìnī","mūmìnā","mūmìnin"]}
+{"w":"munafuki","p":"noun","g":["hypocrite"],"f":["mùnāfùkī","mùnāfùkā","mùnāfùkin"]}
+{"w":"muradi","p":"noun","g":["desire, wish"]}
+{"w":"mushiriki","p":"noun","g":["idolater, mushrik"]}
+{"w":"mu'ujiza","p":"noun","g":["miracle"]}
+{"w":"na'am","p":"intj","g":["yes (reply when called)"]}
+{"w":"na'am","p":"intj","g":["I see, indeed"]}
+{"w":"na'ibi","p":"noun","g":["deputy"]}
+{"w":"nasiha","p":"noun","g":["good advice"],"f":["nasīhōhī"]}
+{"w":"nau'i","p":"noun","g":["type, variety"]}
+{"w":"na'ura","p":"noun","g":["machine","computer"]}
+{"w":"kwamfyuta","p":"noun","g":["computer"]}
+{"w":"nazari","p":"noun","g":["investigation, research"]}
+{"w":"ni'ima","p":"noun","g":["prosperity, blessing, fertility"]}
+{"w":"nishaɗi","p":"noun","g":["enjoyment, pleasure"],"f":["nìshāɗìn"]}
+{"w":"ra'ayi","p":"noun","g":["opinion"]}
+{"w":"rahusa","p":"noun","g":["cheapness, inexpensiveness"]}
+{"w":"rashawa","p":"noun","g":["bribe"]}
+{"w":"rubu'i","p":"noun","g":["one fourth, quarter"]}
+{"w":"ru'uya","p":"noun","g":["vision, revelation"]}
+{"w":"sababi","p":"noun","g":["reason, cause","argument, quarrel"],"f":["sabàbī","sabàbin"]}
+{"w":"saɗara","p":"noun","g":["line of writing"]}
+{"w":"sa'ida","p":"noun","g":["luck","success","comfort"]}
+{"w":"alaikum salam","p":"intj","g":["Response to sàlāmù àlaikùm."]}
+{"w":"salihi","p":"adj","g":["honest, upright"],"f":["sālìhī","sālìhā"]}
+{"w":"salihi","p":"noun","g":["an honest, upright person"],"f":["sālìhī","sālìhā","sālìhin"]}
+{"w":"sana'a","p":"noun","g":["trade, craft, occupation"]}
+{"w":"sha'ani","p":"noun","g":["matter, affair","nature, disposition"]}
+{"w":"shai'an","p":"noun","g":["anything (only used in set phrases in the negative)"]}
+{"w":"sharaɗi","p":"noun","g":["condition, stipulation, arrangement"]}
+{"w":"sharhi","p":"noun","g":["commentary"]}
+{"w":"sharri","p":"noun","g":["evil, wickedness"]}
+{"w":"shirka","p":"noun","g":["partnership","polytheism, idolatry, shirk"]}
+{"w":"shu'umi","p":"noun","g":["something or someone inhabited or possessed by spirits"]}
+{"w":"sitira","p":"noun","g":["clothing","shroud"]}
+{"w":"siyasa","p":"noun","g":["politics","giving a concession or accommodation"]}
+{"w":"sujjada","p":"noun","g":["prostration (in prayer)"]}
+{"w":"tarbiyya","p":"noun","g":["upbringing, training"]}
+{"w":"tarihi","p":"noun","g":["history","biography"]}
+{"w":"tauhidi","p":"noun","g":["monotheism, tawhid"],"f":["tàuhīdìn"]}
+{"w":"tijara","p":"noun","g":["commerce, trade","public humiliation"]}
+{"w":"tubarkalla","p":"intj","g":["bravo, praise God!"]}
+{"w":"ushiri","p":"noun","g":["one tenth","tithe paid to the court in property cases"]}
+{"w":"ushira","p":"noun","g":["alternative form of ushìr̃ī (“tithe paid to the court”)"]}
+{"w":"wa'adi","p":"noun","g":["promise"]}
+{"w":"wa'azi","p":"noun","g":["sermon","warning"]}
+{"w":"waƙafi","p":"noun","g":["detention","pause"],"f":["waƙàfī","waƙàfin"]}
+{"w":"wuridi","p":"noun","g":["private prayer"]}
+{"w":"zaiba","p":"noun","g":["mercury (element)"]}
+{"w":"za'ida","p":"noun","g":["exaggeration"]}
+{"w":"zakka","p":"noun","g":["religious tithe, zakat"],"f":["zàkkā"]}
+{"w":"Umaru","p":"name","g":["a male given name"]}
+{"w":"wasiƙa","p":"noun","g":["letter (written message)"]}
+{"w":"wasiyya","p":"noun","g":["will, bequest"],"f":["wasiyyōyī"]}
+{"w":"sadaki","p":"noun","g":["bride price"],"f":["sàdâkī","sàdâkin"]}
+{"w":"tuhuma","p":"noun","g":["suspicion","interrogation"],"f":["tùhùmce-tùhùmce"]}
+{"w":"zabarjadi","p":"noun","g":["chrysolite or topaz"]}
+{"w":"annoba","p":"noun","g":["epidemic, plague"],"f":["ànnṑbā"]}
+{"w":"fangali","p":"noun","g":["irrigated farm bed"],"f":["fangalī","fangalin"]}
+{"w":"kyanwa","p":"noun","g":["cat"],"f":["kyânwā","kyanwōyī"]}
+{"w":"ayari","p":"noun","g":["caravan","a group of people going in the same direction"]}
+{"w":"dabino","p":"noun","g":["date (fruit)","date palm"],"f":["dabīnṑ","dabīnùwā","dabīnòn"]}
+{"w":"rubuta","p":"verb","g":["to write"]}
+{"w":"karanta","p":"verb","g":["to read"]}
+{"w":"takarda","p":"noun","g":["paper"]}
+{"w":"tawada","p":"noun","g":["ink"],"f":["tàwàdū"]}
+{"w":"tadawa","p":"noun","g":["alternative form of tàwadā̀"]}
+{"w":"taubashi","p":"noun","g":["cross-cousin (child of a parent's opposite-sex sibling)","someone with whom one has a joking relationship (established between two tribes whose ancestors are thought to be brother and sister)"]}
+{"w":"akawal","p":"noun","g":["horse or person with shiny, black skin"],"f":["akawàl","àkàwàlai","akawàlī"]}
+{"w":"akawali","p":"noun","g":["alternative form of akawàl"],"f":["akawàlī","àkàwàlai","akawàlin"]}
+{"w":"danana","p":"noun","g":["covered in oil"]}
+{"w":"amawali","p":"noun","g":["part of a turban which is used as a veil to cover the mouth"],"f":["amāwàlī","amāwàlin"]}
+{"w":"asabari","p":"noun","g":["a mat made from doum palm fronds, often used as a windscreen"]}
+{"w":"tagomashi","p":"noun","g":["popularity"],"f":["tagōmàshī","tagōmàshin"]}
+{"w":"takobi","p":"noun","g":["sword"],"f":["takṑbī","takṑbin"]}
+{"w":"takunkumi","p":"noun","g":["muzzle","embargo, economic blockade"]}
+{"w":"taliki","p":"noun","g":["creature, being"],"f":["tālìkī","tālìkā","tālìkin"]}
+{"w":"tantakwashi","p":"noun","g":["various soft parts of animal bones (head of the femur, caudal end of the backbone) used to make soup"],"f":["tàntakwàshī","tàntakwàshin"]}
+{"w":"tozali","p":"noun","g":["antimony"],"f":["tōzàlī","tōzàlin"]}
+{"w":"daƙashi","p":"noun","g":["colostrum"],"f":["daƙàshī","daƙàshin"]}
+{"w":"linzami","p":"noun","g":["bridle","triangular embroidery of the neck of a gown"],"f":["lìnzāmìn"]}
+{"w":"ragama","p":"noun","g":["halter"],"f":["ragàmā","ragamōmī"]}
+{"w":"auduga","p":"noun","g":["cotton, cotton plant"],"f":["audùgā"]}
+{"w":"cukwi","p":"noun","g":["alternative form of cukū (“cheese”)"],"f":["cukwī","cukwin"]}
+{"w":"tabarma","p":"noun","g":["mat (for sitting or sleeping)"]}
+{"w":"aru-aru","p":"adv","g":["long ago"]}
+{"w":"mubazzari","p":"noun","g":["spendthrift"]}
+{"w":"zikiri","p":"noun","g":["dhikr"]}
+{"w":"zira'i","p":"noun","g":["cubit (unit of measure)"]}
+{"w":"ƙaddara","p":"noun","g":["fate, destiny"]}
+{"w":"ƙaddara","p":"verb","g":["predestine"]}
+{"w":"ƙafa","p":"noun","g":["foot, leg","foot (unit of length)","foot (unit of a poetic meter)"]}
+{"w":"ɗungum","p":"noun","g":["entirely, completely"],"f":["ɗùngum"]}
+{"w":"tatul","p":"noun","g":["full with drink"]}
+{"w":"tiƙis","p":"noun","g":["very tired, exhausted"]}
+{"w":"tuɓur-tuɓur","p":"noun","g":["large and round"]}
+{"w":"tukuf","p":"noun","g":["very old"]}
+{"w":"tsaf","p":"noun","g":["neatly, completely"]}
+{"w":"tsan-tsan","p":"noun","g":["cautiously","firmly, securely"]}
+{"w":"wulik","p":"noun","g":["black or dark blue"],"f":["wul","wuluk"]}
+{"w":"zigidir","p":"noun","g":["completely naked"]}
+{"w":"tsai","p":"noun","g":["still, pensive"]}
+{"w":"ƙal","p":"noun","g":["sparkling clean"]}
+{"w":"raɗau","p":"noun","g":["very clearly"]}
+{"w":"ƙirin","p":"noun","g":["dark, dull black"]}
+{"w":"nukus","p":"noun","g":["damp and mushy"],"f":["nùkùs"]}
+{"w":"hanhai","p":"noun","g":["wide open"],"f":["hànhai"]}
+{"w":"ƙarƙaf","p":"noun","g":["completely used up"],"f":["ƙàrƙaf"]}
+{"w":"butsu-butsu","p":"noun","g":["untidy"]}
+{"w":"ɓalo-ɓalo","p":"noun","g":["large and round (only used for things which contain liquid)"],"f":["ɓalō-ɓàlṑ"]}
+{"w":"dososo","p":"noun","g":["having an ugly face","being boring or dull"],"f":["dṑsṑsṑ"]}
+{"w":"sheƙeƙe","p":"noun","g":["contemptuously"],"f":["shḕƙḕƙḕ"]}
+{"w":"cwai","p":"noun","g":["alternative form of coi (“very sweet”)"]}
+{"w":"ɓaga-ɓaga","p":"noun","g":["chunky, composed of large chunks"]}
+{"w":"raɓe-raɓe","p":"noun","g":["hanging, dangling, pendulous"],"f":["raɓe-ràɓḕ"]}
+{"w":"kazar-kazar","p":"noun","g":["energetic, restless"]}
+{"w":"maƙo-maƙo","p":"noun","g":["miserly"],"f":["màƙṑ-maƙō"]}
+{"w":"wuni-wuni","p":"noun","g":["shifty, suspicious"]}
+{"w":"ɗim","p":"noun","g":["huge, voluminous"],"f":["ɗìm"]}
+{"w":"ɗim","p":"noun","g":["hitting with a thud"],"f":["ɗîm"]}
+{"w":"cif-cif","p":"noun","g":["alternative form of cif (“complete (of numbers or money)”)"]}
+{"w":"kam-kam","p":"noun","g":["alternative form of kam (“firmly, tightly; adamant, insistent”)"]}
+{"w":"ɓal-ɓal","p":"noun","g":["something thick boiling"],"f":["ɓàl-ɓàl"]}
+{"w":"ɗar-ɗar","p":"noun","g":["heart beating quickly"]}
+{"w":"ƙwal-ƙwal","p":"noun","g":["smooth shaving of head"]}
+{"w":"raf-raf","p":"noun","g":["applause"]}
+{"w":"ƙut","p":"noun","g":["intimate, close (of a friendship)"],"f":["ƙuƙut"]}
+{"w":"ɗu","p":"noun","g":["people moving in a line"]}
+{"w":"fatau","p":"noun","g":["very green"]}
+{"w":"ƙuƙut","p":"noun","g":["alternative form of ƙut (“intimate, close (of a relationship)”)"]}
+{"w":"sumul","p":"noun","g":["very healthy"]}
+{"w":"gunus","p":"noun","g":["suddenly stinky"],"f":["gùnùs"]}
+{"w":"shirim","p":"noun","g":["shady, offering shade"],"f":["shìrìm"]}
+{"w":"riris","p":"noun","g":["crying a lot"],"f":["rirìs"]}
+{"w":"kwatsam","p":"noun","g":["suddenly"],"f":["kwatsàm","kwaràm"]}
+{"w":"kwaram","p":"noun","g":["alternative form of kwatsàm (“suddenly”)"],"f":["kwaràm"]}
+{"w":"wuluk","p":"noun","g":["obsolete form of wulik"]}
+{"w":"siɗik","p":"noun","g":["black"]}
+{"w":"buƙwi","p":"noun","g":["bare, exposed"],"f":["bùƙwī"]}
+{"w":"luƙwi","p":"noun","g":["finely ground or pounded"],"f":["luƙwī"]}
+{"w":"birjik","p":"noun","g":["plentiful, abundant, scattered everywhere"]}
+{"w":"kirtif","p":"noun","g":["thick liquid"],"f":["kìrtif"]}
+{"w":"murtuk","p":"noun","g":["dark, turbid"]}
+{"w":"samɓal","p":"noun","g":["straight","very tall"],"f":["sàmɓal"]}
+{"w":"warwar","p":"noun","g":["falling flat on one's back"]}
+{"w":"warwas","p":"noun","g":["alternative form of wàr̃war̃ (“falling flat on one's back”)"]}
+{"w":"wanwar","p":"noun","g":["alternative form of wàr̃war̃ (“falling flat on one's back”)"]}
+{"w":"zundum","p":"noun","g":["full"],"f":["zùndum","tsùndum"]}
+{"w":"tsundum","p":"noun","g":["something not too big falling into water"],"f":["tsùndùm"]}
+{"w":"tsundum","p":"noun","g":["alternative form of zùndum (“full (of a body of water)”)"],"f":["tsùndum"]}
+{"w":"ƙandas","p":"noun","g":["dry, lacking moisture or oil"]}
+{"w":"jawur","p":"noun","g":["bright red"]}
+{"w":"jazur","p":"noun","g":["having reddish skin; light-skinned"]}
+{"w":"maƙil","p":"noun","g":["very full"]}
+{"w":"reras","p":"noun","g":["well arranged"]}
+{"w":"ƙiƙam","p":"noun","g":["motionless, standing in place"]}
+{"w":"fururu","p":"noun","g":["white with dust"]}
+{"w":"rututu","p":"noun","g":["in large numbers"]}
+{"w":"tsalala","p":"noun","g":["thin, watered down"]}
+{"w":"dukuku","p":"noun","g":["ugly","sad","clumsy"],"f":["dùkùkù"]}
+{"w":"sukuku","p":"noun","g":["sad, despondent"],"f":["sùkùkù"]}
+{"w":"zaƙaƙa","p":"noun","g":["something long and thin"],"f":["zàƙàƙà"]}
+{"w":"boɗoɗo","p":"noun","g":["in an exposing manner"],"f":["bṑɗṑɗṑ"]}
+{"w":"bonono","p":"noun","g":["something thought to be secure that turns out not to be"],"f":["bṑnṑnṑ"]}
+{"w":"zololo","p":"noun","g":["tall and thin, having a long neck"],"f":["zṑlṑlṑ","tsṑlṑlṑ"]}
+{"w":"tsololo","p":"noun","g":["alternative form of zṑlṑlṑ (“tall and thin, having a long neck”)"],"f":["tsṑlṑlṑ"]}
+{"w":"ɓelele","p":"noun","g":["laughing with mouth wide open"],"f":["ɓḕlḕlḕ"]}
+{"w":"ƙerere","p":"noun","g":["standing disrespectfully before a superior"],"f":["ƙḕrḕrḕ"]}
+{"w":"galala","p":"noun","g":["unguarded, out in the open"]}
+{"w":"burɗunɗun","p":"noun","g":["swollen (as from insect bites)"]}
+{"w":"ɓangwalgwal","p":"noun","g":["solid, round, and fleshy (e.g., like a kola nut)"],"f":["ɓàngwàlgwàl"]}
+{"w":"jimɓirɓir","p":"noun","g":["large and heavy from being soaked or bloated"]}
+{"w":"ƙursunsun","p":"noun","g":["hard to the touch"],"f":["ƙùrsùnsùn"]}
+{"w":"ramɓasɓas","p":"noun","g":["large and bare (usually used to describe a bald head)"]}
+{"w":"samɓalɓal","p":"noun","g":["straight and tall, slender (of a person)"],"f":["sàmɓàlɓàl"]}
+{"w":"buguzunzum","p":"noun","g":["big, fat, untidy, hairy (mainly of women and animals)"],"f":["bùgùzùnzùm"]}
+{"w":"fata-fata","p":"noun","g":["destroying, breaking into pieces"]}
+{"w":"kwata-kwata","p":"noun","g":["lacking completely"]}
+{"w":"rugu-rugu","p":"noun","g":["shattered"]}
+{"w":"wara-wara","p":"noun","g":["spaced apart, irregularly placed"]}
+{"w":"dushi-dushi","p":"noun","g":["hazy, dim, difficult to see"]}
+{"w":"sako-sako","p":"noun","g":["loosely"]}
+{"w":"buɗu-buɗu","p":"noun","g":["covered with powder","having poor eyesight"],"f":["buɗuɗu"]}
+{"w":"caɓa-caɓa","p":"noun","g":["abundant, profuse"],"f":["caɓaɓa"]}
+{"w":"caɓaɓa","p":"noun","g":["alternative form of caɓa-caɓa"]}
+{"w":"buɗuɗu","p":"noun","g":["alternative form of buɗu-buɗu"]}
+{"w":"faca-faca","p":"noun","g":["spending recklessly","playing in or with water"]}
+{"w":"cuku-cuku","p":"noun","g":["trying to get something dishonestly"]}
+{"w":"giɗi-giɗi","p":"noun","g":["fidgeting","being a busybody"]}
+{"w":"jale-jale","p":"noun","g":["going hither and thither"],"f":["jàlḕ-jalē"]}
+{"w":"wuƙi-wuƙi","p":"noun","g":["children fidgeting"]}
+{"w":"watsal-watsal","p":"noun","g":["wriggling, squirming, roiling"],"f":["wàtsàl-watsal"]}
+{"w":"budum-budum","p":"noun","g":["floundering (physicially or metaphorically)"],"f":["bùdùm-budum"]}
+{"w":"baram-baram","p":"noun","g":["parting on bad terms"],"f":["baram-bàràm"]}
+{"w":"cukun-cukun","p":"noun","g":["confused about what to do"],"f":["cukun-cùkùn"]}
+{"w":"gatsal-gatsal","p":"noun","g":["poorly cut chunks of food","careless or inappropriate speech"],"f":["gatsal-gàtsàl"]}
+{"w":"kikyu-kikyu","p":"noun","g":["standing alert"]}
+{"w":"makari","p":"noun","g":["antidote"],"f":["makarī","makàrai","makarin"]}
+{"w":"arewa","p":"noun","g":["north"],"f":["arḕwa"]}
+{"w":"gusum","p":"adv","g":["south"],"f":["gusùm"]}
+{"w":"waliyyi","p":"noun","g":["saint, holy man","the man who represents the bride in marriage negotiations"],"f":["wàlìyyai","wàliyyìn","wàlî"]}
+{"w":"dogara","p":"verb","g":["entrust, rely on, trust in"],"f":["dṑgarà"]}
+{"w":"dogara","p":"noun","g":["ability to endure","trust in God"]}
+{"w":"zafi","p":"noun","g":["heat"],"f":["zāfī","zāfin"]}
+{"w":"hurriyya","p":"noun","g":["freedom, liberty"]}
+{"w":"hazbiya","p":"noun","g":["speckled pigeon"],"f":["hazbiyā"]}
+{"w":"hodar-ibilis","p":"noun","g":["cocaine"]}
+{"w":"hawainiya","p":"noun","g":["chameleon"],"f":["hàwainìyā"]}
+{"w":"gwanjo","p":"noun","g":["public auction","secondhand clothes, often of European origin, for sale in a market"],"f":["gwànjō","gwànjon"]}
+{"w":"fuɗu","p":"num","g":["alternative form of huɗu (“four”)"]}
+{"w":"gwanki","p":"noun","g":["roan antelope"],"f":["gwankī","gwankaye","gwankin"]}
+{"w":"gamsheƙa","p":"noun","g":["Black-necked spitting cobra"],"f":["gàmshḕƙā","gànshḕƙā"]}
+{"w":"tsagagi","p":"noun","g":["Yellow-billed stork"],"f":["tsagagī","tsagagin"]}
+{"w":"tankarki","p":"noun","g":["Black-bellied bustard"],"f":["tànkarkìn"]}
+{"w":"tafarnuwa","p":"noun","g":["garlic"]}
+{"w":"siyaki","p":"noun","g":["striped hyena"],"f":["sìyākī","sìyākai","sìyākin"]}
+{"w":"shirwa","p":"noun","g":["hawk, specifically the black kite"],"f":["shirwōwī","shirwàn"]}
+{"w":"haƙori","p":"noun","g":["tooth","ivory"],"f":["haƙōrī","haƙṑrā","haƙōrin"]}
+{"w":"tsamiya","p":"noun","g":["The tree Dialium guineense (velvet tamarind)","tamarind (fruit)"],"f":["tsāmiyā","tsāmiyōyī"]}
+{"w":"magana","p":"noun","g":["speech, talk","broadcasting","matter, affair"],"f":["màgàngànū"]}
+{"w":"sulhu","p":"noun","g":["reconciliation, arbitration","peace"],"f":["sulhùn"]}
+{"w":"tuntunmi","p":"noun","g":["Hadada ibis"],"f":["tuntunmī","tuntunmin"]}
+{"w":"yabirbira","p":"noun","g":["fruit bat"]}
+{"w":"zumurrudu","p":"noun","g":["emerald"]}
+{"w":"darduma","p":"noun","g":["oriental rug, carpet"]}
+{"w":"dimilmilo","p":"noun","g":["Reed cormorant"],"f":["dimilmilṑ","dimilmilòn"]}
+{"w":"dodon-koɗi","p":"noun","g":["snail, snailshell"],"f":["dṑdon-kōɗì","dṑdon-kōɗìn"]}
+{"w":"dogon-yaro","p":"noun","g":["neem tree, Azadirachta indica"],"f":["dōgon-yārò","dōgon-yāròn"]}
+{"w":"fitsari","p":"noun","g":["urine"],"f":["fitsārī","fitsārin"]}
+{"w":"gaggafa","p":"noun","g":["bateleur"],"f":["gaggāfā"]}
+{"w":"bahasi","p":"noun","g":["investigation; inquiry"],"f":["bahàsī","bahàsin"]}
+{"w":"cibiya","p":"noun","g":["navel; umbilical cord","center"],"f":["cībìyā"]}
+{"w":"gefen","p":"prep","g":["beside, next to"],"f":["gēfèn"]}
+{"w":"Akure","p":"name","g":["Akure (the largest city and state capital of Ondo State, Nigeria)"]}
+{"w":"kurna","p":"noun","g":["thorn tree"]}
+{"w":"borintinke","p":"noun","g":["marabou stork"],"f":["bṑrintinkḕ","bṑrintinkèn"]}
+{"w":"hannu","p":"noun","g":["hand","arm"],"f":["hannū","hannaye","hannun"]}
+{"w":"kunkuru","p":"noun","g":["tortoise"],"f":["kùnkurū","kùnkùrāi","kùnkurun"]}
+{"w":"ƙwaro","p":"noun","g":["insect"]}
+{"w":"ƙaura","p":"noun","g":["migration"],"f":["ƙaurā"]}
+{"w":"gaskiya","p":"noun","g":["truth","fact"],"f":["gaskiyā"]}
+{"w":"yaƙi","p":"noun","g":["war","combat"],"f":["yāƙìn"]}
+{"w":"tsari","p":"noun","g":["arrangement, plan, system"],"f":["tsārìn"]}
+{"w":"riɗi","p":"noun","g":["beniseed, sesame seed"],"f":["rīɗī","rīɗin"]}
+{"w":"rumbu","p":"noun","g":["granary","storage facility"],"f":["rùmbū","rùmbun"]}
+{"w":"ganuwa","p":"noun","g":["town wall, rampart"],"f":["gānuwā"]}
+{"w":"ganji","p":"noun","g":["gutta-percha tree"],"f":["ganjìn"]}
+{"w":"garafuni","p":"noun","g":["balsam apple vine"]}
+{"w":"gawasa","p":"noun","g":["gingerbread plum tree"],"f":["gawàsū"]}
+{"w":"makiyaya","p":"noun","g":["pasture, grazing land"],"f":["makiyāyā"]}
+{"w":"maƙala","p":"noun","g":["article, essay"]}
+{"w":"maƙari","p":"noun","g":["boundary, limit"],"f":["maƙārī","maƙārin"]}
+{"w":"makwanci","p":"noun","g":["sleeping place","graveyards, cemeteries"],"f":["makwancī","màkwàntai","makwancin"]}
+{"w":"makwarwa","p":"noun","g":["bush fowl, francolin?"],"f":["makwarwā"]}
+{"w":"maƙoƙo","p":"noun","g":["goiter"]}
+{"w":"maƙoshi","p":"noun","g":["throat, esophagus"],"f":["maƙōshī","makṑshai","maƙōshin"]}
+{"w":"maƙwabci","p":"noun","g":["neighbor"],"f":["maƙwàbcī","maƙwàbcin"]}
+{"w":"maƙiyi","p":"noun","g":["enemy"],"f":["maƙìyī","maƙìyin"]}
+{"w":"mamaki","p":"noun","g":["astonishment, surprise"]}
+{"w":"maraya","p":"noun","g":["city, urban area"],"f":["marāyá","marāyán"]}
+{"w":"maraya","p":"noun","g":["kob"],"f":["māràyā","mārāyōyī"]}
+{"w":"maraya","p":"noun","g":["orphan"],"f":["màrainìyā","màràyū","màrāyàn"]}
+{"w":"masaƙi","p":"noun","g":["weaver"]}
+{"w":"masaniya","p":"noun","g":["knowledge"],"f":["masanìyā"]}
+{"w":"masassaƙi","p":"noun","g":["adze"],"f":["masassaƙī","masassàkai","masassaƙin"]}
+{"w":"masassaƙi","p":"noun","g":["carpenter, carver"],"f":["masàssàƙī","masàssàƙin"]}
+{"w":"mashar̃ci","p":"noun","g":["comb"]}
+{"w":"mashawar̃ta","p":"noun","g":["council-chamber, conference"]}
+{"w":"farko","p":"noun","g":["beginning"],"f":["farkō","farkon"]}
+{"w":"fassara","p":"noun","g":["translation"]}
+{"w":"tattaunawa","p":"noun","g":["discussion, negotiations"],"f":["tattàunâwā"]}
+{"w":"kasuwanci","p":"noun","g":["marketing, trading, commerce"],"f":["kāsuwancìn"]}
+{"w":"yunƙuri","p":"noun","g":["serious attempt, effort"],"f":["yùnƙurī","yùnƙurin"]}
+{"w":"zaƙami","p":"noun","g":["thorn apple tree"],"f":["zaƙàmī","zaƙàmin"]}
+{"w":"kwamanda","p":"noun","g":["commander"],"f":["kwàmandōjī","kwàmandàn"]}
+{"w":"muƙami","p":"noun","g":["position (political or professional)","status, influence"],"f":["mùƙāmìn"]}
+{"w":"tabbatarwa","p":"noun","g":["confirmation, certification"]}
+{"w":"tsaro","p":"noun","g":["defense, protection, security"],"f":["tsàrō","tsàron"]}
+{"w":"tsawo","p":"noun","g":["height, altitude","length"],"f":["tsawō","tsawon"]}
+{"w":"hassada","p":"noun","g":["envy"]}
+{"w":"guduma","p":"noun","g":["hammer, mallet"],"f":["gùdumōmi"]}
+{"w":"giginya","p":"noun","g":["deleb palm (Borassus aethiopum)"],"f":["gigìnyū"]}
+{"w":"wallafa","p":"verb","g":["to compose, write"]}
+{"w":"wariya","p":"noun","g":["secession, separation, segregation"],"f":["wāriyā"]}
+{"w":"mafari","p":"noun","g":["origin, beginning","reason, cause"],"f":["mafárī","mafàrai","mafárin"]}
+{"w":"mafaka","p":"noun","g":["haven, shelter, sanctuary"],"f":["mafakā","mafàkai","mafakan"]}
+{"w":"sakiya","p":"noun","g":["amendment, alteration"],"f":["sākiyá","sākiyán"]}
+{"w":"ambaliya","p":"noun","g":["overflowing, flooding","congestion (of people)"]}
+{"w":"ta'adda","p":"noun","g":["act of terrorism"]}
+{"w":"tsakiya","p":"noun","g":["middle, center","prime, height"]}
+{"w":"sanar̃wa","p":"noun","g":["announcement"]}
+{"w":"sansani","p":"noun","g":["camp, barracks"],"f":["sànsanī","sànsanōnī","sànsanin"]}
+{"w":"saboda","p":"prep","g":["because, because of","thanks to","on account of, for the sake of"],"f":["sabṑdà"]}
+{"w":"shugabanci","p":"noun","g":["leadership"],"f":["shūgabancìn"]}
+{"w":"biyayya","p":"noun","g":["obedience, loyalty, allegiance"]}
+{"w":"cigaba","p":"noun","g":["promotion","progress, civilization","continuation"],"f":["cîgàba","cîgàban"]}
+{"w":"matukar̃","p":"conj","g":["as long as, on the condition that, to the extent that"]}
+{"w":"iƙir̃ar̃i","p":"noun","g":["boast, claim","stress, emphasis"]}
+{"w":"hankali","p":"noun","g":["good sense"],"f":["hankàlì","hankàlìn"]}
+{"w":"damuwa","p":"noun","g":["trouble, nuisance, bother, worry"]}
+{"w":"shawar̃a","p":"noun","g":["advice, opinion","decision"]}
+{"w":"bincike","p":"noun","g":["investigation, research"],"f":["bìncìkē","bìncìkē-bìncìkē","bìncìken"]}
+{"w":"tallafa","p":"verb","g":["to support, carry (in the palm of the hand)"],"f":["tallāfà"]}
+{"w":"tallafa","p":"verb","g":["to provide for, give relief to, take care of"]}
+{"w":"addaba","p":"noun","g":["harassment, annoyance"]}
+{"w":"aiki","p":"noun","g":["work, job","act, activity","embroidery"],"f":["aikìce-aikìce","aikìn"]}
+{"w":"ma'aikata","p":"noun","g":["factory, workplace"]}
+{"w":"fetur̃","p":"noun","g":["gasoline, petroleum"]}
+{"w":"amfani","p":"noun","g":["usefulness, advantage"]}
+{"w":"albashi","p":"noun","g":["salary, wages"],"f":["àlbâshī","àlbâshin"]}
+{"w":"taimako","p":"noun","g":["aid, help"],"f":["tàimakō","tàimakon"]}
+{"w":"sakamako","p":"noun","g":["result, outcome, consequence","feedback, recompense"]}
+{"w":"matsala","p":"noun","g":["problem, affair, obstacle"],"f":["màtsalōlī"]}
+{"w":"musamman","p":"adv","g":["especially, expressly","independence, sovereignty"],"f":["mùsammàn"]}
+{"w":"buƙata","p":"verb","g":["to need, require","to request of"]}
+{"w":"buƙata","p":"noun","g":["need, requirement"],"f":["bùƙàtū"]}
+{"w":"tsokana","p":"noun","g":["provocation"],"f":["tsōkànā"]}
+{"w":"tsakani","p":"noun","g":["interval between two points","relationship"],"f":["tsàkānī","tsàkānin"]}
+{"w":"inganta","p":"verb","g":["to strengthen, make durable"],"f":["ingàntā"]}
+{"w":"inganta","p":"verb","g":["to become stronger"],"f":["ìngantà"]}
+{"w":"faɗa","p":"verb","g":["to tell, say"],"f":["fàɗā"]}
+{"w":"faɗa","p":"verb","g":["to fall into, fall onto, descend on","to throw oneself into"]}
+{"w":"faɗa","p":"noun","g":["quarrel, fight","reprimand"],"f":["faɗàn"]}
+{"w":"shaci","p":"noun","g":["mark, trace, zone","verbal noun of shata"],"f":["shācìn"]}
+{"w":"shata","p":"verb","g":["to mark the outline of a plan or pattern"]}
+{"w":"haɗi","p":"noun","g":["combination (especially of disparate things)","mischief-making, inciting other people to quarrel"],"f":["haɗìn"]}
+{"w":"haɗama","p":"noun","g":["greed, gluttony"]}
+{"w":"haihuwa","p":"noun","g":["birth","one's biological child","verbal noun of haihu"],"f":["haihùwā"]}
+{"w":"haihu","p":"verb","g":["to give birth, have a child"],"f":["haihù"]}
+{"w":"mutuwa","p":"noun","g":["death","verbal noun of mutu"]}
+{"w":"mutunci","p":"noun","g":["decency, humaneness","dignity, prestige, reputation"],"f":["mutuncìn"]}
+{"w":"nakiya","p":"noun","g":["explosives"]}
+{"w":"zalunci","p":"noun","g":["oppression, tyranny"],"f":["zāluncìn"]}
+{"w":"yawanci","p":"noun","g":["majority, most"],"f":["yawancī","yawancin"]}
+{"w":"bishar̃a","p":"noun","g":["good tidings","the gospel"]}
+{"w":"tsarki","p":"noun","g":["cleanliness, purity, holiness"],"f":["tsarkī","tsarkin"]}
+{"w":"tasiri","p":"noun","g":["influence, power","benefit, usefulness"],"f":["tāsīrìn"]}
+{"w":"gaskata","p":"verb","g":["to believe","to verify"],"f":["gaskàtā"]}
+{"w":"gaskata","p":"verb","g":["to be borne out, prove to be true"],"f":["gàskatà"]}
+{"w":"bangaskiya","p":"noun","g":["belief, acceptance, (religious) submission"],"f":["bangaskiyā"]}
+{"w":"mashaidi","p":"noun","g":["witness"],"f":["mashàidī","mashàidin"]}
+{"w":"yanzu","p":"adv","g":["now, at present"],"f":["yànzu"]}
+{"w":"zuwa","p":"noun","g":["arrival"],"f":["zuwàn"]}
+{"w":"zuwa","p":"prep","g":["to, towards","to, into","as far as, up to, until"]}
+{"w":"wando","p":"noun","g":["trousers, pants"],"f":["wàndō","wàndon"]}
+{"w":"gunki","p":"noun","g":["idol, statue, fetish"],"f":["gunkìn"]}
+{"w":"guɗa","p":"noun","g":["ululation"],"f":["gùɗē-gùɗē"]}
+{"w":"kujera","p":"noun","g":["chair"],"f":["kujḕrā","kùjḕrū"]}
+{"w":"matuƙa","p":"noun","g":["limit, utmost extreme"],"f":["matuƙā"]}
+{"w":"mazauni","p":"noun","g":["seat, dwelling-place"],"f":["mazaunī","mazaunin"]}
+{"w":"mazauni","p":"noun","g":["dweller, settler, inhabitant, resident"],"f":["mazàunī","mazàunin"]}
+{"w":"kyauro","p":"noun","g":["reed","shaft (of an arrow)"],"f":["kyaurō","kyauràye","kyauron"]}
+{"w":"masauki","p":"noun","g":["place for lodging, overnight quarters"],"f":["masaukī","màsàukai","masaukin"]}
+{"w":"masarauta","p":"noun","g":["seat of government, administrative domain, town where the chief lives"],"f":["masarautā","masaràutū","masaràutai"]}
+{"w":"zauna","p":"verb","g":["to sit","to settle (down), live, remain (in a place)"]}
+{"w":"tafiya","p":"noun","g":["journey, trip"],"f":["tàfiyē-tàfiyē"]}
+{"w":"tafarki","p":"noun","g":["road, highway","path, way"],"f":["tàfàrkū","tafarkìn"]}
+{"w":"girma","p":"noun","g":["bigness, size","importance, prestige"],"f":["girmā","girman"]}
+{"w":"tambari","p":"noun","g":["royal hemispherical drum","official government seal","trademark"],"f":["tambàrī","tambàrin"]}
+{"w":"igiya","p":"noun","g":["rope, string","cable","chevron on military or police uniforms indicating rank"],"f":["igiyoyi"]}
+{"w":"idan","p":"conj","g":["if, when (in the future)"],"f":["ìdan","in"]}
+{"w":"kowanne","p":"pron","g":["everyone, each one, whichever one"],"f":["kōwànnē"]}
+{"w":"kishiya","p":"noun","g":["co-wife","opposite"],"f":["kīshìyā","kīshīyōyī"]}
+{"w":"maciji","p":"noun","g":["snake, serpent"]}
+{"w":"sauka","p":"verb","g":["to descend, come down","to be lodged","to arrive"],"f":["sàuka"]}
+{"w":"sauka","p":"verb","g":["to help unload something from someone","to lodge someone"],"f":["sàukā"]}
+{"w":"rijiya","p":"noun","g":["well"],"f":["rījìyā","rījīyōyī"]}
+{"w":"rinjaye","p":"noun","g":["victory, success","preponderance, majority"],"f":["rinjāyḕ","rinjāyèn"]}
+{"w":"runji","p":"noun","g":["fulani slave settlement"],"f":["runjìn"]}
+{"w":"rumfa","p":"noun","g":["shed, shelter, lean-to, market stall"],"f":["rùmfā"]}
+{"w":"samame","p":"noun","g":["surprise attack"]}
+{"w":"jinjimi","p":"noun","g":["white ibis"],"f":["jinjimī","jinjimin"]}
+{"w":"waƙa","p":"noun","g":["song"],"f":["waƙoƙi"]}
+{"w":"talotalo","p":"noun","g":["turkey"],"f":["tàlotàlo","tàlotàlon"]}
+{"w":"tsoro","p":"noun","g":["fear"],"f":["tsṑrō","tsṑràce-tsṑràce","tsṑron"]}
+{"w":"ɓauna","p":"noun","g":["buffalo"],"f":["ɓaunā","ɓakānē","ɓaunāyē"]}
+{"w":"tunkiya","p":"noun","g":["sheep, ewe"],"f":["tunkìyā","tumāki"]}
+{"w":"ʼY","p":"character","g":["A letter of the Hausa alphabet, written in the Latin script.."],"f":["ʼy","Ƴ"]}
+{"w":"tattasai","p":"noun","g":["large red peppers; (in particular, Capsicum annuum)"]}
+{"w":"makabarta","p":"noun","g":["cemetery"]}
+{"w":"bedin","p":"noun","g":["possessed form of bēdī̀"],"f":["bēdìn"]}
+{"w":"almajiranci","p":"noun","g":["A system of Islamic education practiced in northern Nigeria by the almajiris."]}
+{"w":"Aboki","p":"noun","g":["alternative letter-case form of aboki"],"f":["Àbōkī","Àbōkin"]}
+{"w":"hukunci","p":"noun","g":["verdict, condemnation, sentence"],"f":["hùkùnce-hùkùnce","hukuncìn"]}
+{"w":"maiwa","p":"noun","g":["a long-season, photoperiod sensitive variety of pearl millet"],"f":["màiwā"]}
+{"w":"alamci","p":"noun","g":["symbolism"],"f":["alamcìn"]}
+{"w":"ajiye","p":"verb","g":["to put down, put away","to store, save, safeguard"],"f":["ajìyē"]}
+{"w":"soyayya","p":"noun","g":["love, affection, romance"]}
+{"w":"jagoranci","p":"noun","g":["leadership"],"f":["jāgōrancìn"]}
+{"w":"waɗannan","p":"pron","g":["these, these ones; plural of wannàn"],"f":["waɗànnân"]}
+{"w":"waɗannan","p":"det","g":["these; plural of wannàn"],"f":["waɗànnân"]}
+{"w":"waɗannan","p":"pron","g":["those, those ones; plural of wànnan"],"f":["wàɗànnan"]}
+{"w":"waɗannan","p":"det","g":["those; plural of wànnan"],"f":["wàɗànnan"]}
+{"w":"ƙunci","p":"noun","g":["constriction, narrowness","bad temper, anger"],"f":["ƙuncī","ƙuncin"]}
+{"w":"satifikat","p":"noun","g":["certificate"]}
+{"w":"tsittsige","p":"noun","g":["A small tree stump"],"f":["tsittsigḕ","tsittsigèn"]}
+{"w":"ƙawa","p":"noun","g":["a fondness; great desire"]}
+{"w":"ƙawa","p":"noun","g":["a female friend of a woman or girl","ally"],"f":["ƙawā"]}
+{"w":"rubutu","p":"noun","g":["verbal noun of r̃ubū̀tā","writing"]}
+{"w":"rubuce-rubuce","p":"noun","g":["plural of r̃ùbū̀tū"]}
+{"w":"karatu","p":"noun","g":["verbal noun of kar̃àntā","reading","education, study, learning"]}
+{"w":"karance-karance","p":"noun","g":["plural of kàr̃ā̀tū"]}
+{"w":"kaidin","p":"noun","g":["plural of kaidi"]}
+{"w":"wannan","p":"pron","g":["this, this one"],"f":["wannàn","waɗànnân"]}
+{"w":"wannan","p":"det","g":["this"],"f":["wannàn","waɗànnân"]}
+{"w":"wannan","p":"pron","g":["that, that one"],"f":["wànnan","wàɗànnan"]}
+{"w":"wannan","p":"det","g":["that"],"f":["wànnan","wàɗànnan"]}
+{"w":"awaki","p":"noun","g":["plural of akuya"],"f":["awākī"]}
+{"w":"satifiket","p":"noun","g":["alternative form of satifikat"]}
+{"w":"ƙanƙara","p":"noun","g":["ice, snow, hail","flint"]}
+{"w":"ƙanƙara","p":"verb","g":["to craft something very well"],"f":["ƙanƙàrā"]}
+{"w":"itace","p":"noun","g":["tree","wood, stick"]}
+{"w":"tsutsa","p":"noun","g":["worm"],"f":["tsūtsōtsī"]}
+{"w":"ciyawa","p":"noun","g":["grass"]}
+{"w":"zuciya","p":"noun","g":["heart"],"f":["zūcìyā"]}
+{"w":"wutsiya","p":"noun","g":["tail"],"f":["wutsiyōyī"]}
+{"w":"tebur","p":"noun","g":["table, desk"]}
+{"w":"mabuɗi","p":"noun","g":["key"],"f":["mabūɗī","mabūɗai","mabūɗin"]}
+{"w":"Daular Musulunci","p":"name","g":["Islamic State","Islamic realm"]}
+{"w":"R̃","p":"character","g":["The uppercase of r̃."]}
+{"w":"filin jirgin sama","p":"noun","g":["airport"]}
+{"w":"filayen jirgin sama","p":"noun","g":["plural of filin jirgin sama"]}
+{"w":"jagora","p":"noun","g":["guide, leader","guide, guidebook"],"f":["jāgorōrī"]}
