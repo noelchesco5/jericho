@@ -46,7 +46,11 @@ bytes = "1"
 regex = "1"
 
 # Sema - offline Swahili semantic anchoring (anchor layer: SW -> EN skeletons)
-sema = { git = "https://github.com/noelchesco5/Sema" }
+# Org home (Nama-ResearchLab); the personal fork is retired for this dep.
+sema = { git = "https://github.com/Nama-ResearchLab/Sema" }
+
+# Sema-Tena - pure data-driven Swahili verb synthesis (render layer: EN -> SW verbs)
+sema-tena = { git = "https://github.com/Nama-ResearchLab/Sema-Tena" }
 
 [profile.release]
 opt-level = 2

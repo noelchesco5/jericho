@@ -2883,6 +2883,7 @@ dependencies = [
  "regex",
  "reqwest",
  "sema",
+ "sema-tena",
  "serde",
  "serde_json",
  "sysinfo",
@@ -3272,7 +3273,17 @@ dependencies = [
 [[package]]
 name = "sema"
 version = "0.1.0"
-source = "git+https://github.com/noelchesco5/Sema#97739e0b72c81ac2c3b9e17a01d6b96378233769"
+source = "git+https://github.com/Nama-ResearchLab/Sema#742159f80c8a15dcc6f357ce1834c3e6f4f32c60"
+dependencies = [
+ "serde",
+ "serde_json",
+ "toml",
+]
+
+[[package]]
+name = "sema-tena"
+version = "0.1.0"
+source = "git+https://github.com/Nama-ResearchLab/Sema-Tena#d1cc0c66899b569f7cd1400ac9f31ac800de2b11"
 dependencies = [
  "serde",
  "serde_json",

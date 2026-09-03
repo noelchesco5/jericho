@@ -4,6 +4,7 @@ mod ollama;
 mod rag;
 mod render;
 mod sema_anchor;
+mod sema_synth;
 mod system;
 mod gui;
 
